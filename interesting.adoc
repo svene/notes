@@ -2,6 +2,7 @@
 
 == Links
 
+- 2023-09-08 https://www.youtube.com/watch?v=huMTT5Pb8b8[cool htmx-go video]
 - 2023-09-08 https://medium.com/@waterplea[Articles by Alexander Inkin on medium]
 - 2023-09-08 https://indepth.dev/posts/1443/how-we-make-our-base-components-more-flexible-controllers-concept-in-angular[Angular Controller Concept] [angular]
 - 2023-09-08 https://medium.com/its-tinkoff/dom-di-and-view-the-trees-of-angular-2ef959e7fafd[DOM, DI and View: the trees of Angular] [angular/template-outlet]
