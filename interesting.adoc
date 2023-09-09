@@ -1,6 +1,6 @@
 = Notes
 
-== Links
+== Timely Links
 
 - 2023-09-08 https://www.youtube.com/watch?v=huMTT5Pb8b8[cool htmx-go video]
 - 2023-09-08 https://medium.com/@waterplea[Articles by Alexander Inkin on medium]
@@ -10,6 +10,11 @@
 - 2022-05-21 https://github.com/zeroturnaround/zt-process-killer[Zt-process-killer]
 - 2022-05-21 https://github.com/zeroturnaround/zt-exec[Zt-exec]
 
+== Tagged Links
+
+=== kafka
+
+- https://twitter.com/Igfasouza/status/1695752053564362875?s=20[Exactly Once Semantics]
 
 == TODO
 
