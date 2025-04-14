@@ -271,23 +271,25 @@
 - Wed, 16.04.2025
 - Tue, 15.04.2025
 - Mon, 14.04.2025
+https://csp-evaluator.withgoogle.com/
 
 - Sun, 13.04.2025
+
 vladmihalcea (hibernate / DB) posts:
 
-https://vladmihalcea.com/the-best-way-to-log-jdbc-statements
-https://vladmihalcea.com/the-open-session-in-view-anti-pattern
-https://vladmihalcea.com/14-high-performance-java-persistence-tips
-https://vladmihalcea.com/why-you-should-use-the-hibernate-resulttransformer-to-customize-result-set-mappings
-https://vladmihalcea.com/why-you-should-definitely-learn-sql-window-functions
-https://vladmihalcea.com/postgresql-serial-column-hibernate-identity
-https://vladmihalcea.com/hibernate-statistics/
-https://vladmihalcea.com/n-plus-1-query-problem
-https://vladmihalcea.com/why-and-when-use-jpa
-https://vladmihalcea.com/log-sql-spring-boot
-https://vladmihalcea.com/records-spring-data-jpa/
-https://vladmihalcea.com/high-performance-java-persistence-newsletter-issue-61
-https://vladmihalcea.com/fetchtype-eager-fetchgraph/
-https://vladmihalcea.com/postgresql-copy-result-set-file/
-https://vladmihalcea.com/high-performance-java-persistence-newsletter-issue-64
-https://vladmihalcea.com/time-to-break-free-from-the-sql-92-mindset/
+- https://vladmihalcea.com/the-best-way-to-log-jdbc-statements
+- https://vladmihalcea.com/the-open-session-in-view-anti-pattern
+- https://vladmihalcea.com/14-high-performance-java-persistence-tips
+- https://vladmihalcea.com/why-you-should-use-the-hibernate-resulttransformer-to-customize-result-set-mappings
+- https://vladmihalcea.com/why-you-should-definitely-learn-sql-window-functions
+- https://vladmihalcea.com/postgresql-serial-column-hibernate-identity
+- https://vladmihalcea.com/hibernate-statistics/
+- https://vladmihalcea.com/n-plus-1-query-problem
+- https://vladmihalcea.com/why-and-when-use-jpa
+- https://vladmihalcea.com/log-sql-spring-boot
+- https://vladmihalcea.com/records-spring-data-jpa/
+- https://vladmihalcea.com/high-performance-java-persistence-newsletter-issue-61
+- https://vladmihalcea.com/fetchtype-eager-fetchgraph/
+- https://vladmihalcea.com/postgresql-copy-result-set-file/
+- https://vladmihalcea.com/high-performance-java-persistence-newsletter-issue-64
+- https://vladmihalcea.com/time-to-break-free-from-the-sql-92-mindset/
