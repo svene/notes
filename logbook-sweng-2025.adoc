@@ -1,0 +1,571 @@
+----
+==== Thu, 01.01.2026
+==== Wed, 31.12.2025
+==== Tue, 30.12.2025
+==== Mon, 29.12.2025
+==== Sun, 28.12.2025
+==== Sat, 27.12.2025
+==== Fri, 26.12.2025
+==== Thu, 25.12.2025
+==== Wed, 24.12.2025
+==== Tue, 23.12.2025
+==== Mon, 22.12.2025
+==== Sun, 21.12.2025
+==== Sat, 20.12.2025
+==== Fri, 19.12.2025
+==== Thu, 18.12.2025
+==== Wed, 17.12.2025
+==== Tue, 16.12.2025
+==== Mon, 15.12.2025
+==== Sun, 14.12.2025
+==== Sat, 13.12.2025
+==== Fri, 12.12.2025
+==== Thu, 11.12.2025
+==== Wed, 10.12.2025
+==== Tue, 09.12.2025
+==== Mon, 08.12.2025
+==== Sun, 07.12.2025
+==== Sat, 06.12.2025
+==== Fri, 05.12.2025
+==== Thu, 04.12.2025
+==== Wed, 03.12.2025
+==== Tue, 02.12.2025
+==== Mon, 01.12.2025
+==== Sun, 30.11.2025
+==== Sat, 29.11.2025
+==== Fri, 28.11.2025
+==== Thu, 27.11.2025
+==== Wed, 26.11.2025
+==== Tue, 25.11.2025
+==== Mon, 24.11.2025
+==== Sun, 23.11.2025
+==== Sat, 22.11.2025
+==== Fri, 21.11.2025
+==== Thu, 20.11.2025
+==== Wed, 19.11.2025
+==== Tue, 18.11.2025
+==== Mon, 17.11.2025
+==== Sun, 16.11.2025
+==== Sat, 15.11.2025
+==== Fri, 14.11.2025
+==== Thu, 13.11.2025
+==== Wed, 12.11.2025
+==== Tue, 11.11.2025
+==== Mon, 10.11.2025
+==== Sun, 09.11.2025
+==== Sat, 08.11.2025
+==== Fri, 07.11.2025
+==== Thu, 06.11.2025
+==== Wed, 05.11.2025
+==== Tue, 04.11.2025
+==== Mon, 03.11.2025
+==== Sun, 02.11.2025
+==== Sat, 01.11.2025
+==== Fri, 31.10.2025
+==== Thu, 30.10.2025
+==== Wed, 29.10.2025
+==== Tue, 28.10.2025
+==== Mon, 27.10.2025
+==== Sun, 26.10.2025
+==== Sat, 25.10.2025
+==== Fri, 24.10.2025
+==== Thu, 23.10.2025
+==== Wed, 22.10.2025
+==== Tue, 21.10.2025
+==== Mon, 20.10.2025
+==== Sun, 19.10.2025
+==== Sat, 18.10.2025
+==== Fri, 17.10.2025
+==== Thu, 16.10.2025
+==== Wed, 15.10.2025
+==== Tue, 14.10.2025
+==== Mon, 13.10.2025
+==== Sun, 12.10.2025
+==== Sat, 11.10.2025
+==== Fri, 10.10.2025
+==== Thu, 09.10.2025
+==== Wed, 08.10.2025
+==== Tue, 07.10.2025
+==== Mon, 06.10.2025
+==== Sun, 05.10.2025
+==== Sat, 04.10.2025
+==== Fri, 03.10.2025
+==== Thu, 02.10.2025
+==== Wed, 01.10.2025
+==== Tue, 30.09.2025
+==== Mon, 29.09.2025
+==== Sun, 28.09.2025
+==== Sat, 27.09.2025
+==== Fri, 26.09.2025
+==== Thu, 25.09.2025
+==== Wed, 24.09.2025
+==== Tue, 23.09.2025
+==== Mon, 22.09.2025
+==== Sun, 21.09.2025
+==== Sat, 20.09.2025
+==== Fri, 19.09.2025
+==== Thu, 18.09.2025
+==== Wed, 17.09.2025
+==== Tue, 16.09.2025
+==== Mon, 15.09.2025
+==== Sun, 14.09.2025
+==== Sat, 13.09.2025
+==== Fri, 12.09.2025
+==== Thu, 11.09.2025
+==== Wed, 10.09.2025
+==== Tue, 09.09.2025
+==== Mon, 08.09.2025
+==== Sun, 07.09.2025
+==== Sat, 06.09.2025
+==== Fri, 05.09.2025
+==== Thu, 04.09.2025
+==== Wed, 03.09.2025
+==== Tue, 02.09.2025
+==== Mon, 01.09.2025
+==== Sun, 31.08.2025
+==== Sat, 30.08.2025
+==== Fri, 29.08.2025
+==== Thu, 28.08.2025
+==== Wed, 27.08.2025
+==== Tue, 26.08.2025
+==== Mon, 25.08.2025
+==== Sun, 24.08.2025
+==== Sat, 23.08.2025
+==== Fri, 22.08.2025
+==== Thu, 21.08.2025
+==== Wed, 20.08.2025
+==== Tue, 19.08.2025
+==== Mon, 18.08.2025
+==== Sun, 17.08.2025
+==== Sat, 16.08.2025
+==== Fri, 15.08.2025
+==== Thu, 14.08.2025
+==== Wed, 13.08.2025
+==== Tue, 12.08.2025
+==== Mon, 11.08.2025
+==== Sun, 10.08.2025
+==== Sat, 09.08.2025
+==== Fri, 08.08.2025
+==== Thu, 07.08.2025
+==== Wed, 06.08.2025
+==== Tue, 05.08.2025
+==== Mon, 04.08.2025
+==== Sun, 03.08.2025
+==== Sat, 02.08.2025
+==== Fri, 01.08.2025
+==== Thu, 31.07.2025
+==== Wed, 30.07.2025
+==== Tue, 29.07.2025
+==== Mon, 28.07.2025
+==== Sun, 27.07.2025
+==== Sat, 26.07.2025
+==== Fri, 25.07.2025
+==== Thu, 24.07.2025
+==== Wed, 23.07.2025
+==== Tue, 22.07.2025
+==== Mon, 21.07.2025
+==== Sun, 20.07.2025
+==== Sat, 19.07.2025
+==== Fri, 18.07.2025
+==== Thu, 17.07.2025
+==== Wed, 16.07.2025
+==== Tue, 15.07.2025
+==== Mon, 14.07.2025
+==== Sun, 13.07.2025
+==== Sat, 12.07.2025
+==== Fri, 11.07.2025
+==== Thu, 10.07.2025
+==== Wed, 09.07.2025
+==== Tue, 08.07.2025
+==== Mon, 07.07.2025
+==== Sun, 06.07.2025
+==== Sat, 05.07.2025
+==== Fri, 04.07.2025
+==== Thu, 03.07.2025
+==== Wed, 02.07.2025
+==== Tue, 01.07.2025
+==== Mon, 30.06.2025
+==== Sun, 29.06.2025
+==== Sat, 28.06.2025
+==== Fri, 27.06.2025
+==== Thu, 26.06.2025
+==== Wed, 25.06.2025
+==== Tue, 24.06.2025
+==== Mon, 23.06.2025
+==== Sun, 22.06.2025
+==== Sat, 21.06.2025
+==== Fri, 20.06.2025
+==== Thu, 19.06.2025
+==== Wed, 18.06.2025
+==== Tue, 17.06.2025
+==== Mon, 16.06.2025
+==== Sun, 15.06.2025
+==== Sat, 14.06.2025
+==== Fri, 13.06.2025
+==== Thu, 12.06.2025
+==== Wed, 11.06.2025
+==== Tue, 10.06.2025
+==== Mon, 09.06.2025
+==== Sun, 08.06.2025
+==== Sat, 07.06.2025
+==== Fri, 06.06.2025
+==== Thu, 05.06.2025
+==== Wed, 04.06.2025
+==== Tue, 03.06.2025
+==== Mon, 02.06.2025
+==== Sun, 01.06.2025
+==== Sat, 31.05.2025
+==== Fri, 30.05.2025
+==== Thu, 29.05.2025
+==== Wed, 28.05.2025
+==== Tue, 27.05.2025
+==== Mon, 26.05.2025
+==== Sun, 25.05.2025
+==== Sat, 24.05.2025
+==== Fri, 23.05.2025
+==== Thu, 22.05.2025
+==== Wed, 21.05.2025
+==== Tue, 20.05.2025
+==== Mon, 19.05.2025
+==== Sun, 18.05.2025
+==== Sat, 17.05.2025
+==== Fri, 16.05.2025
+==== Thu, 15.05.2025
+==== Wed, 14.05.2025
+==== Tue, 13.05.2025
+==== Mon, 12.05.2025
+==== Sun, 11.05.2025
+==== Sat, 10.05.2025
+==== Fri, 09.05.2025
+==== Thu, 08.05.2025
+==== Wed, 07.05.2025
+==== Tue, 06.05.2025
+==== Mon, 05.05.2025
+==== Sun, 04.05.2025
+==== Sat, 03.05.2025
+==== Fri, 02.05.2025
+==== Thu, 01.05.2025
+==== Wed, 30.04.2025
+==== Tue, 29.04.2025
+==== Mon, 28.04.2025
+==== Sun, 27.04.2025
+==== Sat, 26.04.2025
+==== Fri, 25.04.2025
+==== Thu, 24.04.2025
+==== Wed, 23.04.2025
+==== Tue, 22.04.2025
+==== Mon, 21.04.2025
+
+light-dark mode: (from https://mlog.nektro.net/posts/2025/html-uswds-accordion/):
+
+[source,html]
+----
+<script>
+if (localStorage.getItem("pref-theme") === "dark") {
+document.body.classList.add('dark');
+} else if (localStorage.getItem("pref-theme") === "light") {
+document.body.classList.remove('dark')
+} else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+document.body.classList.add('dark');
+}
+</script>
+
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+----
+
+==== Sun, 20.04.2025
+
+US Web DesignSystem:
+https://designsystem.digital.gov/
+
+==== Fri, 18.04.2025
+
+slides, presentation:
+https://github.com/slidevjs/slidev
+
+- Thu, 17.04.2025
+- Wed, 16.04.2025
+- Tue, 15.04.2025
+- Mon, 14.04.2025
+https://csp-evaluator.withgoogle.com/
+
+==== Sun, 13.04.2025
+
+vladmihalcea (hibernate / DB) posts:
+
+- https://vladmihalcea.com/the-best-way-to-log-jdbc-statements
+- https://vladmihalcea.com/the-open-session-in-view-anti-pattern
+- https://vladmihalcea.com/14-high-performance-java-persistence-tips
+- https://vladmihalcea.com/why-you-should-use-the-hibernate-resulttransformer-to-customize-result-set-mappings
+- https://vladmihalcea.com/why-you-should-definitely-learn-sql-window-functions
+- https://vladmihalcea.com/postgresql-serial-column-hibernate-identity
+- https://vladmihalcea.com/hibernate-statistics/
+- https://vladmihalcea.com/n-plus-1-query-problem
+- https://vladmihalcea.com/why-and-when-use-jpa
+- https://vladmihalcea.com/log-sql-spring-boot
+- https://vladmihalcea.com/records-spring-data-jpa/
+- https://vladmihalcea.com/high-performance-java-persistence-newsletter-issue-61
+- https://vladmihalcea.com/fetchtype-eager-fetchgraph/
+- https://vladmihalcea.com/postgresql-copy-result-set-file/
+- https://vladmihalcea.com/high-performance-java-persistence-newsletter-issue-64
+- https://vladmihalcea.com/time-to-break-free-from-the-sql-92-mindset/
+
+==== Sat, 12.04.2025
+
+prompt:
+
+"I want to build a Spring Boot application and want to implement:
+Three-layer architecture:
+Web Layer for HTTP APIs using DTOs
+Service Layer for business logic.
+Persistence Layer for JPA repository and entity handling.
+Convert between Entity ↔ DTO using a dedicated Mapper class (no MapStruct or libraries).
+
+Show me where to do the mapping from Entities to DTOs with a dedicated Mapper class (no MapStruct or libraries)
+and where to put the transaction handling.
+"
+
+==== Fri, 11.04.2025
+
+https://jdan.github.io/98.css/
+
+https://github.com/alexpetros/copy-this-code/blob/3e4c6a595a8c874fac2583416b4b3be13be2a073/js/copy-button.js
+
+==== Thu, 10.04.2025
+
+htmx validation:
+https://discord.com/channels/725789699527933952/725789747212976259/1359600155338342421
+
+==== Mon, 07.04.2025
+todo: Using the [name] attribute to turn a collection of <details> into an accordion is great!
+https://discord.com/channels/725789699527933952/1156332623233302578/1358624966635163658
+
+==== Fri, 04.04.2025
+
+https://youdontneedamodalwindow.dev/
+
+==== Sat, 29.03.2025
+
+chartjs.org
+https://css-tricks.com/how-to-make-charts-with-svg/
+
+charts with svg:
+https://discord.com/channels/725789699527933952/725789747212976259/1355339984822861856
+
+==== Thu, 27.03.2025
+select/dropdown control for html:
+https://tom-select.js.org/
+
+animating svgs:
+https://maxwellito.github.io/vivus/
+
+==== Thu, 20.03.2025
+good read:
+https://polotek.net/posts/the-frontend-treadmill/
+
+==== Wed, 19.03.2025
+https://discord.com/channels/725789699527933952/725789747212976259/1352049267346378876
+<oob hx-swap-oob="delete:#form1 .error-field"></oob> <!-- remove all existing errors from the form -->
+
+==== Tue, 18.03.2025
+TODO: chrome 135:
+https://developer.chrome.com/blog/command-and-commandfor
+
+==== Sat, 15.03.2025
+servers:
+An open source PAAS alternative to Heroku:
+https://dokku.com/
+
+https://ploi.io/
+
+https://railway.com/
+
+==== Fri, 14.03.2025
+https://blog.jim-nielsen.com/2025/lots-of-little-html-pages/
+
+==== Tue, 11.03.2025
+htmx view transitions:
+// JS
+htmx.config.globalViewTransitions = true;
+
+/* CSS */
+body {
+transition-duration: 0.03s;
+}
+-> actually changed it to not enable globally but only for <a> tags.
+
+==== Sun, 09.03.2025
+TODO:
+https://www.matuzo.at/blog/2022/100-days-of-more-or-less-modern-css
+
+TODO: evtl. für GMR fotos
+https://splidejs.com/
+-> kind of commercial
+
+
+==== Wed, 05.03.2025
+Models for hierarchical data, tree, sql
+https://de.slideshare.net/slideshow/models-for-hierarchical-data/4179181
+
+==== Tue, 25.02.2025
+webcomponents/facet/slot discussion:
+https://github.com/kgscialdone/facet/pull/7
+https://developer.mozilla.org/en-US/docs/Web/CSS/::part
+
+https://www.scd31.com/posts/extreme-server-side-rendering
+
+==== Mon, 17.02.2025
+Elix webcomponents:
+https://component.kitchen/elix/
+https://component.kitchen/elix/customizing
+
+==== Sat, 15.02.2025
+Deniz: signals, observable objects and arrays in 32loc
+https://discord.com/channels/725789699527933952/1156332663205011586/1339910702130925571
+
+
+==== Fri, 14.02.2025
+movebefore demo: https://state-preserving-atomic-move.glitch.me/
+
+==== Thu, 13.02.2025
+good read: The Web’s Next Transition:
+https://www.epicweb.dev/the-webs-next-transition?ck_subscriber_id=3169879829
+
+==== Mon, 10.02.2025
+ubuntu upgrade: https://ubuntu.com/blog/how-to-upgrade-from-ubuntu-18-04-lts-to-20-04-lts-today
+
+==== Sun, 09.02.2025
+simple-html: html components with xenon
+
+==== Sat, 08.02.2025
+TODO: https://drab.robino.dev/
+
+==== Fri, 07.02.2025
+https://discord.com/channels/725789699527933952/725789747212976259/1337204631545053277
+defer doesn't work on inline scripts, only on scripts with a src attribute
+
+https://discord.com/channels/725789699527933952/725789747212976259/1337261577660796999
+<script type="module"> is always deferred though, and works with inline scripts
+
+==== Thu, 06.02.2025
+TODO: https://discord.com/channels/725789699527933952/796428329531605032/1336734735854211073
+<main>
+<section aria-labelledby="overview">
+<h2 id="overview">Overview</h2>
+<p>Content that might reference a <a href="#faq:term">term</a> that is defined in an accordion FAQ.
+</section>
+<section aria-labelledby="faq" _="on hashchange from window add @open to <details:target/>">
+<h2 id="faq">Frequently asked questions</h2>
+<details id="faq:term" name="faq">
+<summary>What do I mean by "term"?</summary>
+<p>[...]
+</details>
+<details>[...]
+</section>
+</main>
+
+==== Wed, 05.02.2025
+Maintaining Scroll Position When Adding Content to the Top of a Container:
+https://kirbysayshi.com/2013/08/19/maintaining-scroll-position-knockoutjs-list.html
+
+==== Thu, 30.01.2025
+where to put my css library in the dom: https://discord.com/channels/725789699527933952/1149355150956314734/1334296792136814612
+
+==== Wed, 29.01.2025
+TODO: https://simplewebauthn.dev/
+https://www.keycloak.org/2023/11/keycloak-2300-released#_passkeys_support
+TODO: keycloak from codecamp
+
+passkeys and magic links: https://dev.to/yawaramin/youre-thinking-about-passkeys-wrong-171o
+
+TODO: Xenon: Static HTML Components in 650 Bytes
+https://github.com/p2js/xenon
+
+==== Fri, 24.01.2025
+ascii art in background: https://discord.com/channels/725789699527933952/1156332623233302578/1332081715509854299
+.give-me-background {
+isolation: isolate;
+&::before {
+content: ' ... ascii art ... ';
+display: block;
+position: absolute;
+top: 0; left: 0; bottom: 0; right: 0;
+z-index: -1;
+}
+}
+
+==== Tue, 21.01.2025
+dependent-input webcomponent from Deniz:
+https://codeberg.org/dz4k/dependent-input
+
+
+==== Sat, 18.01.2025
+build your own macros:
+TODO: https://www.sweetjs.org/
+
+https://discord.com/channels/725789699527933952/974086000307499028/1329767214378913883
+CoolVer versioning system from Deniz: https://deniz.aksimsek.tr/2025/version/
+--
+at work we do this and it works pretty well: `alias gt='git tag -a $(date -u +v%Y%m%d.0.0-%H%MZ)'`
+it's automatically compliant with the SemVer format for certain tools like say ArgoCD which require it
+eg `v20241010.0.0-1956Z`
+
+advanced css attribute: https://developer.chrome.com/blog/advanced-attr
+---
+
+local npm publishing (eingebaut in 2025-01-12_svene21-npm-util-lib):
+- https://medium.com/@debshish.pal/publish-a-npm-package-locally-for-testing-9a00015eb9fd
+-> https://www.npmjs.com/package/local-package-publisher
+
+  https://stackoverflow.com/questions/18383476/how-to-get-the-npm-global-path-prefix
+   npm config get prefix
+   -> /home/se/.nvm/versions/node/v16.20.2
+---
+
+- Sat, 11.01.2025
+GOOD: https://www.spicyweb.dev/action-web-components/
+fasthtml components: https://about.fastht.ml/components
+---
+
+multi module maven spring boot example:
+https://medium.com/@icbjayasinghe/multi-module-project-87bc85cbaec8
+https://github.com/icbjayasinghe/multimodule/blob/main/pom.xml
+
+- Fri, 10.01.2025
+show modal/dialog with htmx: https://discord.com/channels/725789699527933952/975839826559508510/1327366974547955855
+<dialog id="modal"></dialog>
+<button hx-get='/modal' hx-target="#modal" hx-on:htmx:after-swap="event.detail.target.showModal()">Open modal</button>
+
+- Wed, 08.01.2025
+video hosting:
+https://streamable.com/
+code snippets:
+https://pastes.dev/
+
+https://discord.com/channels/725789699527933952/796428329531605032/1326260686418083870
+https://www.checkboxes.xyz/
+beste lösung: https://codepen.io/1cg/pen/KwPXJxJ
+
+css relative color syntax:
+https://discord.com/channels/725789699527933952/941815579440992337/1326380116325957642
+
+- Mon, 06.01.2025
+https://guseyn.com/html/posts/templates-instead-of-reactivity.html
+
+- Sun, 05.01.2025
+https://lamplightdev.com/blog/2024/01/10/streaming-html-out-of-order-without-javascript/
+
+- Wed, 01.01.2025
+css donut scope: https://css-tricks.com/solved-by-css-donuts-scopes/
+----

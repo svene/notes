@@ -1,0 +1,8 @@
+----
+TODO:
+- https://docs.github.com/en/packages/working-with-a-github-packages-registry/working-with-the-apache-maven-registry
+- https://github.com/spring-petclinic/spring-petclinic-htmx
+- 07.01.2024: (in simple-html): https://developer.mozilla.org/en-US/docs/Web/API/Web_components/Using_templates_and_slots
+- 07.01.2024: https://ricostacruz.com/rscss/components.html
+- 07.01.2024: materializecss for my-bookmarks (webjar exists)
+----

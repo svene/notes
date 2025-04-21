@@ -1,0 +1,1409 @@
+----
+- Wed, 25.12.2024
+NOTE: argument for string-based template engines (vs. api-based ones like jsx):
+https://discord.com/channels/725789699527933952/1156332623233302578/1321068055068934145
+
+Goodbye Array.reduce: https://www.youtube.com/watch?v=1bfK1EswPUY
+
+- Tue, 24.12.2024
+new css grid system:
+https://grrr.atonalstudio.com/
+
+- Mon, 23.12.2024
+mybookmarks: found out that the styling issues with baloise design system are caused by missing
+css classes on the elements after a htmx replacement.
+found out that these are caused when the elements use a html id attribute, e.g.: <bal-tag id="someid">...
+no clue why but now I am using data-id="someid" and this seems to solve the problem.
+
+- Sat, 21.12.2024
+https://google.github.io/zx/getting-started
+---
+light and dark color scheme:
+https://discord.com/channels/725789699527933952/1149355150956314734/1319635228398063688
+
+- Fri, 20.12.2024
+TODO: webcomponent example from Katrina: https://discord.com/channels/725789699527933952/1156332663205011586/1319166315226857502
+
+customElements.define('info-button', class extends HTMLElement {
+connectedCallback() {
+let term = this.getAttribute('term') ?? this.innerText
+let alt  = this.getAttribute('alt') ?? `Click for a definition of the term '${term}'`
+this.innerHTML += `&nbsp;<button popovertarget="info-${term.toLowerCase()}" title="${alt}">ⓘ</button>`
+}
+})
+
+document.body.insertAdjacentHTML('beforeend', `
+<dialog popover id="info-example">
+<h3>Example (n.)</h3>
+<p>A single, simplified instance of a concept used to show what other instances may be like, allowing for extrapolation from there.</p>
+</dialog>
+<!-- ... -->
+`)
+<info-button>Example</info-button>
+<info-button term="example">exemplary</button>
+<info-button alt="This is just alt text, whaddaya want from me">example</button>
+-----
+
+- Wed, 18.12.2024
+html templates in JS:
+ https://observablehq.com/@observablehq/htl
+
+- Sat, 14.12.2024
+https://discord.com/channels/725789699527933952/725789747212976259/1317244369715069069
+<button
+  hx-on::before-swap="if (event.xhr.status === 200) event.detail.swapOverride = 'beforeend'"
+  hx-on::after-swap="if (event.xhr.status === 200) this.closest('dialog').close()"
+---
+custom dropdowns/selects:
+Custom dropdowns just got a whole lot easier (finally!)
+https://www.youtube.com/watch?v=MA9WAHEEfGM
+---
+TIC Talks: NGINX Programmability Howto / Nick Shadrin
+https://www.youtube.com/watch?v=shjc-l76jVk
+---
+Migrating to Signals in Angular: A Practical Workshop | Manfred Steyer | ng-conf 2024
+https://www.youtube.com/watch?v=hyb4c6Mt26A
+(see screendumps)
+
+- Fri, 13.12.2024
+TODO:
+ construct html elements with js:
+ https://observablehq.com/@observablehq/htl
+
+- Tue, 10.12.2024
+webcomponents: good discussion: https://discord.com/channels/725789699527933952/1156332623233302578/1315788248974495774
+fonts: x hoch 2 etc.: https://developer.mozilla.org/en-US/docs/Web/CSS/font-variant-numeric
+---
+from: https://discord.com/channels/725789699527933952/1156332663205011586/1315824418055786640
+ https://codeberg.org/dz4k/htmx-holy-grail-data-table/src/branch/release/public/table-sorter.js
+ TODO: https://justinfagnani.com/2015/12/21/real-mixins-with-javascript-classes/
+---
+TODO: https://clace.io/blog/errors/
+
+- Mon, 09.12.2024
+<button id="the-button">Send 2 requests</button>
+<div id="one" hx-post="/1" hx-trigger="click from:#the-button"></div>
+<div id="two" hx-post="/2" hx-trigger="click from:#the-button"></div>
+
+- Sat, 07.12.2024
+TODO: https://dev.to/yawaramin/handling-form-errors-in-htmx-3ncg
+https://meyerweb.com/eric/thoughts/2023/11/01/blinded-by-the-light-dom/
+
+- Wed, 04.12.2024
+htmx logo:
+https://htmx.org/?uwu=true
+https://htmx.org/?ads=true
+
+- Sat, 30.11.2024
+it can't but there's a JS event for an animation ending, the specific code in this instance is style="animation: fadeout 1s 3s" onanimationend="this.remove()"
+and the fadeout animation is just @keyframes fadeout { from { opacity: 1; } to { opacity: 0; } }
+resulting in a 3s delay after being added, then a 1s fadeout before being removed entirely
+---
+TODO: https://www.morganwebdev.org/posts/speculation-refresh/
+
+- Thu, 28.11.2024
+htmx and toasts: https://themurph.hashnode.dev/go-beyond-the-basics-mastering-toast-notifications-with-go-and-htmx
+
+- Sun, 24.11.2024
+https://css-tricks.com/invoker-commands-additional-ways-to-work-with-dialog-popover-and-more/
+
+- Thu, 21.11.2024
+detect if browsers back button was used:
+ https://discord.com/channels/725789699527933952/1156332851093065788/1308879577707188274
+
+- Wed, 20.11.2024
+https://discord.com/channels/725789699527933952/1156332623233302578/1308631520101142558
+ I have a form that only contains 2 hidden fields (and thus isn't visible at all), but has many different submit buttons throughout my page that are linked to it using <button form="my-form" type="submit" name="one-name-for-all-buttons" value="changing-value-per-button">.
+
+ <form id="cart-form" method="post" action="/cart/<pk>/" hx-patch="/cart/<pk>/">
+  <input type="hidden" name="csrf_token" value="<token>">
+  <input type="hidden" name="_method" value="patch">
+</form>
+
+[ other HTML ]
+
+<button form="cart-form" type="submit" name="product" value="<product_1_id>">
+   Add Product 1 to Cart
+</button>
+<button form="cart-form" type="submit" name="product" value="<product_2_id>">
+   Add Product 2 to Cart
+</button>
+
+- Sun, 17.11.2024
+https://codeberg.org/dz4k/htmx-holy-grail-data-table
+
+- Thu, 14.11.2024
+https://www.morganwebdev.org/posts/web-almanac/
+TODO: https://almanac.httparchive.org/en/2024/
+
+- Fri, 08.11.2024
+https://www.billybjork.com/how-i-built-this
+
+- Thu, 07.11.2024
+https://web.dev/articles/eventsource-basics#event_stream_format
+
+- Sun, 27.10.2024
+htmx: set VARY response header in case of caching problem: https://github.com/bigskysoftware/htmx/issues/497#issuecomment-2406237261
+
+- Sat, 26.10.2024
+read (passkeys): https://thoughts.wilgieseler.com/p/passkeys-are-almost-awesome
+
+- Fri, 25.10.2024
+- Thu, 24.10.2024
+signals:
+ TODO: https://github.com/spearwolf/signalize
+ https://github.com/preactjs/signals
+ https://reefjs.com/
+
+- Sun, 20.10.2024
+https://chromewebstore.google.com/detail/htmx-debugger
+
+- Sat, 19.10.2024
+TODO webcomponents: https://tympanus.net/codrops/2024/08/20/server-first-web-components-with-dsd-htmx-and-islands/
+---
+JS generator for fibonacci:
+ https://discord.com/channels/725789699527933952/974086000307499028/1296957046855434260
+ python:
+ def fib(n):
+    a, b = 0, 1
+    while a < n:
+        yield a
+        a, b = b, a+b
+ JS:
+ function* fib() {
+  let a = 0, b = 1
+  while(true) {
+    yield a
+    [a, b] = [b, a+b]
+  }
+ }
+
+ // We can also move the definition of N out to allow "truly" infinite iteration if desired
+ fib().take(n)
+ ---
+ https://discord.com/channels/725789699527933952/974086000307499028/1296962915202764800
+ doTheThing () { ... }
+element.addEventListener("click", this.doTheThing) // `this` will be the element now
+
+doTheThing = () => { ... }
+element.addEventListener("click", this.doTheThing) // `this` will be what you expect
+// saves you the trouble of remembering to do this.doTheThing.bind(this)
+---
+
+- Fri, 18.10.2024
+https://www.droidcon.com/2024/10/17/htmx-dart-a-good-idea/
+
+jbang - Unleash the power of Java by Max Rydahl Andersen
+ https://www.youtube.com/watch?v=cpKwBbz1sf0&list=WL&index=18
+---
+myBookmarks:
+- 1a: ${ctx.ME().existingTagsComponent.ctx()}
+- 1b: ${ctx.ME().formContentComponent.ctx(BigInteger.ZERO, "", "")}
+- 2a: @template._widget.addbookmark()
+- 2b: @template._widget.tags(tags = ctx.existingTags())
+- 3: NewBookmarkComponent:
+  public record Ctx(
+    ImageComponent.Ctx imageComponentContext,
+    FormContentComponent.Ctx formContent
+  ) implements ViewContext {}
+
+  public ViewContext ctx() {
+    return new Ctx(
+      imageComponent.render("https://placehold.co/640x336/png?text=PREVIEW..."),
+      formContentComponent.render(BigInteger.ZERO, "", "")
+    );
+  }
+-> the more code is in the JTE the less restarts are necessary
+- unclear: Components which have a ctx(...) function with parameters
+  EditCardComponent:
+  public Ctx ctx(BigInteger id) {
+    Bookmark bookmark = bookmarkSessionService.getById(id);
+    return new Ctx(
+      this,
+      formContentComponent.ctx(
+        id, bookmark.url(), BookmarkUtil.toTagsString(bookmark.tags())
+      )
+    );
+  }
+
+
+- Thu, 17.10.2024
+zola (ssg tool like hugo): https://www.getzola.org/
+
+- Wed, 16.10.2024
+TODO: sqlite tutorials:
+  https://www.sqlitetutorial.net/sqlite-java/
+
+- Mon, 14.10.2024
+https://weasyprint.org/
+ convert html to pdf
+---
+book, typst, tex
+https://denizaksimsek.com/2024/new-hypermedia-systems/
+---
+myBookmarks:
+ using
+  @template.org.svenehrke.mybookmarks.components.csvtext.CsvTextComponent(ctx = ctx.csvTextCtx())--%>
+ addresses the JTE file directly.
+ This means no functionality can be executed before (like collecting all the CSV data).
+ -> It might be better to go via the component:
+    ${ctx.ME().csvTextComponent.ctx()}
+
+- Sun, 13.10.2024
+https://discord.com/channels/725789699527933952/725789747212976259/1294687054906658879
+  <a class="chemin-link" hx-get="/chemin" data-chemin-id="4">...</a>
+  <div id="chocolat-content" hx-get="/chocolat" hx-trigger="click from:.chemin-link" hx-vals="js:{id: event.target.dataset.cheminId}"></div>
+  ...
+  trigger="click[event.target.matches('.chemin-link')] from:body"
+---
+https://github.com/scheehan/http_auth_error_handling_with_htmx
+latex math for the web: https://katex.org/
+---
+Design Patterns Revisited in Modern Java by Venkat Subramaniam
+  https://www.youtube.com/watch?v=kE5M6bwruhw&list=PLRsbF2sD7JVrNB1mKqklpc23hsKtvMAXm
+
+- Sat, 12.10.2024
+
+https://thecopenhagenbook.com/
+ A basic guideline on implementing auth for the web. security
+
+- Fri, 11.10.2024
+PWA architecture: https://developer.chrome.com/blog/beyond-spa
+---
+TODO: https://dev.to/yawaramin/handling-form-errors-in-htmx-3ncg
+
+- Thu, 10.10.2024
+
+- Wed, 09.10.2024
+html builder in js by Deniz:
+ https://discord.com/channels/725789699527933952/725789747212976259/1293301134689042442
+ https://www.npmjs.com/package/hyperscript
+
+-----
+fox about webcomponents in theo's video https://discord.com/channels/725789699527933952/1179589992452980806/1293193389063409710
+https://www.youtube.com/watch?v=UrS61kn4gKI
+Hey Theo, loved discussing with you in the chat during this whole thing. I had a few thoughts that didn't really seem to stick during the conversation, which I think may clarify some of the issues you're seeing.
+
+The biggest thing is that, while framework authors' frustrations about being sold the idea that web components are for them are entirely legitimate, that is a flawed premise to begin with and should never really have been part of the discussion. If framework authors can make use of it, that's great! But for the most part, it's not aimed at them, but at a completely separate use case. The people pushing for frameworks to integrate with web components in the way you and Ryan described did both those framework authors and the web components API a disservice.
+
+The primary function of web components is, put as simply as possible, to extend HTML. They aren't and were never "components" in the same sense as frameworks use the term, and the name "web components" has caused a lot of confusion as a result. They're far more similar in practice to an XML extension than a framework component - you're defining a new HTML element, in terms of the existing elements, with its own inherent semantic meaning and built-in behavior. That comes with both benefits and drawbacks, and it fundamentally serves a very different use case than what frameworks call a component; for example, while you might legitimately build an entire website almost solely out of React components for dozens of layers deep, and that deeply nested structure is idiomatic for React, you would effectively never use web components that way if you want to keep your sanity intact. But conversely, web components are perfect for cases like custom form inputs, where you don't want to have to think about the innards of your custom form input basically ever after you've built it, and you simply need the browser to see it as just another form element to be processed - a localized, self-contained use case, which may be used multiple times on a single page, in which the details of what's inside the component are best hidden away.
+
+That said, it's not like web components can't be composed, but rather that defining web components in terms of other web components isn't idiomatic. They can be composed using <slot>s (the idiomatic way, where the shadow DOMs of each component aren't actually nested and the nested component is treated as a child of the outer component, rather than an implementation detail), or just by jamming one web component in another's shadow DOM (not idiomatic, structurally implies that the nested component is a hidden implementation detail of the outer component). Notice the distinction I'm making there - the shadow DOM is where implementation details live, and the light DOM is where content lives. That concept is fundamental to understanding the design intent behind web components, why slots work the way they do, and so on; I would even go so far as to say it's the underpinning of the entire API. And it's for exactly that reason that I claim putting web components inside each other's shadow DOM is, while entirely possible (contrary to claims in the video), not an idiomatic way of using them in general - they're designed primarily for building small, isolated parts of your site, not for structuring your entire site architecture around.
+
+There's tons more I have to say on this topic that isn't really suited for a YouTube comment, so please don't hesitate to reach out here or on Discord (@foxoninetails) if you'd like to learn more about web components as their own technology, rather than only in the context of their unfortunate conflation with frameworks. I'd love to hear your thoughts =)
+-----
+TLDR, web components aren't framework components, the majority of the web may technically run on frameworks but that doesn't imply the majority of web developers develop in them, these are different technologies for different purposes, not understanding web components doesn't mean they're bad, and yeah I feel you it sucks that they're a pain to integrate together.
+-----
+TODO: fox-example of <project-card> component with an without facet: https://discord.com/channels/725789699527933952/1179589992452980806/1293413376789053535
+
+- Tue, 08.10.2024
+https://jakelazaroff.com/words/building-a-single-page-app-with-htmx/
+
+node watch/nodemon (used in datastar example):
+https://dev.to/cassiolacerda/automatically-refresh-the-browser-on-node-express-server-changes-x1f680-1k0o
+
+- Mon, 07.10.2024
+preset textfield size: https://developer.mozilla.org/en-US/docs/Web/CSS/field-sizing
+data-star stack: https://gonads.net/
+
+- Sun, 06.10.2024
+https://open-ui.org/
+
+- Thu, 03.10.2024
+facet-channel: webcomponents are not good, html-elements are the components:
+https://discord.com/channels/725789699527933952/1179589992452980806/1291183072687034438
+
+- Wed, 02.10.2024
+
+htmx-general:
+https://discord.com/channels/725789699527933952/725789747212976259/1290800157906042962
+OK, responding w/ a 204 No Content response is what I would probalby do, rather than setting swap to none: https://htmx.org/docs/#requests
+
+
+- Tue, 01.10.2024
+https://discord.com/channels/725789699527933952/725789747212976259/1290342980489580647
+instead of <select multiple> (antipattern)
+use checkboxes inside scrolling area inside <details>
+With a bit of JavaScript to update the summary based on the selection
+
+ https://adrianroselli.com/2017/05/under-engineered-custom-radio-buttons-and-checkboxen.html
+ https://adrianroselli.com/2022/05/under-engineered-multi-selects.html
+
+ https://alchemists.io/articles/htmx_view_transitions
+
+ https://css.gal/
+
+- Thu, 26.09.2024
+htmx-general:
+https://discord.com/channels/725789699527933952/725789747212976259/1288413233211772964
+
+ if(element.parentElement) element.outerHTML = contentString
+ else container.insertAdjacentHTML('beforeend', contentString)
+ ...
+ Personally I just pop an empty div at the end of my body and target dialogs there.
+ ...
+ document.addEventListener("htmx:beforeSwap", (event) => {
+  const content = event.detail.serverResponse;
+  if (content.includes("hx-replace")) {
+    const parser = new DOMParser();
+    const doc = parser.parseFromString(content, "text/html");
+    const id = doc.querySelector("[hx-replace]").id;
+    const el = event.detail.target.querySelector(`#${id}`);
+    if (el) {
+      el.remove();
+    }
+  }
+});
+...
+you should only look up stuff in the element passed in to htmx.onLoad() to hook event handlers into
+htmx.onLoad(function(newContent) {
+  newContemt.querySelector('whatever').addEventListener(...)
+})
+
+-----
+thoughts on mybookmarks/view-component:
+ multiple possibilites for "nested" components:
+ - add nested component in Ctx:
+   Java:
+    EditCardComponent:
+     Ctx(FormContentComponent.Ctx formContent)
+   JTE:
+     ${ctx.formContent()}
+
+ - using JTE-template (supports default param values). Example: layout:
+    BookmarksComponent.jte
+     @template.bookmarks.page.layout(
+     init = "init",
+    content = @`
+     ...
+    `)
+
+- Wed, 25.09.2024
+htmx: clear form after submit:
+ https://discord.com/channels/725789699527933952/725789747212976259/1288167709200093217
+ hx-on::after-request="this.reset()"
+
+facet:
+intersting discussion in the facet channel:
+
+ declarative web components:
+ https://github.com/kgscialdone/facet/issues/2
+ https://github.com/jhuddle/ponys
+
+- Sun, 22.09.2024
+https://forgejo.org/
+git server: https://github.com/charmbracelet/soft-serve
+
+- Sat, 21.09.2024
+CSRF vs strict cookie:
+ https://discord.com/channels/725789699527933952/1156332851093065788/1286816829120970753
+ -> use lax cookie (strict cookie is too much)
+    https://discord.com/channels/725789699527933952/1156332851093065788/1287142799728316437
+
+ CSRF example:
+ <h1>inflammatory blog post</h1>
+ ... blog post content ...
+ <form method=POST action="https://popular.website/send-all-my-money?to=evilguy">
+   Comment on my post!
+   <textarea>
+   <button>Send</button>
+ </form>
+
+- Wed, 18.09.2024
+https://github.com/jstachio/jstachio
+
+- Tue, 17.09.2024
+effect (TS):
+ https://www.typeonce.dev/course/effect-beginners-complete-getting-started
+  https://tsconfig.guide/
+  https://www.totaltypescript.com/tsconfig-cheat-sheet
+
+Building server-side web applications with htmx and Spring - Thomas Schühly:
+ https://vimeo.com/1006536145
+  code animations for presentations: https://codeblinks.com/
+  https://tschuehly.de/
+  https://github.com/tschuehly?tab=repositories&q=&type=source&language=&sort=
+
+- Sun, 15.09.2024
+https://moderncss.dev/modern-css-for-dynamic-component-based-architecture/#custom-property-and-component-apis
+ https://www.joshwcomeau.com/css/custom-css-reset/
+ (coded in simple html project)
+
+- Fri, 13.09.2024
+https://blog.carlana.net/post/2023/web-component-alternative-futures/
+ https://nolanlawson.com/2023/12/02/lets-learn-how-modern-javascript-frameworks-work-by-building-one/
+ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals#tagged_templates
+
+- Mon, 09.09.2024
+text basierte buchhaltung
+ https://hledger.org/
+ https://codeberg.org/dz4k/gledger
+
+https://html-first.com/
+ https://mini-js.com/
+
+tried out: https://www.karl.berlin/static-site.html
+
+https://j3s.sh/thought/my-deployment-platform-is-a-shell-script.html
+
+- Sun, 08.09.2024
+https://discord.com/channels/725789699527933952/796428329531605032/1282143373557502002
+ on htmx:afterRequest
+    if event.detail.successful then
+        trigger closeModal
+    end
+ end
+---
+spreadsheet:
+ https://www.getgrist.com/
+---
+
+- Wed, 04.09.2024
+timezone element for html:
+ https://www.npmjs.com/package/@github/time-elements
+
+https://discord.com/channels/725789699527933952/974086000307499028/1280589396730581105
+  https://github.com/89luca89/distrobox
+   https://www.youtube.com/watch?v=Q2PrISAOtbY
+   https://github.com/containers/toolbox
+
+  https://asdf-vm.com/guide/introduction.html
+  https://github.com/jdx/mise
+
+  https://github.com/dz4k/biber-os/blob/main/recipes/recipe.yml
+  https://github.com/blue-build
+
+
+- Tue, 03.09.2024
+https://www.keithcirkel.co.uk/i-html/
+
+- Sun, 01.09.2024
+frontend blog:
+https://piccalil.li/
+---
+free discord-like chat server:
+ https://spacebar.chat/
+
+- Sat, 31.08.2024
+js chart lib:
+ https://plotly.com/javascript/
+---
+rxjs
+https://dev.to/krivanek06/advanced-rxjs-operators-you-know-but-not-well-enough-1ela
+
+- Fri, 30.08.2024
+Introduction to Advanced Bash Usage - James Pannacciulli @ OSCON 2014
+ https://www.youtube.com/watch?v=uqHjc7hlqd0
+ https://talk.jpnc.info/bash_oscon_2014.pdf
+
+- Thu, 29.08.2024
+book: https://every-layout.dev/
+
+- Wed, 28.08.2024
+design system 90s style:
+ https://jdan.github.io/98.css/
+
+- Tue, 27.08.2024
+discord:html-discussion: https://discord.com/channels/725789699527933952/1156332623233302578/1277722029407080512
+fox's head section:
+---
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://unmodernweb.com/">
+  <meta property="og:description" content="The web doesn't have to be complicated. Modern web development is a mess of frameworks, preprocessors, and microservices — but it doesn't have to be. We can rethink our processes, go back to our roots, and create the Unmodern Web.">
+  <meta property="og:image" content="https://unmodernweb.com/assets/opengraph-logo.png">
+  <meta property="description" content="The web doesn't have to be complicated. Modern web development is a mess of frameworks, preprocessors, and microservices — but it doesn't have to be. We can rethink our processes, go back to our roots, and create the Unmodern Web.">
+</head>
+---
+... According to MDN, only width and height don't have default values. ...
+=> content="width=device-width"
+
+- Mon, 26.08.2024
+https://moderncss.dev/modern-css-for-dynamic-component-based-architecture/#custom-property-and-component-apis
+
+- Sun, 25.08.2024
+htmx-discord: off-topics...:
+CSS: Jen Simmons video: https://www.youtube.com/watch?v=EashgVqboWo
+What does grid-area: 3/3/4/4 mean?
+it means grid-column: 3/4; grid-row: 3/4
+
+https://gridbyexample.com/examples/
+
+undefined custom elements can be used for styling:
+  https://gist.github.com/gnat/8784a70a07530231f59a682be2ae771f
+
+- Sat, 24.08.2024
+learn springbatch:
+ 2024-08-24_learn_springbatch_baeldung
+ https://www.baeldung.com/introduction-to-spring-batch
+  NOTE: contains example of multiple beans of same class using @Qualifier
+  ---
+  @Value("input/record.csv")
+  private Resource inputCsv;
+  ---
+
+
+- Fri, 23.08.2024
+htmx-webcomponents discussion:
+ https://discord.com/channels/725789699527933952/725789747212976259/1276347529063305237
+
+- Wed, 21.08.2024
+free svg icons: https://github.com/jmjuanes/icons?tab=readme-ov-file
+
+- Mon, 19.08.2024
+colour palette based on Open Color
+ https://github.com/fchristant/colar
+
+- Sun, 18.08.2024
+
+springboot applicationobserver and transactions:
+- https://ishansoninitj.medium.com/using-spring-application-events-within-transactional-contexts-11b41e764aab
+- https://stackoverflow.com/questions/77364109/spring-modulith-events
+- https://de.slideshare.net/slideshow/a-deep-dive-into-spring-application-events/238433940#2
+
+- Sat, 17.08.2024
+htmx: 4 gewinnt, static files: https://github.com/Mabi19/static-htmx-connect-4/tree/main
+
+https://discord.com/channels/725789699527933952/974086000307499028/1274127607062859828
+ https://vanillajsx.com/
+---
+BDS-Spring: addedc modal examples with surreal.js and hyperscript
+
+BDS demos using a nginx docker container
+
+- Fri, 16.08.2024
+facet history:
+ https://discord.com/channels/725789699527933952/1179589992452980806/1273803222653599866
+
+- Mon, 12.08.2024
+https://tom-select.js.org/
+https://unplannedobsolescence.com/blog/messy-pile-css/
+https://blog.wesleyac.com/posts/why-not-javascript-cdn
+
+- Sat, 10.08.2024
+
+https://discord.com/channels/725789699527933952/725789747212976259/1271649717641678888
+no-js styleable htmx confirmation dialog (unless you count the filter expression in hx-trigger) (i'm pretty sure this works)
+<button
+  hx-post="/~robert/drop?table=Students"
+  popovertarget="confirm-danger"
+  hx-trigger="close[target.returnValue === 'yes'] from:#confirm-danger">
+  Do dangerous thing
+  <dialog popover id="confirm-danger">
+    <form method="dialog">
+      Are you sure you want to do the dangerous thing?
+      <button value="yes">Yes, do dangerous thing</button>
+      <button value="no">No, stay safe</button>
+    </form>
+  </dialog>
+</button>
+
+-----
+
+- Fri, 09.08.2024
+https://web.dev/articles/more-capable-form-controls#setting-a-value
+---
+stop using hamburger menus:
+https://btxx.org/posts/hamburgers
+
+Stop saying "Drop-down"
+https://adrianroselli.com/2020/03/stop-using-drop-down.html
+
+- Thu, 08.08.2024
+https://www.htmhell.dev/adventcalendar/2023/2/
+
+- Wed, 07.08.2024
+css: style svg (like a country map):
+https://discord.com/channels/725789699527933952/1149355150956314734/1270444731645689888
+
+- Sun, 04.08.2024
+springboot: serve static content: https://medium.com/jsonbeautify/how-to-serve-static-resources-in-spring-boot-f4cb9d715d54
+
+- Fri, 02.08.2024
+java template engine:
+https://pebbletemplates.io/
+https://github.com/rajasegar/awesome-htmx
+
+- Thu, 01.08.2024
+
+- Wed, 31.07.2024
+java template engine using java instead of html:
+https://j2html.com/
+
+- Tue, 30.07.2024
+SCP with HTMX: https://discord.com/channels/725789699527933952/725789747212976259/1267571595216425053
+
+- Mon, 29.07.2024
+Deploy Spring boot to Fly.io
+https://medium.com/@vergil333/deploy-spring-boot-to-fly-iof-d54d5ca05243
+---
+Decoded Frontend: RxJS Scan Operator - How to Manage the State
+https://www.youtube.com/watch?v=PDpAjf0688Y
+01:48
+click$ = fromEvent<PointerEvent>(document, 'click').subscribe(...)
+05:46
+click$ = fromEvent<PointerEvent>(document, 'click').pipe(
+scan(
+(currentState: PointerEvent[], event) => [...currentState, event]
+,
+[]
+)
+)
+09:00 reset state
+
+- Sun, 28.07.2024
+htmx: file-upload: use last-modified:
+https://discord.com/channels/725789699527933952/725789747212976259/1266685113534779445
+
+- Sat, 27.07.2024
+https://j2html.com/
+---
+https://htmx.org/reference/ :
+<meta name="htmx-config" content='{"defaultSwapStyle":"outerHTML"}'>
+
+ <meta name="htmx-config" content='{"selfRequestsOnly":false}'>
+
+- Sun, 14.07.2024
+htmx-general: CSRF discussion:
+
+- Sat, 13.07.2024
+
+---
+  discussion start: https://discord.com/channels/725789699527933952/725789747212976259/1261481979136835594
+  ...
+- if u only change state on non-GET requests, then samesite="lax" is enough
+- if u change state on GET, then samesite="strict" is enough, but if one wants to use samesite="lax"
+   (to allow following a link from another site, for example),
+   then adding a second cookie with samesite="strict"
+   which is checked in those state changing GETs should cover things
+   -> https://discord.com/channels/725789699527933952/725789747212976259/1261496234888265768
+---
+htmx redirect discussion: https://discord.com/channels/725789699527933952/1156332851093065788/1261316709915168870
+---
+good css grid getting started video:
+ https://www.youtube.com/watch?v=8QSqwbSztnA
+
+- Wed, 10.07.2024
+https://stackoverflow.com/questions/3547035/getting-html-form-values
+
+- Sun, 07.07.2024
+htmx disable,loading extensions:
+https://discord.com/channels/725789699527933952/725789747212976259/1259064168829681714
+---
+surreal:
+element not loaded: https://discord.com/channels/725789699527933952/1253181906204364921/1259182544658763776
+and a bit below in that discussion
+---
+continued learning spring security by PDF
+https://github.com/havinhphu188/spring-security-in-action-source
+---
+$PWD to use only last part of path: https://stackoverflow.com/questions/1371261/get-current-directory-or-folder-name-without-the-full-path
+(causes problems when used in alias bc. it is evaluated immediately)
+
+- Sat, 06.07.2024
+<meta name="htmx-config" content='{code:"204", swap: false},   // 204 - No Content by default does nothing, but is not an error
+{code:"[23]..", swap: true}, // 200 & 300 responses are non-errors and are swapped
+{code:"[45]..", swap: true, swapOveride:'beforeend'}, // Swap codes greater than 400 with beforeEnd'>
+
+- Fri, 05.07.2024
+https://github.com/pdfme/pdfme
+from: https://discord.com/channels/725789699527933952/1156332663205011586/1256385327749267617
+
+https://esm.sh/
+from: https://discord.com/channels/725789699527933952/1156332663205011586/1258311626738761840
+
+- Wed, 03.07.2024
+Converting Observables to Signals in Angular: What You Need to Know
+https://netbasal.com/converting-observables-to-signals-in-angular-what-you-need-to-know-4f5474c765a0
+
+- Tue, 02.07.2024
+https://tschuehly.de/the-best-way-to-build-spring-boot-applications-with-htmx
+
+- Mon, 01.07.2024
+htmx Is Pro-JavaScript – Carson Gross, JSNation 2024
+https://www.youtube.com/watch?v=9ZhmnfKD5PE
+
+- Sun, 30.06.2024
+angular: destroy
+https://medium.com/@chandrashekharsingh25/exploring-the-takeuntildestroyed-operator-in-angular-d7244c24a43e
+
+- Sat, 29.06.2024
+https://pragprog.com/titles/mvhtmx/server-driven-web-apps-with-htmx/
+
+https://tschuehly.gitbook.io/server-side-spring-htmx-workshop
+from: https://discord.com/channels/725789699527933952/940241072959922176/1256013773550911599
+
+Mocks vs Testcontainers: Navigating Modern Testing Dilemmas by IVAN PONOMAREV
+https://www.youtube.com/watch?v=aVDDfN8pwpM&list=WL&index=14
+---
+updated node-devcontainer: added: npm install -g @angular/cli
+/home/se/se/sweng/0_daily/2024/2024-04-19_dev-container-node
+---
+created new angular 18 project using devcontainer (updated it to include ng/cli (see above))
+I had to find out again to add the host parameter to ng start (see comment down in Sat, 20.04.2024)
+
+
+- Thu, 27.06.2024
+alexpetros: Triptych - Polyfill for three small HTML proposals
+https://github.com/alexpetros/triptych
+https://alexanderpetros.com/
+
+- Wed, 26.06.2024
+https://mikemybytes.com/2022/02/16/java-records-and-compact-constructors/
+
+- Tue, 25.06.2024
+exploring jilt:
+triggered from: https://x.com/tschuehly/status/1799561842957643947
+https://github.com/skinny85/jilt/blob/develop/Readme.md#functional-builder-style
+new packagename convention for my play projects:
+package org.sven.play.XYZ;
+e.g.: package org.sven.play.jilt;
+
+- Mon, 24.06.2024
+- Sun, 23.06.2024
+The latest in Web UI (Google I/O ‘24)
+https://www.youtube.com/watch?v=_-6LgEjEyzE
+
+- Sat, 22.06.2024
+https://htmx.org/docs/#creating-demos
+---
+Decoded Frontend: TOP 6 Mistakes in RxJS code
+https://www.youtube.com/watch?v=OhuRvfcw3Tw
+---
+https://developer.chrome.com/
+---
+https://github.com/AdamBien/SaO.java/blob/main/SaO.java
+
+- Fri, 21.06.2024
+- https://www.bitecode.dev/p/a-little-taste-of-htmx-part-1
+- jsdoc: https://discord.com/channels/725789699527933952/1156332663205011586/1253427567332167710
+
+- Wed, 19.06.2024
+https://youmightnotneedjquery.com/
+
+- Mon, 17.06.2024
+htmx offline:
+https://discord.com/channels/725789699527933952/725789747212976259/1251944068531884062
+https://github.com/spirodonfl/htmx-offline-mode
+
+- Sun, 16.06.2024
+inspecting: https://github.com/dsyer/spring-hypertext
+---
+https://docs.freenet.org/
+https://www.youtube.com/watch?v=enTAromEeHo
+
+- Sat, 15.06.2024
+TODO:
+functional htmx endpoints:
+https://github.com/wimdeblauwe/htmx-spring-boot/issues/104
+---
+Big Sky DevCon: https://www.youtube.com/watch?v=uVKSmR_hBMs&t=113s
+https://templ.guide/
+https://github.com/a-h/templ
+---
+service workers for caching artifacts in MPAs
+2:41:26: 'workbox' from google to ease writing service workers
+2:44:29: <script type="speculationrules">
+2:46:30: offline MPAs
+2:48:20: MPAs flash white between transitions
+2:51:40: view transitions
+2:56:00: hx-trigger="intersect"
+
+
+- Fri, 14.06.2024
+https://github.com/1cg/html-json-speed-comparison
+css specifity calculator: https://specificity.keegan.st/
+
+- Thu, 13.06.2024
+fox: as a general rule of thumb, to the extent that it's possible without causing further overcomplication, html should not be used for making purely visual changes to your page; that's what css exists for, whereas html is the structure and content of your page "regardless" (ish) of how it actually looks
+https://discord.com/channels/725789699527933952/1156332623233302578/1250444541371220071
+
+- Tue, 11.06.2024
+https://developer.mozilla.org/en-US/docs/Web/API/Web_components/Using_shadow_DOM
+
+- Mon, 10.06.2024
+* https://web.dev/baseline
+* https://devblogs.microsoft.com/typescript/announcing-typescript-5-5-rc/#type-imports-in-jsdoc
+
+- Sun, 09.06.2024
+htmx-general:
+The Yellow Fade Technique with Modern CSS using @starting-style:
+https://www.bram.us/2023/05/24/the-yellow-fade-technique-with-modern-css-using-starting-style/
+---
+htmx/off-topics:
+Deniz: <dialog popover> has made me do a complete 180 on https://youdontneedamodalwindow.dev/
+---
+Big Sky Dev Con: https://www.youtube.com/watch?v=1g5ruM-16_Y
+
+- Ben Damman (missoula.org)
+- Ryan Florence
+- Nate Maile, Jon-Michael Hartway: Abusing Hypermedia
+
+- Sat, 08.06.2024
+simple-html:demo/dialog-1_hyperscript
+
+- Fri, 07.06.2024
+https://github.com/rajasegar/awesome-htmx?tab=readme-ov-file
+
+- Thu, 06.06.2024
+https://open-ui.org/
+https://corlaez.com/
+
+Bad abstractions are invented, good abstractions are discovered.: https://discord.com/channels/725789699527933952/996832027083026563/1248032865380335668
+
+- Sat, 01.06.2024
+https://bessey.dev/blog/2024/05/24/why-im-over-graphql/
+
+- Thu, 30.05.2024
+https://caddyserver.com/
+https://chasem.co/2024/05/css-animations/
+---
+docker run -it -p8000:8000 chromadb/chroma
+---
+- Wed, 29.05.2024
+
+docker run --add-host=host.docker.internal:host-gateway --name my-nginx -v `pwd`/nginx.conf:/etc/nginx/nginx.conf:ro -p 8085:80 -it --rm nginx
+
+- Tue, 28.05.2024
+
+ollama Example mit breakpoint for ollama.stop()
+docker exec -it strange_jennings bash
+ollama
+ollama list
+
+create image: https://github.com/ollama/ollama/issues/957
+Grafikkarte:
+sudo update-pciids
+sudo lspci -v|less
+---
+sudo lshw -numeric -C display
+---
+https://github.com/ollama/ollama:
+
+ curl http://localhost:11434/api/generate -d '{
+  "model": "llama3",
+  "prompt":"Why is the sky blue?"
+}'
+---
+curl http://localhost:11434/api/chat -d '{
+  "model": "codegemma",
+  "messages": [
+    { "role": "user", "content": "why is the sky blue?" }
+  ]
+}'
+---
+https://github.com/ollama-ui/ollama-ui
+---
+https://ollama.com/blog/embedding-models
+---
+https://github.com/bernardo-bruning/ollama-copilot
+---
+https://www.youtube.com/watch?v=aD-u0gl93wM
+---
+
+- Sat, 25.05.2024
+https://discord.com/channels/725789699527933952/996832027083026563/1243730167533142047
+-> HTMX, extra fancy AJAX with a HTML interface
+-> ich: HTML interface for AJAX
+---
+2024-01-30_quarkus-qute: added Baloise Design System App starter using BDS-webjar
+---
+simple-html:
+added htm-dialog example (from mdn)
+
+  Fri, 24.05.2024
+created BDS-webjar repo: https://github.com/baloise-incubator/baloise-design-system-webjar
+currently only local build works, github-release-action does not provide webjar as package yet
+
+- Thu, 23.05.2024
+https://timdeschryver.dev/blog/testing-signals-with-angular-testing-library
+https://github.com/timdeschryver/timdeschryver.dev/tree/main
+
+- Mon, 20.05.2024
+Pfingstmontag
+Microformats Parser:
+https://discord.com/channels/725789699527933952/1156332623233302578/1241861823473651803
+
+- Sun, 19.05.2024
+style tag inside a noscript tag to show some elements (e.g. buttons) only when javascript is disabled:
+https://discord.com/channels/725789699527933952/1149355150956314734/1241400161356484689
+
+- Sat, 18.05.2024
+good explanation of nested css ampersand operator: "  &:has(...)"
+https://discord.com/channels/725789699527933952/1149355150956314734/1241073284813033574
+---
+styling of dialogs:
+https://x.com/wesbos/status/1791526837153038639
+---
+mybookmarks: ich werde statt materialcss nun BaloiseDesignSystem benutzen
+evtl. dropdown mit chips benutzen:
+https://design.baloise.dev/?path=/docs/components-form-dropdown--documentation
+"Multiple With Chips"
+
+- Fri, 17.05.2024
+openapi api-key:
+https://www.howtogeek.com/885918/how-to-get-an-openai-api-key/
+---
+implemented my first langchain4j example:
+/home/se/se/sweng/0_daily/2024/2024-05-17_play-langchain4j
+from: https://github.com/langchain4j/langchain4j-examples/blob/main/other-examples/src/main/java/embedding/store/InMemoryEmbeddingStoreExample.java
+
+ s.a. https://github.com/langchain4j/langchain4j-examples/blob/main/other-examples/src/main/java/embedding/model/InProcessEmbeddingModelExamples.java
+---
+Imaginary numbers:
+ https://www.youtube.com/playlist?list=PLiaHhY2iBX9g6KIvZ_703G3KJXapKkNaF
+---
+mit Stammbaum-App weitergemacht: diesmal mit css-anchors: repo: simple-html: play/ancestry-chart
+
+- Thu, 16.05.2024
+From 0 to Production - The Modern React Tutorial (RSCs, Next.js, Shadui, Drizzle, TS and more)
+https://www.youtube.com/watch?v=d5x0JCZbAJs
+---
+html anchor-positioning mit chrome 125 zum laufen gebracht:
+repo: simple-html, branch: play/css-anchor-position
+links:
+https://developer.chrome.com/blog/anchor-positioning-api
+https://codepen.io/web-dot-dev/pen/GRaRyKm
+coole menu demo: https://codepen.io/una/pen/BaGVopL
+https://anchor-tool.com/
+
+---
+SameSite cookies explained / CSRF tokens not needed anymore
+article: https://marian-caikovski.medium.com/cross-site-request-forgery-attacks-are-not-feasible-anymore-9f84e05b757d
+repo: https://github.com/marianc000/sameSite
+---
+- Sun, 12.05.2024
+https://b-nova.com/home/content/multityping-in-kafka/
+quarkus initializer: https://code.quarkus.io/
+-----
+chrome: reduce white page flash between page switches with anchor links:
+ https://developer.chrome.com/blog/paint-holding/
+
+- Fri, 10.05.2024
+
+- Thu, 09.05.2024
+another css-framework: https://jenil.github.io/chota/
+https://uiverse.io/elements
+google monospace fonts: https://monaspace.githubnext.com/
+-----
+Josh Long: Spring Tips: Configuration
+https://www.youtube.com/watch?v=PsNNGuLi0ns
+9:00 'application-dev.properties'
+9:40 'application-default.properties'
+10:20 @Value("${somprop:default-value}")
+14:20 @Value("${HOME}") // works without anything in application.properties
+15:25 application.properties: spring.datasource.url=jdbc:postgres://${DB_HOST:localhost}/${DB_NAME:test}
+16:20 @Value("${somprop:}") // empty string as default
+17:00 use program-arg in @Value
+22:54 PropertySource
+24:00 SpringApplicationBuilder
+27:14 using @AutoWired with void to get PropertySource effect
+29:30 @ConfigurationProperties
+32:30 @ConstructorBinding
+34:00 Spring Config Server
+36:45 bootstrap.properties
+38:48 @RefreshScope
+48:00 vault
+
+-----
+ashfall css animation (GMR)
+https://codepen.io/shubniggurath/pen/oPGyQw
+
+
+- Wed, 08.05.2024
+https://www.beyondloom.com/decker/index.html
+
+- Tue, 07.05.2024
+icons: https://fonts.google.com/icons
+https://dev.to/tigt/making-the-worlds-fastest-website-and-other-mistakes-56na
+
+- Mon, 06.05.2024
+https://webkit.org/blog/13851/declarative-shadow-dom/
+
+https://discord.com/channels/725789699527933952/725789747212976259/1236869679151054868
+ "...shadow DOM creates an "island" with strict border control for CSS/JS access in/out..."
+
+- Sun, 05.05.2024
+continued using Baloise Design System for mybookmarks
+
+- Sat, 04.05.2024
+https://dev.to/tigt/making-the-worlds-fastest-website-and-other-mistakes-56na
+
+- Fri, 03.05.2024
+htmx: security with bearer-token handling / cookie:
+ https://discord.com/channels/725789699527933952/725789747212976259/1235708976075767849
+ ---
+with htmx: Flugsuche:
+  https://flightslooker.onrender.com/
+  deploy docker containers (free for individuals)
+   https://render.com/
+   https://github.com/Rattlyy/FlightsLooker
+
+- Thu, 02.05.2024
+hacking documentation:
+ https://attack.mitre.org/
+
+- Mon, 29.04.2024
+htmx-app
+  https://github.com/yawaramin/dream-html/tree/todoapp/app
+---
+worked on:
+ sinon-fakeserver demo (like htmx examples)
+ simple-html/demo-htmx-with-fakeserver
+
+- Sun, 28.04.2024
+JS promises:
+ https://www.infoworld.com/article/3715126/5-ways-to-use-javascript-promises.html
+ https://codepen.io/Sven-Ehrke/pen/GRLLojR
+
+- Sat, 27.04.2024
+https://lp.jetbrains.com/django-developer-survey-2023/#technologies-and-frameworks
+
+- Tue, 23.04.2024
+webjars
+ https://dev.to/janux_de/create-webjar-with-gradle-and-github-2li3
+
+- Sun, 21.04.2024
+trying to use just: https://github.com/casey/just
+for a one file tool for dcnstart.sh etc. => did not work as desired with the containers but interesting for other tasks => needs more time to investigate
+
+copied content of dcnstart.sh and dcnterm.sh to aliases: dcns, dcnt => works perfectly
+
+https://pkl-lang.org/
+
+thoughts about homepage like site (like gmr) with htmx or angular with subroutes and reload support:
+
+ 1. angular: index.html with angular routing : .../page1.html, .../page2.html, .htaccess with redirects to index.html
+ 2. htmx: with hx-boost: just reload body -> then reload of subpages do not work -> also use .htaccess approach ?
+ 3. use jback (or huge, or ...) to generate complete pages -> solves reload problem without .htaccess approach -> but: flickering of page bc. complete page is reloaded -> use hx-boost: no flickering anymore -> css-scope-inline does not work togeter with hx-boost
+
+ https://github.com/libfuse/sshfs
+
+- Sat, 20.04.2024
+https://jtreminio.com/blog/running-docker-containers-as-current-host-user/
+ https://github.com/nodejs/docker-node/blob/e8dc03502488e162b6860a6adc3ee8e8ae517e87/20/bookworm-slim/Dockerfile
+
+https://github.com/nodejs/docker-node/blob/main/docs/BestPractices.md
+
+After I got the docker image for node-development working (host userids = container userids (see post above))
+ I could successfully finish a working stencil hello-world project working in the browser, compilable and testable from inside the node container.
+ Editing with IDEA can be done outside the container on the host. => Great !!!
+ ( /home/se/se/sweng/0_daily/2024/2024-04-19_play-stencil/readme.adoc )
+
+create a new angular 17 project using dcn-scripts (devcontainer):
+  worked well. Unfortunately 'npm install -g @angular/cli' needs to be called every time the container is started. Maybe an extra image which includes this in the Dockerfile would make sense (TODO)
+  needed an adaption in package.json/scripts (see https://stackoverflow.com/questions/77211115/angular-application-running-in-a-container-not-accessible-from-the-browser):
+    "start": "ng serve --host 0.0.0.0", // added --host...
+
+
+- Fri, 19.04.2024
+improve node-dev-container for local node development with node > v16
+
+- Wed, 17.04.2024
+tries css-scope-inline with new gmr-homepage.
+Looks great but has problems with hx-boost. -> I opened a discussion-item in css-scope-inline
+
+- Sat, 13.04.2024
+Rapid server side full stack web development with ViewComponents and htmx by Thomas Schuehly
+ https://www.youtube.com/watch?v=DPAtQU-erM4&t=628s
+  https://github.com/tschuehly/fullstack-with-spring
+   https://github.com/tschuehly/fullstack-with-spring/tree/master/slides/spring-io-2023
+
+  supabase starter
+
+- Fri, 12.04.2024
+https://discord.com/channels/725789699527933952/725789747212976259/1227939534314934342
+ https://github.com/croxton/craftcms-hda-starter-kit/blob/main/src/styles/components/transition.scss
+  /* disable boosted links during transition */
+  .htmx-request a[hx-boost="true"],
+  .htmx-request [hx-boost="true"] a {
+    pointer-events: none;
+  }
+
+https://news.ycombinator.com/item?id=39886969
+
+- Wed, 10.04.2024
+nodejs docker container development:
+ https://docs.docker.com/language/nodejs/develop/#overview
+
+devcontainers:
+ https://plugins.jetbrains.com/plugin/21962-dev-containers
+
+https://nystudio107.com/blog/run-your-node-js-apps-buildchains-via-docker
+
+- Sun, 07.04.2024
+10 CSS Pro Tips - Code this, NOT that!
+ https://www.youtube.com/watch?v=Qhaz36TZG5Y
+---
+node server: express, fastify
+https://hono.dev/
+https://github.com/dy/sprae
+https://edgejs.dev
+https://arc.codes/
+
+- Sat, 06.04.2024
+How to take control of Flexbox:
+ https://www.youtube.com/watch?v=Ns12ALe8aqI
+ 1:20:
+ .hotel-listing > * {
+   outline: 2px solid lime;
+ }
+ 4:40
+ flexbox: inside out: size of children determine parent sizes
+ grid: outside in: sizes are defined on parents
+ 7:00
+ flex-shrink: 1 // keep aspect ratio of children
+ 8:50
+ problem: colum width differ from row to row -> suggestion: use grid instead
+ 11:50
+ flex-shrink: 0 // so that "2 nights, 2 adults" do not wrap on resize
+ 12:00
+ .hotel-info { // middle
+   flex-basis: 10px // on middle column, so that content does not determine width, but the 10px setting. It does not matter if we use 10px or 1000px -> 30ch (characters)
+ }
+ 13:10
+ .hotel-meta { // right
+  ...
+   flex-basis: 14ch;
+ }
+ 13:57
+ .hotel-info { // middle
+   flex-shrink: 1;
+   flex-grow: 1;
+   flex-basis: 30ch;
+ }
+ 13:10
+ .hotel-meta { // right
+   flex-shrink: 0;
+   flex-basis: 14ch;
+ }
+ ---
+.container {
+  width: min(100% - 2rem, 600px);
+  margin-inline: auto;
+}
+
+
+- Fri, 05.04.2024
+
+free css framework:
+ https://www.w3schools.com/w3css/
+
+- Wed, 03.04.2024
+https://gitlab.com/T3CHN01200/6502-emulator
+
+- Tue, 02.04.2024
+
+- Mon, 01.04.2024
+Pfingstmontag
+https://utopia.fyi/
+js-discussions: https://github.com/gnat/surreal
+https://synergyjs.org/
+
+fox about webcomponent:
+ https://discord.com/channels/725789699527933952/1156332663205011586/1179331216093224991
+
+/home/se/se/DAILY/topics/books/_Languages/0_javascript/JavaScript- The Good Parts.pdf
+/home/se/se/DAILY/topics/books/_Languages/seven-languages-in-seven-weeks_p5_0.pdf
+
+DOM ready events considered harmful | HTTP 203
+ https://www.youtube.com/watch?v=_iq1fPjeqMQ
+
+https://medium.com/@julienetienne/stop-using-localstorage-64a6d6805da8
+https://ricostacruz.com/rsjs/
+
+JavaScript- The Good Parts:
+ https://www.youtube.com/watch?v=hQVTIJBZook
+
+https://discord.com/channels/725789699527933952/1156332663205011586/1206844070203494400
+ https://github.com/vimeshjs/vimesh-ui
+
+https://riot.js.org/
+https://realm.codes/
+
+- Fri, 29.03.2024
+https://lofi.limo/blog/write-html-right
+JS Template Engine: https://vento.js.org/
+https://blog.jim-nielsen.com/2023/html-web-components/
+https://meyerweb.com/eric/thoughts/2023/11/01/blinded-by-the-light-dom/
+discord/html-discussions: 20.11.2023: If you're having FOUC issues with WCs, you should use the :defined pseudoclass. Styling :not(:defined) will let you add default styles to components that aren't yet registered, so the FOUC can be drastically reduced.
+https://tedium.co/2023/11/24/weird-html-hacks-history/
+https://www.youtube.com/watch?v=VE0gghEKmdw
+https://github.com/sindresorhus/modern-normalize
+https://piccalil.li/blog/a-more-modern-css-reset/
+https://www.youtube.com/watch?v=R75ZVW4LW5o&list=PLNYkxOF6rcIAaV1wwI9540OC_3XoIzMjQ&index=14
+
+- Mon, 25.03.2024
+https://dev.htmx.org/test/
+https://tschuehly.de/interactive-web-applications-with-htmx-and-spring-boot
+
+- Fri, 22.03.2024
+htmx-css: css inline scope with MutationObserver:
+ https://github.com/gnat/css-scope-inline
+ https://old.reddit.com/r/htmx/comments/16coc78/htmx_tailwind_alternative_inline_scoped_css/jzkzwmf/
+ discord: htmx/css-discussion: 23.2.2024:
+  Is there good support for a selector that will allow me to select e.g. all <h1> that are not in a .card?
+   h1:not(.card *) // it's a wildcard, "h1 that is not anything inside a .card"
+
+https://github.com/troxler/awesome-css-frameworks
+
+- Mon, 18.03.2024
+an neuer GMR HP weitergemacht.
+ festgestellt, dass wenn ich reloads unterstützen will (z.B. .../kurzprofil.html, ../historie.html)
+ funktioniert der Ansatz mit HTMX includes genauso wenig wie in Angular.
+ -> doch mit static site generator probieren
+
+- Sun, 17.03.2024
+https://web.dev/articles/rendering-on-the-web
+hyperscript:
+ https://news.ycombinator.com/item?id=39701838
+  https://hyperscript.org/docs/#introduction
+
+GMR HP angefangen mit normalen html files und htmx (für includes) zu bauen.
+Geht überraschend gut
+
+- Fri, 15.03.2024
+https://htmx.org/examples/click-to-edit/
+ see: demo.js:
+  sinon-fake-server: https://sinonjs.org/releases/latest/fake-xhr-and-server/
+
+- Thu, 14.03.2024
+svelte: make webcomponents: https://www.youtube.com/watch?v=xIYOyiAE-sY
+
+- Wed, 13.03.2024
+deploy nodejs app
+ https://www.freecodecamp.org/news/how-to-deploy-your-site-using-express-and-heroku/
+ https://vercel.com/guides/using-express-with-vercel
+
+- Sun, 10.03.2024
+LangChain4J - use the power of LLMs in Java!
+ https://www.youtube.com/watch?v=x8kkjmCZTaw
+ https://github.com/jdubois/2024-LangChain4J-demo
+ https://lmstudio.ai/
+
+https://ryanmulligan.dev/blog/we-can-has-it-all/
+
+- Sat, 09.03.2024
+htmx processes the page once on page load, then again for any content it swaps in using its own processes; it doesn't watch for new elements added by other unrelated javascript, which is why htmx.process exists to manually bridge the gap
+
+- Thu, 07.03.2024
+How to Hover on a Child Element Without Hovering on the Parent, Using Only CSS
+ https://medium.com/@nksCodingLearnings/how-to-hover-on-a-child-element-without-hovering-on-the-parent-using-only-css-6e57b034e429
+
+- Wed, 06.03.2024
+Using CSS Grid to Stack Elements
+ https://www.webpro.nl/scraps/using-css-grid-to-stack-elements#:~:text=The%20trick%20is%20to%20use,grid%20for%20even%20more%20flexibility.
+myBookmarks: working on flip-card for editing: needs time: 2 elements stacked over each other (solved with grid-trick)
+ https://www.w3schools.com/howto/howto_css_flip_card.asp
+
+- Sat, 24.02.2024
+Makinde Adeagbo: Primer
+ https://www.youtube.com/watch?v=wHlyLEPtL9o
+
+- Thu, 22.02.2024
+https://www.youtube.com/watch?v=uwmtqTjj4pM
+ buildpacks.io
+ 9:30 mvn plugin: spring-boot-startup-report
+
+- Tue, 20.02.2024
+https://www.grusingh.com/post/simplifying-web-development-with-alpinejs/
+ https://github.com/goldfire/howler.js#documentation
+
+- Sat, 10.02.2024
+https://turbo.hotwired.dev/handbook/page_refreshes#morphing
+https://v2-0v2-0.htmx.org/posts/2024-02-09-htmx-2-0-0-alpha2-is-released/
+
+- Fri, 09.02.2024
+mit myBookmarks weitergemacht
+https://kaydee.net/blog/open-graph-image/
+
+really long url: http://www.reallylong.link/ :
+http://www.reallylong.link/rll/MGr0E4ej/4afraEzGOoxjtmSQch3jMo9CFx3ZqYR87TdWzA8Dqv1rk21HrT4tNp801PkHZr/LkeNxD7SCO7UaCvOQnEuO6LxCo9Un7k9YI4aDN8IDcLbve2aUJ9dA/X1uEyvNVX4uJznY06U/S1JlEBmn3Pq0fMFmwaIGFSzWaa60lKoplgcJYlfHVchLW2BuckMrVDLcErBGp_oU7tJ_BFMrnq2tlngxKZhix20S5gIhcI2O98zwbZY1x1CZKmGZL_TmfnlClFFIK4j5IsPznR4LvVHHw_5AgKKzjGlvN5N8mQag/j9dapfgubycOlDxiRO/Qb9vvjOH_0qGlgwX8LtZD04zBaRMGidyUiiyb/km02F7yYyqLEeIHyIXwmc0eTP8tIPzAv51nTulXaoEMEWS073UlphPRoVYjSgneCEs9VoNFSdUkcwsXPRcDhS2ZUY37UD3d5eI8Xw44RIr9dRbd0LPkcjt3tHo1iKv7xqdEjlmuWyucWblHhS7HN1W7XC0F3fOmY8C4c/x2UWBu2LxjGsReUlvZ09LPBZH4/aqW6OKct0IkbsAOZqYE/lcUgpZ480eWmQXrapcIvpGclNfpP5wRqS8CaymlygZyWTVSl8C8CU6MVJk7jobgasYejnO4nvvn2vUop_lY6BihzxnRuEXYsRWWYFgfnnmxdC1PtnUFYz4dVfdBuJBiFGnXFKie5SFgFQnan/RO0Nz3GaZHURp3tdXvkjuIgvKk6/8jNsYQY11w8Zzw1YZVlhLk4qNotmHbT2v7Q6EKxkigo/jjDyzOWNaIztA5J_gEKTl6ILWUoilSxVCFEXlHpI8xPyIiVqHhm84mE4T/p3wU0rIM4i05wnMFr4S1F9HJ8TK1iCnggtjCiU2EdTjmNPLyRQy29mBY89pSdRloYIjDmIL02z8G5ceV9NfIjLXL0a2remvQQsCpM6edzNnYpD0rIxql54ZoLJbzKgBNwpJbL5YiP5zpTwO4Id_tAfjS1DRNyd/CqBbuceKOFFhULOLQnKzNi6XEWa1zU0xr5g_ZBCAGHJDC5k47I7WneuyBBBmljxMW3ntWVsWxx/3sI0u6wzCAVSf9jEOdbu7wTTixfiAAu_FWtcjZRoIsyk8kzE0AcCZvJplhF1tHHgU39MaiyUY8gTP5myjA5BqP33JJ3lpmzRo9Td3eMkh7eNTK4/MG3YCruBfOSLtk5Yia9tJkkE/An7AAllfvb_cZuXVkfV6DRfGUR2zSQ3iOMr9VHcAWbhSqRSD6/HZJELfELcDckHzHxeU1n9b2X_Owu2K1EcXY6FqCrQnWF1DLrtPrFt1YbIvEgJQkOanInHesnfjGhePKsWP2vwFQMdnxwB4_2qR1IAV9UzKMCtrbjILmCpxntrFl5R0sBb16wYn3ZfXFJXa_W/pd9be2GSDU5eVFFYBD4oNwdVwuNNeVCNWIqmTocbukVN1sZygSq4ga3dPVAB10UAI80PxeHlWRadqSlJD108RWtkaLZEcoMC1K7xLsYCa5MUegkQAwBsqQKkYbYifcTU2yFWv5uaBPAO2gqr5YXjXZ4hkG/9bvC3grUo2kSl8hKdf024_fq5ykz4wNv95_nLKvU0nQOLz/q26_0HVhOZnG8Oq63PY5c3Hf4ODafbOC40IM_UOg96OwVsKWQPBOew0UfReCfeefOa_jOdAc/sPKKDKZx71F8n54Jzam80hZcvvWFK2y/Et6dKrRKZqL7d_PpMw/42vrnOmwUsOp9EB2gJiF6xwXyXiYs_ToKQNbLe4_8PPSLwNzX1AQXstW1RgRryniUNpz7kP72ahnPkocNynh5KvvQhpqAs66UETneYz5QLqWF3jue6WsdW6AILOmIPFF8B50B03C1RVBkc1/A1u2VJUojj90XGETqV3nCcr2CO01qNVh874tj8cz2RlwSHS3Bb_tb9sTHzRJO8oHfDi9SmcDaJbKtdcWq
+
+short:
+https://www.heise.de
+
+- Sun, 04.02.2024
+htmx deep dive:
+https://www.youtube.com/watch?v=javGxN-h9VQ
+
+- Fri, 02.02.2024
+https://github.com/1cg/size_comparison
+https://mvolkmann.github.io/blog/topics/
+
+- Thu, 01.02.2024
+https://htmx.org/essays/a-real-world-react-to-htmx-port/
+https://www.oreilly.com/library/view/restful-web-clients/9781491921890/
+
+- Tue, 30.01.2024
+played with quarkus and qute
+qute seems to be a really good template engine
+-> try to use qute with spring boot
+
+- Wed, 17.01.2024
+htmx-general:
+-----
+<form id="Form1" action="Action1.php" method="post"></form>
+<form id="Form2" action="Action2.php" method="post"></form>
+
+<input type="text" name="input_Form1_n1" form="Form1" />
+<input type="text" name="input_Form2_n1" form="Form2" />
+<input type="text" name="input_Form1_n2" form="Form1" />
+<input type="text" name="input_Form2_n2" form="Form2" />
+
+<input type="submit" name="button1" value="buttonVal1" form="Form1" />
+<input type="submit" name="button2" value="buttonVal2" form="Form2" />
+-----
+is ok according to w3c
+- Sun, 14.01.2024
+https://www.nerdfonts.com/
+create subset of font file: https://discord.com/channels/725789699527933952/725789747212976259/1195843750275059802
+give Google Search hints about localized versions of a website: https://developers.google.com/search/docs/specialty/international/localized-versions?hl=de
+
+https://ahastack.dev/
+astro,htmx,alpine
+
+- Sat, 13.01.2024
+htmx playground: https://lassebomh.github.io/htmx-playground/
+
+https://github.com/tschuehly/spring-view-component
+
+- Thu, 11.01.2024
+select widget: https://tom-select.js.org/
+
+- Tue, 09.01.2024
+https://pebbletemplates.io/
+https://github.com/jhuddle/ponys
+
+- Sun, 07.01.2024
+added todo: (in simple-html): https://developer.mozilla.org/en-US/docs/Web/API/Web_components/Using_templates_and_slots
+added todo: https://ricostacruz.com/rscss/components.html
+added todo: materializecss for my-bookmarks
+
+materializecss 2.x :
+https://materializeweb.com/getting-started.html
+
+https://github.com/bigskysoftware/chill/tree/master/chill-script
+
+- Mon, 01.01.2024
+Idee:
+use rsjs approach to:
+<include path="..."> with htmx get
+which resolves to :
+<template component="my-component">
+</template>
+
+and then:
+<my-component ...
+...
+-----
+google analytics alternative:
+https://plausible.io/
+-----
+created SpringBoot Commandline Application: /home/se/se/sweng/0_daily/2024/2024-01-01_spring-cmdline-jooq
+which is run once just to generate JOOQ files.
+
+----

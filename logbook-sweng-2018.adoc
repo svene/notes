@@ -1,0 +1,8 @@
+----
+13.01.2018:
+docker port not exposed on host
+Adding --ip=127.0.0.1 in the ExecStart line of /etc/systemd/system/multi-user.target.wants/docker.service solved the problem ( no more --net=host when i run my docker images)
+
+-> sudo service docker restart
+
+----

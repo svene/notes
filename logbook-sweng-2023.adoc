@@ -1,0 +1,579 @@
+----
+- Sun, 31.12.2023
+htmx: https://putyourlightson.com/articles/htmx-has-a-javascript-api-btw
+
+Idea:
+use https://www.baeldung.com/spring-boot-console-app
+with a flyway config (maybe see https://www.sivalabs.in/spring-boot-flyway-database-migration-tutorial/)
+with postgres testcontainers
+and https://www.jooq.org/doc/latest/manual/code-generation/codegen-configuration/
+
+ to generate jooq classes
+
+ todo: new idea: create jooq-classes as final java based flyway-migration ?
+
+- Fri, 29.12.2023
+REST discussion: https://news.ycombinator.com/item?id=38798430
+
+- Thu, 28.12.2023
+https://unplannedobsolescence.com/blog/behavior-belongs-in-html/
+https://denizaksimsek.com/en/
+https://meyerweb.com/eric/thoughts/2023/11/01/blinded-by-the-light-dom/
+
+- Wed, 27.12.2023
+https://news.ycombinator.com/item?id=38298694
+https://btmc.substack.com/p/making-sense-of-web-components
+
+https://unmodernweb.com/projects
+
+https://tailwindcss.com/docs/utility-first
+https://data-star.dev/
+https://shoelace.style/
+https://github.com/modderme123/reactively
+https://dev.to/modderme123/super-charging-fine-grained-reactive-performance-47ph
+
+https://stackoverflow.com/questions/28664207/importing-styles-into-a-web-component
+
+- Tue, 26.12.2023
+<template component="todo-item">
+<slot></slot>
+<script on="connect">
+const todo = host.querySelector('h1')
+todo?.addEventListener('click', evt => todo.style.textDecoration =
+todo.style.textDecoration === 'line-through' ? 'none' : 'line-through')
+</script>
+</template>
+
+
+htmx-book font: https://fontlibrary.org/en/font/chicagoflf
+https://asciiflow.com/#/
+https://github.com/martinthomson/aasvg
+https://ivanceras.github.io/svgbob-editor/
+https://www.type-together.com/literata-font
+
+
+- Sun, 24.12.2023
+https://github.com/croxton/htmx-booster-pack
+https://developer.mozilla.org/en-US/docs/Web/API/AbortController
+
+- Thu, 21.12.2023
+https://carbondesignsystem.com/components/data-table/usage/#live-demo
+
+https://github.com/mgdm/htmlq
+
+- Sat, 16.12.2023
+habe versucht jooq 3.19.0 gradle plugin zu benutzen.
+Immer noch viel zu kompliziert
+
+- Fri, 15.12.2023
+Fox o'Nine Tail: Katrina Scialdone
+https://kgscialdone.substack.com/p/web-components-arent-framework-components
+
+- Thu, 14.12.2023
+https://github.com/kgscialdone/facet
+https://github.com/croxton/htmx-booster-pack
+https://github.com/VictorSohier/html-include
+https://css-tricks.com/web-component-for-a-code-block/
+https://data-star.dev/
+
+- Mon, 11.12.2023
+https://github.com/Itzdlg/htmx-chat-app
+https://quarkus.io/extensions/io.quarkiverse.renarde/quarkus-renarde/
+
+java 21 HTML."" template processor:
+https://mccue.dev/pages/12-9-23-java-library-of-the-day-9
+https://github.com/bowbahdoe/html
+
+---
+see 2023-11-12_spring-data-sql
+
+@Bean
+@ServiceConnection
+PostgreSQLContainer<?> postgresContainer() {
+// return new PostgreSQLContainer<>(DockerImageName.parse("postgres:latest"));
+int containerPort = 5432 ;
+int localPort = 5432 ;
+var container = new PostgreSQLContainer<>("postgres:latest")
+.withUsername("postgres")
+.withPassword("postgres")
+.withReuse(false)
+.withExposedPorts(5432, 5432)
+.withCreateContainerCmdModifier(
+cmd -> cmd.withHostConfig(
+new HostConfig()
+.withPortBindings(
+new PortBinding(
+Ports.Binding.bindPort(localPort),
+new ExposedPort(containerPort))
+))
+);
+return container;
+}
+
+- Sat, 09.12.2023
+Java logging history, System.Logger (since Java 9): https://renato.athaydes.com/posts/java-system-logging
+
+- Thu, 07.12.2023
+todo:
+https://www.bitecode.dev/p/a-little-taste-of-htmx-part-1
+
+- Wed, 06.12.2023
+watched Adam Bien devoxx 2023 video. Then created aws account and executed first lambda function in browser
+I started here: https://quarkus.io/guides/aws-lambda
+
+
+- Fri, 01.12.2023
+htmx: to add something (e.g. url for bookmark):
+ - add button uses hx-target to an invisible element (better: use hx-swap="none")
+ - server sends empty result, with hx-... response header for the event
+ - client fragments interested in the 'added'-event use hx-trigger and update themselves
+
+serverside examples:
+  @PostMapping(path = "/bookmark", consumes = {MediaType.APPLICATION_FORM_URLENCODED_VALUE})
+  @ResponseBody
+  public String addBookmark(@RequestParam(required = true, name = "bm-url") String bmUrl, HttpServletResponse response) {
+  ---
+  @PostMapping(path = "/saveSelectedFood", consumes = {MediaType.APPLICATION_FORM_URLENCODED_VALUE})
+    public void saveSelectedFood(SaveFoodPayload payload, Model model, HttpServletResponse response) {
+     selectedFoodStore.addItem(payload.title());
+     ...
+  - client:
+  @for(FoodModel food : result.foodModels())
+        <li hx-post="/saveSelectedFood" hx-swap="none" hx-vals='{"title": "${food.title()}"}'>${food.title()}</li>
+    @endfor
+
+ client
+
+- Wed, 29.11.2023
+https://github.com/katrinakitten/htmx-template
+
+- Sat, 25.11.2023
+mit htmx-bookmarks app weitergemacht: styling, reading data from csv
+ postgres DB auf supabase erstellt (mit github account zugreifen):
+ https://supabase.com/dashboard/project/goymgpbydnxuwxbfvpgq/settings/database
+ bookmarks from my github: https://github.com/svene/notes/blob/master/bookmarks.csv
+
+- Tue, 21.11.2023
+cube css: https://cube.fyi/
+https://stylus-lang.com/
+https://classless.de/
+https://github.com/cbracco/html5-test-page
+https://stackoverflow.com/questions/40010597/how-do-i-apply-opacity-to-a-css-color-variable/41265350#41265350
+minimal css framework: https://github.com/kbrsh/wing
+https://css-tricks.com/centering-css-complete-guide/
+https://www.keithcirkel.co.uk/css-classes-considered-harmful/
+https://github.com/dbohdan/classless-css
+https://yeun.github.io/open-color/
+https://github.com/fchristant/colar
+https://github.com/dohliam/dropin-minimal-css
+
+- Sat, 18.11.2023
+from the htmx discord channel:
+webframework:
+https://jooby.io/
+
+ui-component js-lib:
+https://w2ui.com/
+
+looks good: ui-lib:
+https://semantic-ui.com/
+
+htmx from webjars.org:
+compile 'org.webjars.npm:htmx.org:1.9.8'
+
+missing.css from webjars.org:
+compile 'org.webjars.npm:missing.css:1.1.1'
+
+minifying,hashing for java:
+Web Resource Optimizer for Java: https://wro4j.github.io/wro4j/
+
+<button _="init wait 2s then remove @disabled" disabled>Save</button>
+
+----- (from: https://pweb-one.vercel.app/#    -> show source and inspect svg-hidden at top of html and svg-usages further down)
+idea using svgs:
+<svg class="hidden">
+        <symbol id="check-icon-green" width="15" height="12" viewBox="0 0 15 12" fill="none">
+            <path d="M2.23173 5.85953L5.99084 10.1028L12.7573 2.35425" stroke="#307D5E" stroke-width="3.12482" stroke-linecap="round" stroke-linejoin="round"></path>
+        </symbol>
+        <symbol id="check-icon-white" width="15" height="12" viewBox="0 0 15 12" fill="none">
+            <path d="M2.23173 5.85953L5.99084 10.1028L12.7573 2.35425" stroke="white" stroke-width="3.12482" stroke-linecap="round" stroke-linejoin="round"></path>
+        </symbol>
+...
+</svg>
+<!-- usage: -->
+<div class="flex w-10 mb-2">
+                              <svg class="h-5 w-5 text-white" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                  <use href="#icon-person">
+                              </use></svg>
+                          </div>
+-----
+see: svg symbols:
+https://developer.mozilla.org/en-US/docs/Web/SVG/Element/symbol
+-----
+quarkus and htmx:
+https://github.com/dashorst/funwithflags
+
+todo: watch video "improve your test driven development" https://www.youtube.com/watch?v=2vEoL3Irgiw
+
+another Java template engine:
+https://pebbletemplates.io/
+
+---
+build a webjar:
+https://dev.to/janux_de/create-webjar-with-gradle-and-github-2li3
+
+---
+https://html-first.com/
+https://ivanceras.github.io/svgbob-editor/
+---
+
+// see: https://blog.jooq.org/faster-sql-paging-with-jooq-using-the-seek-method/
+
+- Fri, 17.11.2023
+micronaut video:
+https://www.youtube.com/watch?v=Elz_abev4ts&list=PLRsbF2sD7JVoylItQFt2RKpLsYasx1c3F&index=79
+
+- Mon, 13.11.2023
+standard spring-boot dependencies
+web, postgres, testcontainers,devtools,jdbc
+
+- Sat, 11.11.2023
+use case: https://medium.com/the-resonant-web/spring-boot-2-0-starter-kit-part-1-23ddff0c7da2
+ github repo: https://github.com/khandelwal-arpit/springboot-starterkit
+
+ deprecated: https://github.com/google/material-design-lite
+ -> https://github.com/material-components/material-components-web
+
+
+https://alan.norbauer.com/articles/browser-debugging-tricks
+
+https://martijndashorst.com/blog/2023/11/09/jfall-htmx-presentation
+
+- Fri, 10.11.2023
+OAuth2, OpenID: live coding SSO, from first principles By Daniel Garnier Moiroux:
+https://www.youtube.com/watch?v=wP4TVTvYL0Y&list=PLRsbF2sD7JVoylItQFt2RKpLsYasx1c3F&index=19
+repo: https://github.com/Kehrlann/sso-live-coding/tree/main
+
+- Wed, 01.11.2023
+devoxx belgium 2023: https://www.youtube.com/playlist?list=PLRsbF2sD7JVoylItQFt2RKpLsYasx1c3F
+
+Reactive applications with Event Sourcing and Server Sent events By Mitchell Herrijgers
+ (axon framework, kotlin, eventstore, CQRS)
+ - try SSE with pure spring boot (without axon framework)
+ https://www.youtube.com/watch?v=E7rWSYbZQfg&list=PLRsbF2sD7JVoylItQFt2RKpLsYasx1c3F&index=97
+
+todo:
+ - openid: https://www.youtube.com/watch?v=wP4TVTvYL0Y&list=PLRsbF2sD7JVoylItQFt2RKpLsYasx1c3F&index=19
+ - micronaut: https://www.youtube.com/watch?v=Elz_abev4ts&list=PLRsbF2sD7JVoylItQFt2RKpLsYasx1c3F&index=78
+ - https://www.youtube.com/watch?v=MTPUtODhNWE&list=PLRsbF2sD7JVoylItQFt2RKpLsYasx1c3F&index=74
+ - https://www.youtube.com/watch?v=4SPkpIap4Ls&list=PLRsbF2sD7JVoylItQFt2RKpLsYasx1c3F&index=4
+ - https://www.youtube.com/watch?v=T0p4FAJdYOQ&list=PLRsbF2sD7JVoylItQFt2RKpLsYasx1c3F&index=3&t=1s
+ -
+
+
+to view:
+algebraic data types
+
+- Sun, 29.10.2023
+material web:
+https://github.com/material-components/material-web/blob/main/docs/quick-start.md
+Idee: statt install via npm als webjar in spring-boot
+
+- Sat, 28.10.2023
+inspected spring petclinic app (standard and htmx versions):
+ normal: https://github.com/spring-projects/spring-petclinic
+ htmx:   https://github.com/spring-petclinic/spring-petclinic-htmx
+
+https://www.wimdeblauwe.com/projects/
+https://www.wimdeblauwe.com/books/
+  downloaded book: Practical-Guide-to-building-an-API-backend-with-Spring-Boot-v2-1545577412730.pdf
+
+JTE statt JSP und Thymeleaf:
+https://www.chrono24.net/ist-jte-eine-alternative-zu-jsp/#gref
+
+- Thu, 26.10.2023
+minimal_htmx_in_html.md:
+https://gist.github.com/1cg/d1ad1ddd5f43a8a993cd9f711135edc9
+
+HTMX Interview Video: https://www.youtube.com/watch?v=9H5VK9vJ-aw
+
+- Tue, 24.10.2023
+htmx contact app: https://github.com/bigskysoftware/contact-app
+
+- Mon, 23.10.2023
+https://github.com/mkyong/spring-boot
+
+- Sat, 21.10.2023
+htmx logo:
+https://raw.githubusercontent.com/bigskysoftware/htmx/master/www/static/img/htmx_logo.1.png
+
+htmx discord channel (see htmx page: https://github.com/bigskysoftware/htmx)
+https://discord.com/channels/725789699527933952/725789747212976259
+
+https://github.com/tradfursten/htmx_umejug
+
+- Fri, 20.10.2023
+tozo 6 Kopfhörer
+https://github.com/baloise-incubator/AddressSearchClient
+
+codecamp 2023 links:
+http://localhost:8080/food
+https://shoelace.style/
+https://picocss.com/
+https://github.com/spring-petclinic/spring-petclinic-htmx
+icons: https://icones.js.org/collection/all?s=youtube
+
+- Thu, 19.10.2023
+https://zetcode.com/java/record/
+Flyway: read migrations from a jar file: not working out of the box but could be done with MigrationResolver
+https://blog.jooq.org/how-to-statically-override-the-default-settings-in-jooq/
+
+- Wed, 18.10.2023
+keycloak: http://localhost:8081/
+ realm wählen
+   Realm settings->Login: user registration: on
+   Realm settings->Login: email ausschalten
+ user anlegen
+
+- Sat, 14.10.2023
+https://www.dell.com/support/kbdoc/de-de/000131667/how-do-i-upgrade-my-ubuntu-operating-system-to-the-latest-version
+
+- Sat, 07.10.2023
+https://www.w3.org/TR/css-anchor-position-1/
+
+- Fri, 29.09.2023
+DB, postgres multi-project setup.
+  see /home/se/se/sweng/0_daily/2023/2023-09-29_db-project-setup/README.adoc
+
+No Nonsense Monad & Functor - The foundation of Functional Programming by César Tron-Lozai
+https://www.youtube.com/watch?v=e6tWJD5q8uw&t=2s
+  functor: something that has map
+  monad: functor and has 'flatten' to remove box in a box (or combined with 'flatmap')
+
+- Thu, 21.09.2023
+docker build -t dockercopy .
+docker run --rm --name dockercopy -it dockercopy
+
+docker build -f Dockerfile.new -t dockercopy .
+
+- Thu, 14.09.2023
+https://grugbrain.dev/
+ -> https://craftinginterpreters.com/
+
+https://s3.eu-central-1.amazonaws.com/airhacks.fm/airhacksfm_258.mp3
+
+- Mon, 11.09.2023
+micronaut controller ausprobiert
+play with nx
+ https://nx.dev/getting-started/tutorials/package-based-repo-tutorial
+
+- Sun, 10.09.2023
+https://blog.bitsrc.io/how-to-generate-previews-for-your-web-page-on-social-media-f867bfd26859
+  https://ogp.me/
+
+- Sat, 09.09.2023
+hypermedia buch fertiggelesen
+
+https://postgrest.org/en/stable/
+
+- Fri, 08.09.2023
+htmx: https://www.youtube.com/watch?v=huMTT5Pb8b8
+  uno css
+
+quarkus with jbang (idea from https://twitter.com/andrew_graaff/status/1697954106470486456)
+  https://quarkus.io/guides/scripting
+
+- Tue, 05.09.2023
+CSS library tips from: https://hypermedia.systems/client-side-scripting/
+ bootstrap, tailwind, bulma, pico.css
+
+- Sun, 03.09.2023
+htmx source code: https://github.com/bigskysoftware/htmx
+
+- Thu, 31.08.2023
+good htmx-podcast discusstion with transcription: https://changelog.com/gotime/266
+ https://grugbrain.dev/
+
+- Sun, 20.08.2023
+continued htmx example
+
+- Sat, 19.08.2023
+continued html example
+
+- Fri, 18.08.2023
+https://github.com/svene/htmx-example-contacts-springboot-gradle-jte
+
+https://github.com/bigskysoftware/contact-app
+https://missing.style/
+
+https://github.com/casid/jte/blob/main/DOCUMENTATION.md
+https://github.com/casid/jte-javalin-tutorial/blob/master/src/main/jte/layout/page.jte
+
+LEARNING:
+- testcontainers/postgres/serviceconnection springboot > 3.1:
+
+  @Configuration
+  public class MyTestConfiguration {
+  ...
+  @Bean
+  @ServiceConnection
+  PostgreSQLContainer<?> postgresContainer() {
+    return new PostgreSQLContainer("postgres:latest")
+      .withUsername("postgres")
+      .withPassword("postgres");
+
+  reicht nicht, um im appcode eine DataSource zu injecten.
+  Es muss noch folgende dependency hinzugefügt werden:
+  implementation 'org.springframework.boot:spring-boot-starter-jdbc'
+  (oder falls jooq im Einsatz ist reicht auch: implementation 'org.springframework.boot:spring-boot-starter-jooq')
+
+
+implementation 'org.springframework.boot:spring-boot-starter-jdbc'
+
+- Sun, 13.08.2023
+spring-view-component experiments:
+- https://lorefnon.me/2022/04/26/using-jte-kotlin-templates-in-spring-boot/
+
+- Sat, 12.08.2023
+openrewrite für xcommand andgewandt:
+https://foojay.io/today/we-all-grow-older-but-do-our-projects-really-have-to-openrewrite/
+
+- Wed, 09.08.2023
+  https://twitter.com/davidm_ml/status/1688476520480649216?s=20
+    color palettes: https://coolors.co/
+    https://cssgradient.io/
+
+  https://vladmihalcea.com/tutorials/hibernate/
+    DB Schema for posts, comments, tags, ...:
+    https://vladmihalcea.com/flyway-database-schema-migrations/
+
+- Wed, 02.08.2023
+- Top 5 HTMC features: https://www.youtube.com/watch?v=cmOz0GU5ol8
+- Mike Pearson: Signals make Angular MUCH easier: https://www.youtube.com/watch?v=FRCpN62LyyM
+  6:12, 8:50: rxjs is good for async reactivity, bad at synchronous reactivity (signals the other way round)
+  9:08: signals: eager and stale, rxjs: lazy and fresh
+- Spring View Component for HTMX: https://github.com/tschuehly/spring-view-component#viewaction-interactivity-with-htmx
+  - Java Template Engine: https://github.com/casid/jte
+
+- Sat, 29.07.2023
+https://dev.to/this-is-angular/wrapping-imperative-apis-in-angular-550b
+  https://betterprogramming.pub/angular-isnt-reactive-enough-70b6b8d6cf8
+    mixins: https://www.npmjs.com/package/@se-ng/observable-hooks
+    ngrx: RFC: Component: Proposal for a new package component: https://github.com/ngrx/platform/issues/2052
+
+ngrx action groups: https://dev.to/ngrx/ngrx-action-group-creator-1deh
+
+- Thu, 27.07.2023
+rxjs core team member blog:
+https://ncjamieson.com/
+
+- Wed, 26.07.2023
+https://dev.to/this-is-angular/progressive-reactivity-in-angular-1d40
+
+- Tue, 25.07.2023
+https://dev.to/mfp22/rxjs-can-save-your-codebase-49fi
+
+----- Sun, 23.07.2023
+show execution order of maven plugins:
+ ./mvnw -X verify > ttt.txt
+ -> search for BUILD PLAN in ttt.txt
+
+ https://dev.to/art_ptushkin/how-to-properly-ignore-junit-4-in-gradle-and-maven-3o82
+---
+Architecturally evident Spring applications with jMolecules by Oliver Drotbohm @ Spring I/O 2023
+  https://www.youtube.com/watch?v=-I7KiV_6f-s&list=WL&index=4
+  24:18 : persistent model vs. dedicated persistent model
+  26:56 : JPA-induced boilerplate
+  27:34 : bytebuddy plugin
+  29:27 : get rid of @Entity...
+  34:15 : get rid of @Entity...
+  41:00 : provided interface, required interface
+  48:00 : technology integration
+
+----- Sat, 22.07.2023
+Do you really need Hibernate by Simon Martinelli @ Spring I/O 2023:
+  https://www.youtube.com/watch?v=ykoUBctblno
+  07:45: JPA vs JOOQ
+  23:00: sql examples
+  54:20: JPA vs JOOQ superpowers:
+  JOOQ: querying, reading nested objects (multiset), calling functions/stored procedures, bulk updates and deletes
+  JPA: entity state transition, cascading insert, update, delete, and orphan removal
+  both can be used together in one application
+  41:10: using JPA or Spring Data JDBC for executing SQL is not a good idea because you have to use strings
+
+---
+flyway:
+  quickstarts: https://documentation.red-gate.com/fd/quickstart-how-flyway-works-184127223.html
+  quickstart java: https://documentation.red-gate.com/fd/quickstart-api-184127575.html
+
+----- Wed, 19.07.2023
+Josh Long: HTMX and Spring Boot: https://www.youtube.com/watch?v=M9TL-2Jbr0c
+  31:10: hyperscript.org
+  37:00: thymeleaf fragment
+  bis 42:00
+  48:38: dependency of 'thymeleaf for htmx' (return more than one view from spring controller method)
+  57:00: working version
+
+----- Tue, 18.07.2023
+Josh Long: HTMX and Spring Boot: https://www.youtube.com/watch?v=M9TL-2Jbr0c
+  13:10: spring initializer deps
+  bis 24:29
+
+- check spring viewcontroller somebody texted during video: https://twitter.com/tschuehly/status/1680326811694116864?s=20
+
+----- Mon, 17.07.2023
+Josh Long: HTMX and Spring Boot: https://www.youtube.com/watch?v=M9TL-2Jbr0c
+  bis 12:48
+
+----- Sun, 16.07.2023
+Jooq-maven-code-generation experiments. Successfully works !
+Hint from Lukas Eder from JOOQ-Video (see Sat below):
+  https://blogs.oracle.com/database/post/json-relational-duality-app-dev
+
+----- Sat, 15.07.2023
+Spring Boot 3.1.0 Testcontainers Support for Testing and Local Development:
+- https://www.youtube.com/watch?v=7i0C_QWpSn8&t=306s
+  1:06: spring initilizer deps: spring web, spring data jpa, flyway migrations, postgres, testcontainer
+
+Databases, jOOQ, and Testcontainers with Lukas Eder: https://www.youtube.com/watch?v=gLmMkB5QfY8
+  maven pom with groovy-plugin to generate jooq code:
+    Lukas Eder: https://github.com/jOOQ/jOOQ-mcve/blob/main/jOOQ-mcve-java-postgres/pom.xml
+    Simon Martinelli: https://github.com/simasch/jooq-workshop/tree/main/jooq-sakila (see pom.xml):
+    - uses flyway for film DB structure: jooq-workshop/jooq-sakila/src/main/resources/db/migration
+    - examples, excercises:
+      - uses flyway in test to insert film data
+      - jooq-workshop/jooq-sakila/src/test/java/ch/martinelli/edu/jooq/sakila/[demo|excercise]
+    - uses testcontainers
+    -> https://github.com/simasch/docker-postgres-sakila
+  testcontainers maven plugin: https://testcontainers.com/guides/working-with-jooq-flyway-using-testcontainers/
+  Etienne Studers gradle plugin: https://github.com/etiennestuder/gradle-jooq-plugin
+  Film/Actor database: https://www.jooq.org/sakila
+    https://github.com/jOOQ/sakila
+  Simon Martinelli, jOOQ Quick Start:
+    https://www.youtube.com/watch?v=UuNrcBgRGXw
+    https://github.com/simasch/jooq-quickstart
+
+  My thoughts:
+  - 1: create new DB:
+    - create repo 1 with:
+      - Dockerfile
+      - flyway migration files for the DB structure
+    - create repo 2 (lazy way: do it also in repo 1) with:
+      - flyway files to populate DB with data
+  - 2: existing DB (like sakila or after step 1):
+    - use (or create) Docker image of Postgres DB. Data is not needed
+    - create repo with the code-generation support in it (e.g. in pom.xml) to generate the code and create a DB-jook-lib (e.g. sakila-jooq.jar) from it
+      - if the DB-schema from step 1 is still under development: create unit tests to proof that the schema is as expected
+
+  - 3: client:
+    - create another repo with app code. It uses the DB-jooq-lib to access the DB
+
+mvn archetype:generate -DgroupId=org.svenehrke -DartifactId=demo-jooq-pomgen -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false
+
+gradle: https://github.com/sivaprasadreddy/spring-boot-jooq-demo/blob/gradle/build.gradle
+
+TODO:
+
+- twitter bookmarks 16.6.2023: https://www.youtube.com/watch?v=fW80PwtNJAM
+
+----

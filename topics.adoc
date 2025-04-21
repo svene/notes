@@ -1,0 +1,22 @@
+_______________________________________________________________________
+TOPICS:
+_______________________________________________________________________
+
+----
+Database setup:
+- usecase 1: standard
+  -> Empty DB
+  -> setup structure with flyway
+  -> initial data load
+  -> populate with data over time
+  -> structure change needed: flyway migration
+
+- usecase 2: event based input
+  1: Empty DB
+  2: setup structure without flyway
+  3: initial data load
+  4: populate event store with data over time
+  5: populate DB from event store
+  6: structure change needed: restart from 1:, 2: use new structure, 3:, 4: replay event store
+----
+
