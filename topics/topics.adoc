@@ -33,10 +33,3 @@
   6: structure change needed: restart from 1:, 2: use new structure, 3:, 4: replay event store
 ----
 
-== JOOQ setup variants
-
-TBD
-
-=== Variant 1: ...
-
-=== Variant 2: ...
