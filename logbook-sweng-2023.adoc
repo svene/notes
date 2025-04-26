@@ -85,30 +85,33 @@ https://mccue.dev/pages/12-9-23-java-library-of-the-day-9
 https://github.com/bowbahdoe/html
 
 ---
+use a fixed port for a postgres testcontainer:
 see 2023-11-12_spring-data-sql
 
+[source,java]
+----
 @Bean
 @ServiceConnection
 PostgreSQLContainer<?> postgresContainer() {
-// return new PostgreSQLContainer<>(DockerImageName.parse("postgres:latest"));
-int containerPort = 5432 ;
-int localPort = 5432 ;
-var container = new PostgreSQLContainer<>("postgres:latest")
-.withUsername("postgres")
-.withPassword("postgres")
-.withReuse(false)
-.withExposedPorts(5432, 5432)
-.withCreateContainerCmdModifier(
-cmd -> cmd.withHostConfig(
-new HostConfig()
-.withPortBindings(
-new PortBinding(
-Ports.Binding.bindPort(localPort),
-new ExposedPort(containerPort))
-))
-);
-return container;
+    // return new PostgreSQLContainer<>(DockerImageName.parse("postgres:latest"));
+    int containerPort = 5432 ;
+    int localPort = 5432 ;
+    var container = new PostgreSQLContainer<>("postgres:latest")
+        .withUsername("postgres")
+        .withPassword("postgres")
+        .withReuse(false)
+        .withExposedPorts(5432, 5432)
+        .withCreateContainerCmdModifier(cmd -> cmd.withHostConfig(
+            new HostConfig()
+            .withPortBindings(
+                new PortBinding(
+                    Ports.Binding.bindPort(localPort),
+                    new ExposedPort(containerPort))
+            ))
+    );
+    return container;
 }
+----
 
 - Sat, 09.12.2023
 Java logging history, System.Logger (since Java 9): https://renato.athaydes.com/posts/java-system-logging

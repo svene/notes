@@ -252,8 +252,28 @@
 ==== Sat, 26.04.2025
 ==== Fri, 25.04.2025
 ==== Thu, 24.04.2025
+
+https://unplannedobsolescence.com/blog/mostly-true-naming-rule/
+
 ==== Wed, 23.04.2025
+
+qooq projects:
+- 2021-01-08_playpostgress
+- 2021-06-05_dvdrental-jooq
+- 2023-06-10_jooq-demo
+- 2023-07-16_jooq-setup-examples
+- 2023-09-29_db-project-setup
+- 2023-10-01_jooqgen-img
+- 2023-10-07_jooqgen-img2
+- 2023-12-16_spring-jooq-gradle
+- 2024-01-01_spring-cmdline-jooq
+
 ==== Tue, 22.04.2025
+
+- https://heroicons.com/
+- https://www.vanillastack.tools/
+-- https://smolcss.dev/
+
 ==== Mon, 21.04.2025
 
 light-dark mode: (from https://mlog.nektro.net/posts/2025/html-uswds-accordion/):
@@ -534,7 +554,7 @@ local npm publishing (eingebaut in 2025-01-12_svene21-npm-util-lib):
 ---
 
 - Sat, 11.01.2025
-GOOD: https://www.spicyweb.dev/action-web-components/
+todo: GOOD: https://www.spicyweb.dev/action-web-components/
 fasthtml components: https://about.fastht.ml/components
 ---
 
