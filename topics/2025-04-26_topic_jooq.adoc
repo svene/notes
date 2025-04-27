@@ -1,16 +1,156 @@
 = JOOQ
 
-== qooq projects:
+TODO:
 
-- 2021-01-08_playpostgress
-- 2021-06-05_dvdrental-jooq
-- 2023-06-10_jooq-demo
-- 2023-07-16_jooq-setup-examples
-- 2023-09-29_db-project-setup
-- 2023-10-01_jooqgen-img
-- 2023-10-07_jooqgen-img2
-- 2023-12-16_spring-jooq-gradle
-- 2024-01-01_spring-cmdline-jooq
+-    /home/se/se/sweng/0_daily/1-github/svene/jooq-playground/01_scenario_existing-db
+
+
+== qooq projects
+
+2021-01-08_playpostgress
+
+uses:
+
+- docker-compose to start postgres DB and loads DVD-rental-tar data
+- gradle-jooq-plugin from Etienne Studer: https://github.com/etiennestuder/gradle-jooq-plugin
+
+TODO: find out where the tar file is coming from. +
+- maybe from here: https://github.com/jOOQ/sakila by running it and then dumping the data to a tar file
+- or from (see 2023-07-16_jooq-setup-examples/01-gh-simasch_jooq-quickstart)
+
+=== 2021-06-05_dvdrental-jooq
+
+needs: the running DB from 2021-06-05_dvdrental-jooq +
+uses: gradle, gradle-jooq-plugin
+dependencies: jooq, postgres
+
+purpose: demonstrates how to do SQL with JOOQ against the DVD-rental DB
+
+=== 2023-06-10_jooq-demo
+
+uses:
+
+- spring-boot, maven, testcontainers, testcontainers-jooq-codegen-maven-plugin, flyway
+- see also: https://github.com/jOOQ/jOOQ/tree/main/jOOQ-codegen-maven
+- dependencies: jooq, postgres
+- spring-boot test application and postgres-bean via @ServiceConnection
+
+build time:
+
+- jooq plugin starts postgres container, applies flyway migration, generates jooq classes (see plugin-config in pom.xml) +
+TODO: find out if plugin also supports flyway callbacks (for initial data deletion) (since the path to the migration folder is configured)
+
+
+=== 2023-07-16_jooq-setup-examples
+
+===== 01-gh-simasch_jooq-quickstart
+
+uses jooq in a manual (non-automated way)
+
+uses
+
+- maven,
+- plugins: jooq-codegen-maven-plugin
+- manual: start the docker postgres image from Simon Martinelli: +
+  `docker run -e POSTGRES_PASSWORD=sakila -p 5432:5432 -d simas/postgres-sakila` +
+  (see https://hub.docker.com/r/simas/postgres-sakila)
+
+build time: +
+run the jooq plugin and then maven test (maybe this works at the same time with mvn install for example)
+
+===== 02-pom-code-gen
+
+uses
+
+- maven
+- plugins: groovy-maven-plugin, sql-maven-plugin, jooq-codegen-maven, maven-surefire-plugin
+- dependencies: testcontainers, postgres
+
+in pom.xml the
+
+- groovy-maven-plugin (phase: generate-sources, goal: execute) +
+via source section starts the postgres container and populates project-properties with the DB connection details
+
+- poor man's flyway: sql-maven-plugin (phase: generate-sources, goal: execute) +
+executes: ${basedir}/src/main/resources/db/migration/init.sql +
+using the project-properties containing the DB connection details from the groovy-maven-plugin
+
+- jooq-codegen-maven (phase: generate-sources, goal: generate) +
+generates jooq sources using the project-properties containing the DB connection details from the groovy-maven-plugin
+
+- maven-surefire-plugin: configuration to copy +
+the project-properties containing the DB connection details +
+into system-properties so that integration tests can use them up
+
+- groovy-maven-plugin (phase: test, goal: execute) +
+to stop and remove the container (obviously run after the integration tests, maybe due to some built-in maven lifecyle order)
+
+
+=== 2023-09-29_db-project-setup
+
+separate everything into a separate project +
+see README.md
+
+Motivation:
+
+- one DB might be used by multiple projects. +
+If that is the case, the JOOQ classes could be provided through a jar file. +
+This has the advantage that applications can use the JOOQ classes without having to generate them themselves. +
+Note: if only one project uses the DB, it probably does not make sense to increase complexity by separating the DB project from the application project.
+
+Another variant is to hide the DB behind a service and use JOOQ only inside the service. +
+Then the single project (the service) approach applies again.
+
+===== 01_database-with-flyway
+
+same as 2023-07-16_jooq-setup-examples / 02-pom-code-gen +
+but with the SQL scripts in separate files instead of directly in the pom.xml
+
+uses
+
+- maven
+- plugins: groovy-maven-plugin, flyway-maven-plugin, maven-surefire-plugin
+- dependencies: testcontainers, postgres
+
+
+===== 01_db-only
+
+just a docker-compose file to start postgres DB
+
+===== 02_flyway
+
+just flyway migration scripts. +
+Expects DB is already running
+
+uses
+
+- maven
+- plugins: flyway-maven-plugin, maven-surefire-plugin
+- dependencies: postgres
+
+===== 03_jooq-gen
+
+outdated. Successor is 2023-10-01_jooqgen-img which also has a successor: 2023-10-07_jooqgen-img2
+
+just JOOQ generation. +
+Expects DB is already running and flyway migrations have been applied
+
+uses
+
+- maven
+
+===== 04_spring-boot-db-demo
+
+uses
+
+- maven, spring-boot
+- dependencies: postgres, org.svenehrke.demojooqlib (jar from 03_jooq-gen)
+
+=== 2023-10-01_jooqgen-img
+
+=== 2023-10-07_jooqgen-img2
+=== 2023-12-16_spring-jooq-gradle
+=== 2024-01-01_spring-cmdline-jooq
 
 == JOOQ setup variants
 
