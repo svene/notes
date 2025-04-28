@@ -38,7 +38,6 @@ uses:
 build time:
 
 - jooq plugin starts postgres container, applies flyway migration, generates jooq classes (see plugin-config in pom.xml) +
-TODO: find out if plugin also supports flyway callbacks (for initial data deletion) (since the path to the migration folder is configured)
 
 
 === 2023-07-16_jooq-setup-examples
