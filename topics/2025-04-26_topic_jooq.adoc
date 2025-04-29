@@ -24,7 +24,7 @@ needs: the running DB from 2021-06-05_dvdrental-jooq +
 uses: gradle, gradle-jooq-plugin
 dependencies: jooq, postgres
 
-purpose: demonstrates how to do SQL with JOOQ against the DVD-rental DB
+purpose: demonstrates how to do SQL with JOOQ against the DVD-rental DB with low level JOOQ classes.
 
 === 2023-06-10_jooq-demo
 
@@ -39,12 +39,16 @@ build time:
 
 - jooq plugin starts postgres container, applies flyway migration, generates jooq classes (see plugin-config in pom.xml) +
 
+UserRepostory has some jooq-example code using domain-records
+
 
 === 2023-07-16_jooq-setup-examples
 
 ===== 01-gh-simasch_jooq-quickstart
 
-uses jooq in a manual (non-automated way)
+uses jooq in a manual (non-automated) way
+
+shows some low level and high level jooq code in QueryTest.java
 
 uses
 
