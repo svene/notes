@@ -1,3 +1,76 @@
 = Spring Boot and Postgres
 
-TBD
+TODO:
+
+- grep notes for postgres
+
+== repos
+
+=== 2023-03-11_spring-testing-demo
+
+=== 2025-04-27_spring-flyway-jooq
+
+
+== Running JOOQ Unittests
+
+
+=== works
+
+[source,java]
+----
+public record PersonDTO(int id, String name) {
+}
+
+----
+[source,java]
+.works with @JDBCTest
+----
+import org.jooq.DSLContext;
+import org.jooq.SQLDialect;
+
+@JdbcTest // Or @SpringBootTest if really needed
+@ContextConfiguration(classes = {TestcontainersConfiguration.class}) // Or @Import(TestcontainersConfiguration.class)
+@RequiredArgsConstructor
+class DbTest {
+	@Autowired
+	DataSource dataSource;
+
+	@Test
+	void jooq_list() throws SQLException {
+		DSLContext jooq = DSL.using(dataSource.getConnection(), SQLDialect.POSTGRES);
+		List<PersonDTO> personDTOS = jooq.select(Person.PERSON.ID, Person.PERSON.NAME)
+			.from(Person.PERSON)
+			.fetch(mapping(PersonDTO::new))
+			;
+		assertThat(personDTOS.size()).isEqualTo(4);
+	}
+}
+----
+
+[source,java]
+.does not work: with @ExtendWith(SpringExtension.class)
+----
+import org.jooq.DSLContext;
+import org.jooq.SQLDialect;
+
+@ExtendWith(SpringExtension.class)
+@ContextConfiguration(classes = {TestcontainersConfiguration.class}) // Or @Import(TestcontainersConfiguration.class)
+@RequiredArgsConstructor
+class DbTest {
+	@Autowired
+	DataSource dataSource;
+
+	@Test
+	void jooq_list() throws SQLException {
+		DSLContext jooq = DSL.using(dataSource.getConnection(), SQLDialect.POSTGRES);
+		List<PersonDTO> personDTOS = jooq.select(Person.PERSON.ID, Person.PERSON.NAME)
+			.from(Person.PERSON)
+			.fetch(mapping(PersonDTO::new))
+			;
+		assertThat(personDTOS.size()).isEqualTo(4);
+	}
+}
+----
+
+This results in the error message: +
+`NoSuchBeanDefinitionException: No qualifying bean of type 'javax.sql.DataSource' available`
