@@ -14,7 +14,7 @@ TODO:
 == Running JOOQ Unittests
 
 
-=== works
+=== Unittest with JOOQ and Postgres-Testcontainer
 
 [source,java]
 ----
@@ -74,3 +74,77 @@ class DbTest {
 
 This results in the error message: +
 `NoSuchBeanDefinitionException: No qualifying bean of type 'javax.sql.DataSource' available`
+
+=== use a fixed port for a postgres testcontainer
+
+see logbook: Mon, 11.12.2023
+
+see 2023-11-12_spring-data-sql
+
+[source,java]
+----
+@Bean
+@ServiceConnection
+PostgreSQLContainer<?> postgresContainer() {
+    // return new PostgreSQLContainer<>(DockerImageName.parse("postgres:latest"));
+    int containerPort = 5432 ;
+    int localPort = 5432 ;
+    var container = new PostgreSQLContainer<>("postgres:latest")
+        .withUsername("postgres")
+        .withPassword("postgres")
+        .withReuse(false)
+        .withExposedPorts(5432, 5432)
+        .withCreateContainerCmdModifier(cmd -> cmd.withHostConfig(
+            new HostConfig()
+            .withPortBindings(
+                new PortBinding(
+                    Ports.Binding.bindPort(localPort),
+                    new ExposedPort(containerPort))
+            ))
+    );
+    return container;
+}
+----
+
+=== Injection of datasource
+
+see logbook Fri, 18.08.2023
+
+----
+@Bean
+@ServiceConnection
+  PostgreSQLContainer<?> postgresContainer() {
+    return new PostgreSQLContainer("postgres:latest")
+      .withUsername("postgres")
+      .withPassword("postgres");
+----
+
+reicht nicht, um im appcode eine DataSource zu injecten.
+Es muss noch folgende dependency hinzugefügt werden:
+implementation 'org.springframework.boot:spring-boot-starter-jdbc'
+(oder falls jooq im Einsatz ist reicht auch: implementation 'org.springframework.boot:spring-boot-starter-jooq')
+
+=== Sat, 15.07.2023
+
+Spring Boot 3.1.0 Testcontainers Support for Testing and Local Development:
+- https://www.youtube.com/watch?v=7i0C_QWpSn8&t=306s
+  1:06: spring initilizer deps: spring web, spring data jpa, flyway migrations, postgres, testcontainer
+
+Databases, jOOQ, and Testcontainers with Lukas Eder: https://www.youtube.com/watch?v=gLmMkB5QfY8
+  maven pom with groovy-plugin to generate jooq code:
+    Lukas Eder: https://github.com/jOOQ/jOOQ-mcve/blob/main/jOOQ-mcve-java-postgres/pom.xml
+    Simon Martinelli: https://github.com/simasch/jooq-workshop/tree/main/jooq-sakila (see pom.xml):
+    - uses flyway for film DB structure: jooq-workshop/jooq-sakila/src/main/resources/db/migration
+    - examples, excercises:
+      - uses flyway in test to insert film data
+      - jooq-workshop/jooq-sakila/src/test/java/ch/martinelli/edu/jooq/sakila/[demo|excercise]
+    - uses testcontainers
+    -> https://github.com/simasch/docker-postgres-sakila
+  testcontainers maven plugin: https://testcontainers.com/guides/working-with-jooq-flyway-using-testcontainers/
+  Etienne Studers gradle plugin: https://github.com/etiennestuder/gradle-jooq-plugin
+  Film/Actor database: https://www.jooq.org/sakila
+    https://github.com/jOOQ/sakila
+  Simon Martinelli, jOOQ Quick Start:
+    https://www.youtube.com/watch?v=UuNrcBgRGXw
+    https://github.com/simasch/jooq-quickstart
+
