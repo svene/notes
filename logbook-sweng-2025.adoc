@@ -224,28 +224,55 @@
 ==== Sat, 24.05.2025
 ==== Fri, 23.05.2025
 ==== Thu, 22.05.2025
+
 ==== Wed, 21.05.2025
-==== Tue, 20.05.2025
-==== Mon, 19.05.2025
+hikari connection pool sizing:
+https://github.com/brettwooldridge/HikariCP/wiki/About-Pool-Sizing
+
 ==== Sun, 18.05.2025
+pines ui:
+https://devdojo.com/pines
+
+uswds: design system for the US government:
+https://designsystem.digital.gov/
+
+Icons recommended by Deniz (https://discord.com/channels/725789699527933952/941815579440992337/1372885158080020480):
+https://lucide.dev/
+
+The one I used myself:
+https://icones.js.org/collection/lucide
+
+
 ==== Sat, 17.05.2025
 ==== Fri, 16.05.2025
 ==== Thu, 15.05.2025
+https://github.com/gnat/text-to-speech-ubuntu
+
 ==== Wed, 14.05.2025
-==== Tue, 13.05.2025
-==== Mon, 12.05.2025
+https://alistapart.com/article/web-typography-tables/
+
 ==== Sun, 11.05.2025
-==== Sat, 10.05.2025
+signals:
+https://github.com/dy/sprae
+
 ==== Fri, 09.05.2025
-==== Thu, 08.05.2025
-==== Wed, 07.05.2025
-==== Tue, 06.05.2025
-==== Mon, 05.05.2025
+https server:
+https://caddyserver.com/
+---
+https://discord.com/channels/725789699527933952/1156332663205011586/1368927146189394042
+the formdata event is a nice way to add extra computed values to a form
+---
+https://kisoft-me.github.io/training-material/
+
+
 ==== Sun, 04.05.2025
-==== Sat, 03.05.2025
-==== Fri, 02.05.2025
-==== Thu, 01.05.2025
+Still using ControlValueAccessor? It might be overkill:
+https://www.youtube.com/watch?v=0DAFZGy259Y
+
 ==== Wed, 30.04.2025
+
+https://jestjs.io/docs/snapshot-testing
+https://github.com/Orange-OpenSource/hurl
 
 ==== Tue, 29.04.2025
 https://cloudfour.com/thinks/faux-containers-in-css-grids/
