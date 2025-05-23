@@ -222,8 +222,17 @@
 ==== Mon, 26.05.2025
 ==== Sun, 25.05.2025
 ==== Sat, 24.05.2025
+
 ==== Fri, 23.05.2025
+Locality of Behavior (LoB) interview:
+https://docs.google.com/document/d/1M7vdvH36N4HNkOkyBeuMbzgn5CV6BSw4jAQ0cZvnAXM/edit?tab=t.0
+
+https://every-layout.dev/blog/css-components/
+
 ==== Thu, 22.05.2025
+
+HTMX OOB swap nuances:
+https://www.youtube.com/watch?v=YBcmAEerF5Y
 
 ==== Wed, 21.05.2025
 hikari connection pool sizing:
