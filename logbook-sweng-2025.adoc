@@ -210,8 +210,15 @@
 ==== Sat, 07.06.2025
 ==== Fri, 06.06.2025
 ==== Thu, 05.06.2025
+form validation js lib (no deps):
+https://github.com/dimmerz92/formageddon
+
 ==== Wed, 04.06.2025
-==== Tue, 03.06.2025
+webcomponent select:
+https://gist.github.com/yawaramin/088d2d86eddbb2a8f1da01358d2909e9
+https://github.com/whatwg/html/issues/11288
+https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/datalist
+
 ==== Mon, 02.06.2025
 https://discord.com/channels/725789699527933952/1156332623233302578/1378927707546583182
 a combo box implementation using a web component with only Light DOM
