@@ -209,6 +209,8 @@
 ==== Sun, 08.06.2025
 ==== Sat, 07.06.2025
 ==== Fri, 06.06.2025
+TODO: https://shopify.engineering/resilient-import-maps
+
 ==== Thu, 05.06.2025
 form validation js lib (no deps):
 https://github.com/dimmerz92/formageddon
