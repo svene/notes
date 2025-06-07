@@ -210,6 +210,11 @@
 ==== Sat, 07.06.2025
 ==== Fri, 06.06.2025
 TODO: https://shopify.engineering/resilient-import-maps
+---
+DjangoCon Europe 2025 | Django + HTMX: Patterns to Success
+https://www.youtube.com/watch?v=SDuqa82nx90
+17:02
+use property 'dataset' and data- attributes to store data
 
 ==== Thu, 05.06.2025
 form validation js lib (no deps):
