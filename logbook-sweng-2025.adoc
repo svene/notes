@@ -205,9 +205,12 @@
 ==== Thu, 12.06.2025
 ==== Wed, 11.06.2025
 ==== Tue, 10.06.2025
+https://www.oddbird.net/2023/11/17/components/
+: ...every article above mentions the enticing danger of ‘empty’ web components, where all the content is provided through attributes.
+
 ==== Mon, 09.06.2025
-==== Sun, 08.06.2025
-==== Sat, 07.06.2025
+https://frontendmasters.com/blog/light-dom-only/
+
 ==== Fri, 06.06.2025
 TODO: https://shopify.engineering/resilient-import-maps
 ---
