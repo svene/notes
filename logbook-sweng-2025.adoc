@@ -195,8 +195,22 @@
 ==== Sun, 22.06.2025
 ==== Sat, 21.06.2025
 ==== Fri, 20.06.2025
+https://unplannedobsolescence.com/blog/the-server-doesnt-render/
+https://mlog.nektro.net/
+
+https://github.com/dimmerz92/eavesdrop
+https://dev.to/yawaramin/why-hx-boost-is-actually-the-most-important-feature-of-htmx-3nc0
+
 ==== Thu, 19.06.2025
+https://thirstywing.substack.com/p/from-graphql-to-html
+
 ==== Wed, 18.06.2025
+https://discord.com/channels/725789699527933952/725789747212976259/1384850177579548713
+a nice snippet for server-driven dialogs
+<dialog
+  hx-on::load="this.showModal()"
+  hx-on:close="this.remove()"
+>
 ==== Tue, 17.06.2025
 HTML Web Components:
 https://gomakethings.com/html-web-components/
