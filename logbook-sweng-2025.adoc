@@ -189,11 +189,24 @@
 ==== Sat, 28.06.2025
 ==== Fri, 27.06.2025
 ==== Thu, 26.06.2025
-==== Wed, 25.06.2025
-==== Tue, 24.06.2025
-==== Mon, 23.06.2025
+https://rstacruz.github.io/rscss/elements.html
+https://webjsx.org/
+
+https://discord.com/channels/725789699527933952/1156332851093065788/1387625404835299348
+i've been exploring HTTP caching with conditional requests recently: https://yawaramin.github.io/dream-html/dream-html/Dream_html/#conditional-requests
+one thing i learned is that for handlers which can return full or fragment responses based on htmx request headers, the If-None-Match check should be done only when responding with a fragment, not when responding with a full page: https://github.com/yawaramin/dream-html/blob/eb1d800488f8ad2e0d5a7240627e53261c759a48/app/app.ml#L207
+
+https://discord.com/channels/725789699527933952/1149355150956314734/1387521122253410376
+is there a pseudo selector for when an element's [id] is the active url hash
+:target
+
+
 ==== Sun, 22.06.2025
+https://dev.to/yawaramin/why-hx-boost-is-actually-the-most-important-feature-of-htmx-3nc0
+
 ==== Sat, 21.06.2025
+https://www.jonoalderson.com/conjecture/javascript-broke-the-web-and-called-it-progress/
+
 ==== Fri, 20.06.2025
 https://unplannedobsolescence.com/blog/the-server-doesnt-render/
 https://mlog.nektro.net/
