@@ -183,11 +183,33 @@
 ==== Fri, 04.07.2025
 ==== Thu, 03.07.2025
 ==== Wed, 02.07.2025
-==== Tue, 01.07.2025
-==== Mon, 30.06.2025
+
+define only once:
+https://discord.com/channels/725789699527933952/1156332623233302578/1389683294735700130
+actually, customElements.get('my-component') || customElement.define('my-component', class extends HTMLElement { ... }); probably does like 90% of what i need here
+---
+https://github.com/croxton/htmx-booster-pack
+---
+https://discord.com/channels/725789699527933952/725789747212976259/1389671436888707236
+<!-- my-component.template.html -->
+<my-component>...</my-component>
+{{ if !my_component_js }}
+<!-- In the top level of the response: -->
+<script
+  defer
+  src=/static/my-component.js
+  id=my-component.js
+  hx-swap-oob=true
+  hx-preserve=true
+></script>
+{{ my_component_js = true }}
+{{ endif }}
+---
+
 ==== Sun, 29.06.2025
-==== Sat, 28.06.2025
-==== Fri, 27.06.2025
+linter and prettier alternative in rust:
+https://biomejs.dev/
+
 ==== Thu, 26.06.2025
 https://rstacruz.github.io/rscss/elements.html
 https://webjsx.org/
