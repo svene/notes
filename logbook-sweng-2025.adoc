@@ -168,22 +168,76 @@
 ==== Sat, 19.07.2025
 ==== Fri, 18.07.2025
 ==== Thu, 17.07.2025
-==== Wed, 16.07.2025
-==== Tue, 15.07.2025
-==== Mon, 14.07.2025
-==== Sun, 13.07.2025
-==== Sat, 12.07.2025
-==== Fri, 11.07.2025
-==== Thu, 10.07.2025
-==== Wed, 09.07.2025
-==== Tue, 08.07.2025
-==== Mon, 07.07.2025
-==== Sun, 06.07.2025
-==== Sat, 05.07.2025
-==== Fri, 04.07.2025
-==== Thu, 03.07.2025
-==== Wed, 02.07.2025
+from: https://discord.com/channels/725789699527933952/909436816388669530/1395073825745666210
+https://htmx-local.puny.engineering/
 
+css-if for visualizing UI state:
+https://developer.chrome.com/blog/if-article#demo_visualizing_ui_state
+https://www.youtube.com/watch?v=Apn8ucs7AL0
+https://lea.verou.me/blog/2024/css-conditionals/
+
+==== Wed, 16.07.2025
+https://dev.to/clairecodes/my-misconceptions-about-the-universal-selector-in-css-4ngm
+https://developer.mozilla.org/en-US/docs/Learn_web_development/Extensions/Performance/CSS
+from:
+https://discord.com/channels/725789699527933952/1149355150956314734/1394780447531073697
+
+https://animate.style/
+
+==== Mon, 14.07.2025
+fox's css reset:
+https://discord.com/channels/725789699527933952/1149355150956314734/1393736716975865926
+*, *::before, *::after { position: relative; margin: 0; padding: 0; box-sizing: border-box; }
+
+Example DB models:
+https://modelarchive.databases.biz/data_models/index.html
+from:
+https://discord.com/channels/725789699527933952/1360311940244701184/1393845907446960228
+
+SQLite:
+https://www.youtube.com/watch?v=9RArbqGOvsw
+
+==== Sun, 13.07.2025
+Kevin Powell: Getting started with CSS Style Queries
+https://www.youtube.com/watch?v=WP5CC5yawfs
+(made demo in simple-html)
+4:35
+card:
+<article class="article-preview">
+  <h1>title</h1>
+  <img ...>
+  <p>description</p>
+</article>
+
+6:08
+-> container style queries can be used for themeing
+
+6:55
+-> should we use modifier class instead ?
+
+
+
+==== Sat, 12.07.2025
+No More Media Queries? Try This Simple CSS Trick!
+https://www.youtube.com/watch?v=MDqhKkEN-IM
+
+How I Used CSS GRID to Create a PHOTO GALLERY layout in 10 Minutes
+https://www.youtube.com/watch?v=VN6l8lit2no
+
+The Easy Way to Pick UI Colors
+https://www.youtube.com/watch?v=vvPklRN0Tco
+brilliant.org/Sajid
+
+==== Fri, 11.07.2025
+https://github.com/croxton/htmx-booster-pack
+
+==== Fri, 04.07.2025
+https://www.lorenstew.art/blog/eta-htmx-lit-stack
+
+==== Thu, 03.07.2025
+https://github.com/oanda/git-deps
+
+==== Wed, 02.07.2025
 define only once:
 https://discord.com/channels/725789699527933952/1156332623233302578/1389683294735700130
 actually, customElements.get('my-component') || customElement.define('my-component', class extends HTMLElement { ... }); probably does like 90% of what i need here
@@ -205,6 +259,8 @@ https://discord.com/channels/725789699527933952/725789747212976259/1389671436888
 {{ my_component_js = true }}
 {{ endif }}
 ---
+git large file storage
+https://git-lfs.com/
 
 ==== Sun, 29.06.2025
 linter and prettier alternative in rust:
