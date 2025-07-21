@@ -340,7 +340,9 @@ template components, markup components
 https://frontendmasters.com/blog/light-dom-only/
 
 ==== Fri, 06.06.2025
-TODO: https://shopify.engineering/resilient-import-maps
+TODO (done):
+https://shopify.engineering/resilient-import-maps
+-> /home/se/se/sweng/0_daily/1-projects/simple-html/demo/2025/2025-07-21_importmap/index.html
 ---
 DjangoCon Europe 2025 | Django + HTMX: Patterns to Success
 https://www.youtube.com/watch?v=SDuqa82nx90
@@ -561,7 +563,7 @@ htmx validation:
 https://discord.com/channels/725789699527933952/725789747212976259/1359600155338342421
 
 ==== Mon, 07.04.2025
-todo: Using the [name] attribute to turn a collection of <details> into an accordion is great!
+Using the [name] attribute to turn a collection of <details> into an accordion is great!
 https://discord.com/channels/725789699527933952/1156332623233302578/1358624966635163658
 
 ==== Fri, 04.04.2025
@@ -592,8 +594,9 @@ https://discord.com/channels/725789699527933952/725789747212976259/1352049267346
 <oob hx-swap-oob="delete:#form1 .error-field"></oob> <!-- remove all existing errors from the form -->
 
 ==== Tue, 18.03.2025
-TODO: chrome 135:
+TODO (done): chrome 135:
 https://developer.chrome.com/blog/command-and-commandfor
+-> /home/se/se/sweng/0_daily/1-projects/simple-html/demo/2025/2025-07-20_commandfor/index.html
 
 ==== Sat, 15.03.2025
 servers:
@@ -619,10 +622,10 @@ transition-duration: 0.03s;
 -> actually changed it to not enable globally but only for <a> tags.
 
 ==== Sun, 09.03.2025
-TODO:
+TODO (done):
 https://www.matuzo.at/blog/2022/100-days-of-more-or-less-modern-css
 
-TODO: evtl. für GMR fotos
+TODO (wont): evtl. für GMR fotos
 https://splidejs.com/
 -> kind of commercial
 
@@ -662,7 +665,8 @@ ubuntu upgrade: https://ubuntu.com/blog/how-to-upgrade-from-ubuntu-18-04-lts-to-
 simple-html: html components with xenon
 
 ==== Sat, 08.02.2025
-TODO: https://drab.robino.dev/
+TODO (hmm):
+https://drab.robino.dev/
 
 ==== Fri, 07.02.2025
 https://discord.com/channels/725789699527933952/725789747212976259/1337204631545053277
@@ -696,7 +700,8 @@ https://kirbysayshi.com/2013/08/19/maintaining-scroll-position-knockoutjs-list.h
 where to put my css library in the dom: https://discord.com/channels/725789699527933952/1149355150956314734/1334296792136814612
 
 ==== Wed, 29.01.2025
-TODO: https://simplewebauthn.dev/
+TODO:
+https://simplewebauthn.dev/
 https://www.keycloak.org/2023/11/keycloak-2300-released#_passkeys_support
 TODO: keycloak from codecamp
 
@@ -725,7 +730,8 @@ https://codeberg.org/dz4k/dependent-input
 
 ==== Sat, 18.01.2025
 build your own macros:
-TODO: https://www.sweetjs.org/
+TODO (hmm):
+https://www.sweetjs.org/
 
 https://discord.com/channels/725789699527933952/974086000307499028/1329767214378913883
 CoolVer versioning system from Deniz: https://deniz.aksimsek.tr/2025/version/
@@ -747,7 +753,8 @@ local npm publishing (eingebaut in 2025-01-12_svene21-npm-util-lib):
 ---
 
 - Sat, 11.01.2025
-todo: GOOD: https://www.spicyweb.dev/action-web-components/
+todo: GOOD:
+https://www.spicyweb.dev/action-web-components/
 fasthtml components: https://about.fastht.ml/components
 ---
 

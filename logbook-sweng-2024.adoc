@@ -76,9 +76,9 @@ fonts: x hoch 2 etc.: https://developer.mozilla.org/en-US/docs/Web/CSS/font-vari
 ---
 from: https://discord.com/channels/725789699527933952/1156332663205011586/1315824418055786640
  https://codeberg.org/dz4k/htmx-holy-grail-data-table/src/branch/release/public/table-sorter.js
- TODO: https://justinfagnani.com/2015/12/21/real-mixins-with-javascript-classes/
+ TODO (good): https://justinfagnani.com/2015/12/21/real-mixins-with-javascript-classes/
 ---
-TODO: https://clace.io/blog/errors/
+https://clace.io/blog/errors/
 
 - Mon, 09.12.2024
 <button id="the-button">Send 2 requests</button>
@@ -86,7 +86,7 @@ TODO: https://clace.io/blog/errors/
 <div id="two" hx-post="/2" hx-trigger="click from:#the-button"></div>
 
 - Sat, 07.12.2024
-TODO: https://dev.to/yawaramin/handling-form-errors-in-htmx-3ncg
+TODO (good): https://dev.to/yawaramin/handling-form-errors-in-htmx-3ncg
 https://meyerweb.com/eric/thoughts/2023/11/01/blinded-by-the-light-dom/
 
 - Wed, 04.12.2024
@@ -99,7 +99,7 @@ it can't but there's a JS event for an animation ending, the specific code in th
 and the fadeout animation is just @keyframes fadeout { from { opacity: 1; } to { opacity: 0; } }
 resulting in a 3s delay after being added, then a 1s fadeout before being removed entirely
 ---
-TODO: https://www.morganwebdev.org/posts/speculation-refresh/
+https://www.morganwebdev.org/posts/speculation-refresh/
 
 - Thu, 28.11.2024
 htmx and toasts: https://themurph.hashnode.dev/go-beyond-the-basics-mastering-toast-notifications-with-go-and-htmx
@@ -159,7 +159,8 @@ signals:
 https://chromewebstore.google.com/detail/htmx-debugger
 
 - Sat, 19.10.2024
-TODO webcomponents: https://tympanus.net/codrops/2024/08/20/server-first-web-components-with-dsd-htmx-and-islands/
+TODO (hmm) webcomponents:
+https://tympanus.net/codrops/2024/08/20/server-first-web-components-with-dsd-htmx-and-islands/
 ---
 JS generator for fibonacci:
  https://discord.com/channels/725789699527933952/974086000307499028/1296957046855434260
@@ -270,9 +271,7 @@ https://thecopenhagenbook.com/
 - Fri, 11.10.2024
 PWA architecture: https://developer.chrome.com/blog/beyond-spa
 ---
-TODO: https://dev.to/yawaramin/handling-form-errors-in-htmx-3ncg
-
-- Thu, 10.10.2024
+TODO (good): https://dev.to/yawaramin/handling-form-errors-in-htmx-3ncg
 
 - Wed, 09.10.2024
 html builder in js by Deniz:
@@ -294,7 +293,7 @@ There's tons more I have to say on this topic that isn't really suited for a You
 -----
 TLDR, web components aren't framework components, the majority of the web may technically run on frameworks but that doesn't imply the majority of web developers develop in them, these are different technologies for different purposes, not understanding web components doesn't mean they're bad, and yeah I feel you it sucks that they're a pain to integrate together.
 -----
-TODO: fox-example of <project-card> component with an without facet: https://discord.com/channels/725789699527933952/1179589992452980806/1293413376789053535
+TODO: fox-example of <project-card> component with and without facet: https://discord.com/channels/725789699527933952/1179589992452980806/1293413376789053535
 
 - Tue, 08.10.2024
 https://jakelazaroff.com/words/building-a-single-page-app-with-htmx/

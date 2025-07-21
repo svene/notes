@@ -10,7 +10,7 @@ and https://www.jooq.org/doc/latest/manual/code-generation/codegen-configuration
 
  to generate jooq classes
 
- todo: new idea: create jooq-classes as final java based flyway-migration ?
+ todo: new idea: create jooq-classes as final java based step (using callback) after flyway-migration ?
 
 - Fri, 29.12.2023
 REST discussion: https://news.ycombinator.com/item?id=38798430

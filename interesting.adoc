@@ -18,6 +18,3 @@
 
 == TODO
 
-- https://www.rx-angular.io/docs/template/api/let-directive
-- https://github.com/spring-projects/spring-boot/issues/29461
-- https://twitter.com/sidpalas/status/1634194026500096000[Write Better Dockerfiles for Nodejs]
