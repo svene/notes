@@ -157,8 +157,24 @@
 ==== Wed, 30.07.2025
 ==== Tue, 29.07.2025
 ==== Mon, 28.07.2025
+https://htmxlabs.com/
+https://github.com/ravenclaw900/nomini
+
 ==== Sun, 27.07.2025
+Thinking on ways to solve TOASTS
+https://web.dev/shows/gui-challenges/R75ZVW4LW5o
+
 ==== Sat, 26.07.2025
+MTMC - MonTana state Mini Computer
+https://github.com/msu/mtmc/
+---
+page transitions etc:
+https://www.jonoalderson.com/conjecture/its-time-for-modern-css-to-kill-the-spa/
+
+https://www.vanillastack.tools/resources.html
+
+
+
 ==== Fri, 25.07.2025
 https://colton.dev/blog/tailwind-is-the-worst-of-all-worlds/
 ->for react:
