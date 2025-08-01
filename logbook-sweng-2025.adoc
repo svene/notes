@@ -153,9 +153,81 @@
 ==== Sun, 03.08.2025
 ==== Sat, 02.08.2025
 ==== Fri, 01.08.2025
-==== Thu, 31.07.2025
-==== Wed, 30.07.2025
-==== Tue, 29.07.2025
+
+spring-boot with only spring-data-jdbc (no JPA)
+
+| Use Case                           | Entity Required? | Works with DTO?            | Is Function Name Important? |
+| ---------------------------------- | ---------------- | -------------------------- | --------------------------- |
+| `@Query` with DTO                  | ❌ No             | ✅ Yes                      | ❌ No                        |
+| `findBy...` method (derived query) | ✅ Yes            | ❌ No                       | ✅ Yes                       |
+| `@Query` with Entity               | ✅ Yes            | ✅ Yes (if manually mapped) | ❌ No                        |
+| `findBy...` returning an Entity    | ✅ Yes            | ✅ Yes                      | ✅ Yes                       |
+| `findBy...` returning a DTO        | ❌ Not Supported  | ❌ No                       | ✅ Yes (but won’t work)      |
+
+Quick Rule of Thumb:
+Using @Query? You control the SQL → name doesn't matter.
+Using findBy...? Spring parses the name → name must follow the convention, and you need an entity.
+
+updates:
+@Modifying
+@Query("UPDATE customers SET email = :email WHERE name = :name")
+int someMethodNameWhichIsNotImportant(String name, String email);
+
+deletes:
+@Modifying
+@Query("DELETE FROM customers WHERE email = :email")
+int deleteSomething(String email);
+
+built-in delete:
+customerRepository.deleteById(42L);
+
+| Operation Type      | Derived from Method Name | Requires `@Query` |
+| ------------------- | ------------------------ | ----------------- |
+| `SELECT`            | ✅ Yes                    | ❌ Optional        |
+| `UPDATE` / `DELETE` | ❌ No                     | ✅ Required        |
+| `INSERT` / `SAVE`   | ❌ (Handled via `save`)   | ❌ No              |
+
+
+To get access to built-in CRUD methods like save(), findById(), deleteById(),
+etc., in Spring Data JDBC, you typically extend one of the following:
+- CrudRepository<T, ID>
+-> save(T entity), findById(ID id), findAll(), deleteById(ID id), count()
+
+- PagingAndSortingRepository<T, ID>
+-> Adds: findAll(Pageable pageable), findAll(Sort sort)
+-> You still get all CrudRepository methods too.
+
+- Repository<T, ID>
+This is the least specific interface — more like a marker. Use this only if:
+- You don’t want any built-in methods,
+- You want to define only custom queries, e.g., using @Query.
+
+| Interface                           | Built-in Methods              | Use Case                         |
+| ----------------------------------- | ----------------------------- | -------------------------------- |
+| `CrudRepository<T, ID>`             | ✅ Basic CRUD methods          | Most common default              |
+| `PagingAndSortingRepository<T, ID>` | ✅ CRUD + paging/sorting       | If you need pagination/sorting   |
+| `Repository<T, ID>`                 | ❌ None — fully custom queries | If you want fine-grained control |
+
+Inserts:
+- define entity: @Table("customers") public class Customer {...}
+- public interface CustomerRepository extends CrudRepository<Customer, Long> { // no additional method needed for insert }
+Customer newCustomer = new Customer();
+newCustomer.setName(name);
+newCustomer.setEmail(email);
+return customerRepository.save(newCustomer);  // inserts if id==null (otherwise updates), returns generated id as well
+
+Insert with @Query:
+@Modifying
+@Query("INSERT INTO customers(name, email) VALUES (:name, :email)")
+void insertCustomer(String name, String email);
+What you lose compared to save() on an entity:
+| Feature                 | `save()` (entity)        | `@Query` Insert             |
+| ----------------------- | ------------------------ | --------------------------- |
+| Automatic ID generation | ✅ maps generated ID back | ❌ no automatic ID retrieval |
+| Entity state tracking   | ✅ managed by Spring Data | ❌ none                      |
+| Type-safe mapping       | ✅ via entity fields      | ❌ manual parameter binding  |
+| Ease of use             | ✅ simple                 | ❌ more manual work          |
+
 ==== Mon, 28.07.2025
 https://htmxlabs.com/
 https://github.com/ravenclaw900/nomini
