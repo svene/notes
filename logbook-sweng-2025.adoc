@@ -151,7 +151,12 @@
 ==== Tue, 05.08.2025
 ==== Mon, 04.08.2025
 ==== Sun, 03.08.2025
-==== Sat, 02.08.2025
+npm release withouth package.json ? (e.g. for htmx):
+https://github.com/gnat/surreal/blob/main/.github/workflows/npm.yml
+from:
+https://discord.com/channels/725789699527933952/1331304769930788915/1401561766256840705
+
+
 ==== Fri, 01.08.2025
 
 spring-boot with only spring-data-jdbc (no JPA)
