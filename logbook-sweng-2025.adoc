@@ -141,15 +141,35 @@
 ==== Fri, 15.08.2025
 ==== Thu, 14.08.2025
 ==== Wed, 13.08.2025
-==== Tue, 12.08.2025
-==== Mon, 11.08.2025
-==== Sun, 10.08.2025
+Big Sky DevCon 2025
+https://www.youtube.com/playlist?list=PLE57lymIlIyVXwAO-pO6gvMmnd6isAFTR
+
+htmx event flow:
+https://mermaid.live/edit#pako:eNqVV9tu40QYfhXLq72bFufkHIQWNYfm1KTZJs1u23Dh2OPEWscTxs62S7cSSLAXsFCgq5VYuhwkFvYCCSRueJ6-ADwC43-c8cRpQc1VPPP933_65h_7VDWJhdWSarvk2JwaNFAG1ZGnsN_du0o_YAv8aetopP7zw5e_K_s-pkrTCzA1zMAh3rtj-s69AXUmE7Zee4y9YKS-r2xs3FPKp6HJixfKNJidlAIOGalnnFA4qRDPdujMCMmU3tTwMd8qA0mFkVy9vuAcJocKjkoIecoAl58q0R62RupTpcqivXr17d9_nUuGkz38wQL7YXwJ89fPFdPwTOy63PwQkj3_WKl5lkCLgIeG61hr4VYh3EYDkr74XEK9J-JtNCKPB9gP_TSbYZyXL0Scj4XR8i8W_ptN8NBqMQ9AHvO2WlImTQ9MQ_52-4ivJcltw4FUI-p2G6h3diDv775ew08NN5DwOzuAP0x6Z20YLn3XEil3ibQqahm1RC5kDSr46iMexBjbhGLRuSjhmpTvnOJQdVHnEvssIsNl0ua725Dfxc8ydR9f1-MuDo4JfSTHtQ0514Hi-Vci8j5XPMfUuQi4m5-4m5MpLbnEsHw4TEsklEVphuo-_zMuAyUm9n3Hm4hUo65zys9iyjklE8qwsT4A2Ob6e8Mo_TnxfMz-mNh5HBbgbK34EaRheJYbOuVqkIrXX5gmOHmqcHFcvOUhGDabALveDksslpHUlRqlhIZmHTD75g0381m1YQvGBizRKIrIIsl1_ocycGaYLIKQrXvEl_hIWa4nbEDCW2NCwWR3RdRhANFWsudx8eW2c6n3-Cz7QlbOMvuorL2bNHn_KBoJceGSk6h3vV73uNdPVvR6bMzXWxmuylHv3RhMYn_VYT_U4-Vb2d-AGp7vhFNg3WvD8QNCn8iO-1CuAU_5lUwUgffnK1NtAPgaP_QXLwUlh8UjriaO9G_PwnHZW_hTONLhmY7WwNmcbWCLXVAkohKuBAWUdA_PXcPEIUedH-plnSnfYRw3Mlx9_1LpEg-s96PxwOdD9FSvy0_yXRewVkC7-OL-0vXK1po2d3fL8nDgpvyW5dcsu5lDTM3FM8bix4Url1fvnEplJVlCxmVJV8ubEa5GpQr3KJPIEroVincFWeX33jDhjE_7YfKEET_YSEp1KPsw1hwMgf8BD_pXWVBRPbrsBUagHwD6YeL6B9br4A8BfsDV-gsHu_JIOwDAFn_7OX8mB4mDwMXrnaqQ2dzFcF74i9MWUETn7r58cQobGH1KzwimPl_rAKzTgTx-FHnglRHZjUD8aXflqdORvUovdE_iOW-6hu9Xsa3AzRTWRbEd1y3dwRk7bVvIDyh5hEt3UsW8bqWjx41jxwqmpcz8BJnEJbR0R9O0BB-MG4nPzuCcnRN8-XHKNhJ86f_is7Dp-KygMqXNSDVBaefypqbdgnIei2GZdMHO4YJgzBQKOGPeghF6sxIhHmMs-KxMmhX1NnyeJbOZOItNwWamU4Xc-BYt8fj7jJyvxuJJCUZNyxf18S3im_LZKMeYsgu4KBj1QtHOFP6fUeJVtmItystlVEXbqIF20BA9QA_RAWKnSqhMRlZQDfXQHuqjRgM1m6jVQm3UROUyYrNb1pFsVEf7siDkrQ7qol3U6aB2G7G3XtFkGXOI7i-7JS-35KLLGwO0vY3qdVSpIDY9pTpykIrUCXUslX0xLTBSZ5h9G4WP6mm4P1KDKRvxI7XE_loGfTRSR94Zs5kb3iEhs6UZJYvJVGUv-q7PnhZwm1YdY0KNGMKCxrRCFl6gljLpHHCopVP1RC2lUvpmUU9nCtm8nk9l9WIWqU_U0kYqp-ubWiGt5zO5bKGYzafPkPoh-E1vajktldGzxWJK17JaUUcqthyWXId_YsKX5tm_oCvCqA
+
+view transition tricks:
+https://vtbag.dev/
+
 ==== Sat, 09.08.2025
+increase linux inotify limit for IntelliJ IDEA
+https://youtrack.jetbrains.com/articles/SUPPORT-A-1715/Inotify-Watches-Limit-Linux
+
 ==== Fri, 08.08.2025
+https://www.dmitry.ie/2024/why-building-billing-systems-is-so-painful
+https://www.valentinog.com/blog/formdata/#getting-to-know-the-formdata-event
+
+alpinejs alternative?:
+https://github.com/nanostores/query
+
 ==== Thu, 07.08.2025
-==== Wed, 06.08.2025
+https://tonsky.me/blog/lockfiles/
+https://github.com/t-mart/kill-sticky
+https://github.com/oanda/git-deps
+
 ==== Tue, 05.08.2025
-==== Mon, 04.08.2025
+Standards based import map package management:
+https://jspm.org/
+
 ==== Sun, 03.08.2025
 npm release withouth package.json ? (e.g. for htmx):
 https://github.com/gnat/surreal/blob/main/.github/workflows/npm.yml
