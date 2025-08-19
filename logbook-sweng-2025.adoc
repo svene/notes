@@ -139,6 +139,8 @@ from: https://discord.com/channels/725789699527933952/974086000307499028/1407089
 "I switched to https://www.statichost.eu/ for https://missing.style/ and my personal sites and it's so nice":
 
 https://www.statichost.eu/
+-----
+https://github.com/vipcxj/beanknife
 
 ==== Mon, 18.08.2025
 ==== Sun, 17.08.2025
