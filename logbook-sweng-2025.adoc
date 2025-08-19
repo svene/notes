@@ -135,11 +135,36 @@
 ==== Thu, 21.08.2025
 ==== Wed, 20.08.2025
 ==== Tue, 19.08.2025
+from: https://discord.com/channels/725789699527933952/974086000307499028/1407089911575740506
+"I switched to https://www.statichost.eu/ for https://missing.style/ and my personal sites and it's so nice":
+
+https://www.statichost.eu/
+
 ==== Mon, 18.08.2025
 ==== Sun, 17.08.2025
-==== Sat, 16.08.2025
-==== Fri, 15.08.2025
+https://css-tricks.com/covering-hiddenuntil-found/
+
+chat-gpt for HTML-URL design:
+Customer + order + item selected:
+/ui/app?customers.show=17&orders.show=42&items.show=5
+What happens:
+- Panel A → customer list
+- Panel B → customer 17 details
+- Panel C → order 42 details
+- Panel D → item list for order 42
+- Panel E → item 5 details
+
+Edit customer + new item:
+/ui/app?customers.edit=17&orders.show=42&items.new=true
+
+Edit customer + edit order
+/ui/app?customers.edit=17&orders.edit=42
+
+
 ==== Thu, 14.08.2025
+The Complete HTMX Event Flow
+https://gist.github.com/MichaelWest22/f74903996be03bb406b1cc35e5f338ec
+
 ==== Wed, 13.08.2025
 Big Sky DevCon 2025
 https://www.youtube.com/playlist?list=PLE57lymIlIyVXwAO-pO6gvMmnd6isAFTR
