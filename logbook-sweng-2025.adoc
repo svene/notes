@@ -141,6 +141,9 @@ from: https://discord.com/channels/725789699527933952/974086000307499028/1407089
 https://www.statichost.eu/
 -----
 https://github.com/vipcxj/beanknife
+---
+junit config in gradle 9.0.0:
+https://docs.gradle.org/current/userguide/upgrading_version_8.html#test_framework_implementation_dependencies
 
 ==== Mon, 18.08.2025
 ==== Sun, 17.08.2025
