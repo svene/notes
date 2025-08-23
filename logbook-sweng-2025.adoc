@@ -131,9 +131,18 @@
 ==== Mon, 25.08.2025
 ==== Sun, 24.08.2025
 ==== Sat, 23.08.2025
+JOOQ: generation from sql file:
+https://www.jooq.org/doc/latest/manual/code-generation/codegen-meta-sources/codegen-ddl/
+https://www.jooq.org/doc/latest/manual/code-generation/codegen-meta-sources/codegen-liquibase/
+---
+
 ==== Fri, 22.08.2025
 ==== Thu, 21.08.2025
 ==== Wed, 20.08.2025
+https://discord.com/channels/725789699527933952/796428329531605032/1407442944780275853
+there's a simple rule to avoiding injections in inline scripts (javascript or hyperscript): never {{ interpolate }} anything into a script, and if you must, convert it into JSON
+JSON is valid JS and _hs syntax, but won't have any side effects
+
 ==== Tue, 19.08.2025
 from: https://discord.com/channels/725789699527933952/974086000307499028/1407089911575740506
 "I switched to https://www.statichost.eu/ for https://missing.style/ and my personal sites and it's so nice":
