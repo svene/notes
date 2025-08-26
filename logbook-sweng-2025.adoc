@@ -129,7 +129,12 @@
 ==== Wed, 27.08.2025
 ==== Tue, 26.08.2025
 ==== Mon, 25.08.2025
+https://unplannedobsolescence.com/blog/less-htmx-is-more/
+
 ==== Sun, 24.08.2025
+htmx data-loading extension:
+https://github.com/bigskysoftware/htmx-extensions/blob/main/src/loading-states/README.md
+
 ==== Sat, 23.08.2025
 JOOQ: generation from sql file:
 https://www.jooq.org/doc/latest/manual/code-generation/codegen-meta-sources/codegen-ddl/
