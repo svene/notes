@@ -128,6 +128,33 @@
 ==== Thu, 28.08.2025
 ==== Wed, 27.08.2025
 ==== Tue, 26.08.2025
+https://dev.to/yawaramin/why-hx-boost-is-actually-the-most-important-feature-of-htmx-3nc0
+https://unplannedobsolescence.com/blog/less-htmx-is-more/
+https://unplannedobsolescence.com/blog/hard-page-load/
+https://unplannedobsolescence.com/blog/behavior-belongs-in-html/
+
+https://developer.chrome.com/blog/paint-holding
+https://www.jonoalderson.com/conjecture/its-time-for-modern-css-to-kill-the-spa/
+htmx.config.globalViewTransitions = true;
+https://htmx.org/essays/view-transitions/
+https://htmx.org/docs/#view-transitions
+https://developer.mozilla.org/en-US/docs/Web/API/View_Transition_API
+-----
+s.a. 11.3.2025:
+htmx view transitions:
+// JS
+htmx.config.globalViewTransitions = true;
+
+/* CSS */
+body {
+transition-duration: 0.03s;
+}
+-> actually changed it to not enable globally but only for <a> tags.
+-----
+
+https://alchemists.io/articles/htmx_view_transitions
+
+
 ==== Mon, 25.08.2025
 https://unplannedobsolescence.com/blog/less-htmx-is-more/
 
