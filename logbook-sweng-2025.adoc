@@ -128,10 +128,13 @@
 ==== Thu, 28.08.2025
 ==== Wed, 27.08.2025
 ==== Tue, 26.08.2025
+related info about server side frontend architecture design (collected, most of them noted earlier here):
 https://dev.to/yawaramin/why-hx-boost-is-actually-the-most-important-feature-of-htmx-3nc0
 https://unplannedobsolescence.com/blog/less-htmx-is-more/
 https://unplannedobsolescence.com/blog/hard-page-load/
 https://unplannedobsolescence.com/blog/behavior-belongs-in-html/
+
+https://dev.to/yawaramin/handling-form-errors-in-htmx-3ncg
 
 https://developer.chrome.com/blog/paint-holding
 https://www.jonoalderson.com/conjecture/its-time-for-modern-css-to-kill-the-spa/
@@ -153,6 +156,11 @@ transition-duration: 0.03s;
 -----
 
 https://alchemists.io/articles/htmx_view_transitions
+-----
+From:
+https://discord.com/channels/725789699527933952/725789747212976259/1409605914155290745
+TODO: I was very interested to learn today that custom elements can mix light and shadow DOM content by using/abusing slots:
+https://www.youtube.com/watch?v=vlmtVmWimD4
 
 
 ==== Mon, 25.08.2025
