@@ -127,13 +127,16 @@
 ==== Fri, 29.08.2025
 ==== Thu, 28.08.2025
 ==== Wed, 27.08.2025
+TODO:
+https://calendar.perfplanet.com/2024/simple-web-performance-mentoring/
+
 ==== Tue, 26.08.2025
 related info about server side frontend architecture design (collected, most of them noted earlier here):
 https://dev.to/yawaramin/why-hx-boost-is-actually-the-most-important-feature-of-htmx-3nc0
 https://unplannedobsolescence.com/blog/less-htmx-is-more/
 https://unplannedobsolescence.com/blog/hard-page-load/
 https://unplannedobsolescence.com/blog/behavior-belongs-in-html/
-
+-> see form errorhandling section. TODO: create WebComponent for this
 https://dev.to/yawaramin/handling-form-errors-in-htmx-3ncg
 
 https://developer.chrome.com/blog/paint-holding
