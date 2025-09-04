@@ -119,13 +119,26 @@
 ==== Sat, 06.09.2025
 ==== Fri, 05.09.2025
 ==== Thu, 04.09.2025
+htmx:
+hx-get URLs with path parameters:
+Discussion:
+https://discord.com/channels/725789699527933952/725789747212976259/1412798656653819924
+https://github.com/bigskysoftware/htmx/issues/1202
+extension: path-params:
+https://github.com/bigskysoftware/htmx-extensions/blob/main/src/path-params/README.md
+
+---
+using selects for nav is a little troublesome because the option elements don't recieve click events, it's doable but takes some work
+from:
+https://discord.com/channels/725789699527933952/725789747212976259/1412911224055795824
+a solution:
+https://alchemists.io/projects/htmx-select
+
+
 ==== Wed, 03.09.2025
 ==== Tue, 02.09.2025
-==== Mon, 01.09.2025
-==== Sun, 31.08.2025
-==== Sat, 30.08.2025
-==== Fri, 29.08.2025
-==== Thu, 28.08.2025
+https://v2.remix.run/docs/discussion/routes/
+
 ==== Wed, 27.08.2025
 TODO:
 https://calendar.perfplanet.com/2024/simple-web-performance-mentoring/
