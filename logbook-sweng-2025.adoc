@@ -118,6 +118,13 @@
 ==== Sun, 07.09.2025
 ==== Sat, 06.09.2025
 ==== Fri, 05.09.2025
+https://github.com/zakirullin/cognitive-load
+https://ntietz.com/blog/lets-say-instead-of-auth/
+https://minds.md/benji/frameworks
+https://fhur.me/posts/2024/thats-not-an-abstraction
+https://www.hyrumslaw.com/
+https://blog.jooq.org/why-you-should-not-implement-layered-architecture
+
 ==== Thu, 04.09.2025
 htmx:
 hx-get URLs with path parameters:
