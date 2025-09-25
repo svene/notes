@@ -1,5 +1,304 @@
 = Maven
 
+== Setting Java version
+
+[source,xml]
+.instead of:
+----
+<maven.compiler.source>21</maven.compiler.source>
+<maven.compiler.target>21</maven.compiler.target>
+----
+
+[source,xml]
+.better use (Since Java 9):
+----
+<maven.compiler.release>21</maven.compiler.release>
+----
+
+[source,xml]
+----
+<properties>
+  <java.version>21</java.version>
+  <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+</properties>
+
+<build>
+  <plugins>
+    <plugin>
+      <groupId>org.apache.maven.plugins</groupId>
+      <artifactId>maven-compiler-plugin</artifactId>
+      <version>3.13.0</version>
+      <configuration>
+        <release>${java.version}</release>
+      </configuration>
+    </plugin>
+  </plugins>
+</build>
+----
+
+== Test plugins
+
+Always configure the 'surefire' and 'failsafe' plugins for testing:
+
+[source,xml]
+.complete pom.xml example:
+----
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+                             https://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.example</groupId>
+    <artifactId>my-app</artifactId>
+    <version>1.0.0-SNAPSHOT</version>
+    <packaging>jar</packaging>
+    <name>My App</name>
+
+    <properties>
+        <!-- Java version -->
+        <java.version>21</java.version>
+
+        <!-- Encoding -->
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+    </properties>
+
+    <build>
+        <plugins>
+            <!-- Compiler plugin -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.13.0</version>
+                <configuration>
+                    <release>${java.version}</release>
+                </configuration>
+            </plugin>
+
+            <!-- Unit tests -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>3.2.5</version>
+                <configuration>
+                    <includes>
+                        <include>**/*Test.java</include>
+                        <include>**/*Tests.java</include>
+                        <include>**/*TestCase.java</include>
+                    </includes>
+                </configuration>
+            </plugin>
+
+            <!-- Integration tests -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-failsafe-plugin</artifactId>
+                <version>3.2.5</version>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>integration-test</goal>
+                            <goal>verify</goal>
+                        </goals>
+                    </execution>
+                </executions>
+                <configuration>
+                    <includes>
+                        <include>**/*IT.java</include>
+                        <include>**/*ITCase.java</include>
+                    </includes>
+                </configuration>
+            </plugin>
+
+            <!-- Javadoc (optional) -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-javadoc-plugin</artifactId>
+                <version>3.7.0</version>
+                <configuration>
+                    <release>${java.version}</release>
+                    <encoding>${project.build.sourceEncoding}</encoding>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+    <!-- Dependencies placeholder -->
+    <dependencies>
+        <!-- Example: JUnit 5 for testing -->
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter</artifactId>
+            <version>5.11.0</version>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+
+</project>
+
+----
+
+=== Dependency scope optional
+
+[source,xml]
+.optional dependency example:
+----
+<dependency>
+    <groupId>com.example</groupId>
+    <artifactId>some-library</artifactId>
+    <version>1.0.0</version>
+    <optional>true</optional>
+</dependency>
+----
+Maven will not transitively include it in projects that depend on this project.
+
+=== Normal dependency (default)
+
+If Project A depends on Project B, and B depends on C (without <optional>), then:
+
+- Maven will automatically include C in A’s classpath.
+
+This is the usual transitive dependency behavior.
+
+=== Optional dependency
+
+If Project B declares C with <optional>true</optional>, then:
+
+- Project A will not automatically get C on its classpath.
+- Only Project B will use C internally.
+
+Optional is effectively a “don’t propagate this dependency to consumers” flag.
+
+=== Typical Use Cases
+
+- Libraries that can use an extra feature but don’t require it.  +
+Example: a library supports JSON via Jackson, but users might want to use Gson instead.  +
+-> Declare Jackson as <optional>true</optional> so downstream projects aren’t forced to include it.
+
+- Avoid forcing consumers to pull in unnecessary dependencies (reduces conflicts, keeps classpath cleaner).
+
+=== Important Notes
+
+- `<optional>` only affects transitive resolution.
+- The dependency is still required when building the project itself.
+- If the code calls a class from an optional dependency, it has to be present at runtime.
+
+=== Complete example
+
+[source,xml]
+.mylib: pom.xml:
+----
+<dependencies>
+    <dependency>
+        <groupId>com.fasterxml.jackson.core</groupId>
+        <artifactId>jackson-databind</artifactId>
+        <version>2.16.2</version>
+        <optional>true</optional>
+    </dependency>
+
+    <dependency>
+        <groupId>com.google.code.gson</groupId>
+        <artifactId>gson</artifactId>
+        <version>2.10.1</version>
+        <optional>true</optional>
+    </dependency>
+</dependencies>
+----
+
+[source,java]
+.runtime detection in mylib:
+----
+public class JsonProvider {
+    private static boolean jacksonAvailable;
+    private static boolean gsonAvailable;
+    static {
+        try {
+            Class.forName("com.fasterxml.jackson.databind.ObjectMapper");
+            jacksonAvailable = true;
+        } catch (ClassNotFoundException e) {
+            jacksonAvailable = false;
+        }
+        try {
+            Class.forName("com.google.gson.Gson");
+            gsonAvailable = true;
+        } catch (ClassNotFoundException e) {
+            gsonAvailable = false;
+        }
+    }
+
+    public static void serialize(Object obj) {
+        if (jacksonAvailable) {
+            // use Jackson
+        } else if (gsonAvailable) {
+            // use Gson
+        } else {
+            throw new IllegalStateException("No JSON library found");
+        }
+    }
+}
+----
+
+Key points:
+
+- mylib compiles without forcing either Jackson or Gson onto consumers.
+- Consumers can choose which library to include at runtime.
+- Optional dependencies are not transitive by default.
+
+[source,xml]
+.myapp: pom.xml:
+----
+<dependencies>
+    <dependency>
+        <groupId>com.example</groupId>
+        <artifactId>mylib</artifactId>
+        <version>1.0.0</version>
+    </dependency>
+
+    <dependency>
+        <groupId>com.fasterxml.jackson.core</groupId>
+        <artifactId>jackson-databind</artifactId>
+        <version>2.16.2</version>
+        <scope>runtime</scope> <!-- optional: compile scope if myapp uses Jackson directly -->
+    </dependency>
+</dependencies>
+----
+
+Key points:
+
+- myapp does not automatically get Jackson or Gson because mylib declared them optional.
+- At runtime, Jackson must be on the classpath for mylib’s code to work.
+- If myapp wants to use Gson instead, it can declare only Gson and not Jackson.
+
+Summary of the Pattern:
+
+- mylib declares optional dependencies: “I can use these, but consumers don’t have to pull them in.”
+- At runtime, mylib detects which library is available (reflection / Class.forName).
+- myapp decides which optional dependency to provide at runtime.
+- This keeps the library flexible, modular, and avoids forcing unnecessary dependencies downstream.
+
+=== Dependency scope provided
+
+[source,xml]
+.example:
+----
+<dependency>
+    <groupId>javax.servlet</groupId>
+    <artifactId>servlet-api</artifactId>
+    <version>4.0.1</version>
+    <scope>provided</scope>
+</dependency>
+----
+
+- code can compile against servlet-api.
+- At runtime, the servlet container (e.g., Tomcat) provides it — Maven does not package it.
+
+Use when: the runtime environment already provides the dependency, e.g., servlet container, Java EE APIs, or some system library.
+
+
+== Properties from external file
 [source,xml]
 .read properties from file to be used in pom.xml:
 ----
