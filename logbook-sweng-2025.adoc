@@ -98,22 +98,61 @@
 ==== Sat, 27.09.2025
 ==== Fri, 26.09.2025
 ==== Thu, 25.09.2025
-==== Wed, 24.09.2025
-==== Tue, 23.09.2025
-==== Mon, 22.09.2025
+https://ajmoon.com/posts/mesh-i-tried-htmx-then-ditched-it
+
 ==== Sun, 21.09.2025
+Thomas Schuehly. JUG Stuttgart: view components next steps:
+https://github.com/tschuehly/fullstack-with-spring
+
 ==== Sat, 20.09.2025
+Integrating SPAs with BFF (it is safer to do oauth on the server, not on the client):
+https://www.youtube.com/watch?v=pSTMCyQH_E4
+
 ==== Fri, 19.09.2025
+from:
+https://gist.github.com/leodutra/b9867f1e910591e8014fbf6e2683e8fa
+
+git config --global merge.ff no
+git config --global merge.commit no
+
+# However, the problem with this is that git pull = git fetch + git merge.
+# So whenever you pull from the remote server,
+# you'd be creating an ugly merge commit when
+# a simple fast-forward would be warranted.
+# To solve this, set pull.ff to yes:
+git config --global pull.ff yes
+
 ==== Thu, 18.09.2025
 ==== Wed, 17.09.2025
+use idea diff tool to compare two directories:
+idea diff <dir1> <dir2>
+
+-----
+gradle init --type java-application --dsl groovy --test-framework junit-jupiter --split-project --java-version 21 --use-defaults
+-----
+gradle: show test results on console:
+-> in root build.gradle put:
+---
+subprojects {
+    tasks.withType(Test) {
+        testLogging {
+            events "passed", "skipped", "failed"
+            exceptionFormat "short"
+        }
+    }
+}
+---
+-> ./gradlew clean test
+
 ==== Tue, 16.09.2025
 ==== Mon, 15.09.2025
+
 ==== Sun, 14.09.2025
-==== Sat, 13.09.2025
-==== Fri, 12.09.2025
-==== Thu, 11.09.2025
-==== Wed, 10.09.2025
-==== Tue, 09.09.2025
+from (Latent):
+https://discord.com/channels/725789699527933952/909436816388669530/1416409969875484742
+https://michaelwest22.github.io/htmx/secure-eval-demo.html
+here is a demo of an extension idea that replaces all htmx eval use like hx-on or hx-vals etc into proper nonced scripts so you can have a very strict csp policy.  It does force you to add nonces to all eval code like you do wirh script tags and also needs a modified htmx js with the htmx native eval code simplified into a single function to make replacment by extension possible.
+
 ==== Mon, 08.09.2025
 https://www.scattered-thoughts.net/writing/sql-needed-structure/
 
