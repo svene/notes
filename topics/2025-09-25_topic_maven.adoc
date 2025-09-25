@@ -1,2 +1,195 @@
 = Maven
 
+[source,xml]
+.read properties from file to be used in pom.xml:
+----
+<build>
+<pluginManagement>
+  <plugins>
+    <plugin>
+      <groupId>org.codehaus.mojo</groupId>
+      <artifactId>properties-maven-plugin</artifactId>
+      <version>1.1.0</version>
+      <executions>
+        <execution>
+          <phase>initialize</phase>
+          <goals>
+            <goal>read-project-properties</goal>
+          </goals>
+          <configuration>
+            <files>
+              <file>.development-git-ignore/credentials.properties</file>
+            </files>
+          </configuration>
+        </execution>
+      </executions>
+    </plugin>
+  </plugins>
+</pluginManagement>
+....
+----
+
+[source,xml]
+.and then add it to the plugins section:
+----
+<build>
+    <plugins>
+        <plugin>
+            <groupId>org.codehaus.mojo</groupId>
+            <artifactId>properties-maven-plugin</artifactId>
+            <!-- no config needed, it inherits from pluginManagement -->
+        </plugin>
+----
+
+
+[source,xml]
+.use 'build-helper-maven-plugin' to add additional source directories:
+----
+<plugins>
+<plugin>
+    <groupId>org.codehaus.mojo</groupId>
+    <artifactId>build-helper-maven-plugin</artifactId>
+    <version>3.6.1</version>
+    <executions>
+        <execution>
+            <id>add-source</id>
+            <phase>generate-sources</phase>
+            <goals>
+                <goal>add-source</goal>
+            </goals>
+            <configuration>
+                <sources>
+                    <source>src/main/java-generated</source>
+                </sources>
+            </configuration>
+        </execution>
+    </executions>
+</plugin>
+...
+----
+
+== Jooq code generation for existing DB
+
+[source,xml]
+.Configure it inside a dedicated maven profile:
+----
+<profiles>
+  <profile>
+    <id>jooq-gen</id>
+    <build>
+      <plugins>
+        <plugin>
+          <groupId>org.codehaus.mojo</groupId>
+          <artifactId>properties-maven-plugin</artifactId>
+          <!-- no config needed, it inherits from pluginManagement -->
+        </plugin>
+        <plugin>
+          <groupId>org.jooq</groupId>
+          <artifactId>jooq-codegen-maven</artifactId>
+          <version>${jooq.version}</version>
+          <executions>
+            <execution>
+              <id>generate-jooq</id>
+              <phase>generate-sources</phase>
+              <goals>
+                <goal>generate</goal>
+              </goals>
+              <configuration>
+                <generator>
+                  <target>
+                    <!-- Directory where sources should be generated -->
+                    <directory>${project.basedir}/src/main/java-generated</directory>
+                    <!-- Package where classes will be placed -->
+                    <!-- <package>org.jooq.generated</package> -->
+                  </target>
+                </generator>
+              </configuration>
+            </execution>
+          </executions>
+          <!-- Common code generation configuration that applies for all language examples -->
+          <configuration>
+            <onUnused>SILENT</onUnused>
+            <jdbc>
+              <driver>org.postgresql.Driver</driver>
+              <url>jdbc:postgresql://...</url>
+              <!--
+                NOTE: POSTGRES_USER and POSTGRES_PASSWORD are read
+                from .development-git-ignore/credentials.properties
+                (see properties-maven-plugin above)
+                :
+                -->
+              <user>${POSTGRES_USER}</user>
+              <password>${POSTGRES_PASSWORD}</password>
+            </jdbc>
+            <generator>
+              <database>
+                <inputSchema>myschema</inputSchema>
+                <excludes>flyway_.*</excludes>
+              </database>
+              <generate>
+                <pojos>true</pojos>
+                <pojosToString>false</pojosToString>
+                <pojosEqualsAndHashCode>false</pojosEqualsAndHashCode>
+                <daos>true</daos>
+              </generate>
+            </generator>
+          </configuration>
+        </plugin>
+      </plugins>
+    </build>
+  </profile>
+...
+----
+
+Execute jooq code generation with:
+
+`mvn clean generate-sources -Pjooq-gen`
+
+== Export data from DB
+
+[source,xml]
+.Configure it inside a dedicated maven profile:
+----
+<profile>
+  <id>db-export</id>
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>properties-maven-plugin</artifactId>
+        <!-- no config needed, it inherits from pluginManagement -->
+      </plugin>
+      <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>exec-maven-plugin</artifactId>
+        <version>3.5.1</version>
+        <executions>
+          <execution>
+            <goals>
+              <goal>java</goal>
+            </goals>
+          </execution>
+        </executions>
+        <configuration>
+          <mainClass>org.demo.MyCsvExporter</mainClass>
+          <classpathScope>test</classpathScope>
+          <systemProperties>
+            <systemProperty>
+              <key>POSTGRES_USER</key>
+              <value>${POSTGRES_USER}</value>
+            </systemProperty>
+            <systemProperty>
+              <key>POSTGRES_PASSWORD</key>
+              <value>${POSTGRES_PASSWORD}</value>
+            </systemProperty>
+          </systemProperties>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+</profile>
+----
+
+Execute jooq code generation with (note that `MyCsvExporter` is in the test sources):
+
+`mvn test-compile exec:java -Pdb-export`
