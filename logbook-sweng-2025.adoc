@@ -88,7 +88,15 @@
 Facebook - Front End Tech Talk 8/5/2010 (Primer.js) (Mirror):
 https://www.youtube.com/watch?v=BZmfCjtv6cM
 
-==== Tue, 07.10.2025
+create slides:
+https://pandoc.org/demo/example33/10-slide-shows.html
+
+create slides (yawaramin):
+https://slipshow.readthedocs.io/en/stable/
+
+also aria:
+https://www.w3.org/TR/html-aam-1.0/
+
 ==== Mon, 06.10.2025
 ARIA Authoring Practices Guide (APG) Home:
 https://www.w3.org/WAI/ARIA/apg/
