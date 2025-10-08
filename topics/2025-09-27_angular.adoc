@@ -1,0 +1,6 @@
+= Collected Information about Angular
+
+== Links
+
+https://medium.com/@amosisaila/learn-when-to-use-signal-effects-in-angular-and-why-you-should-avoid-overusing-them-a0d6516032c1[Usage of Signal-Effects]
+

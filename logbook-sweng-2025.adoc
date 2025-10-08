@@ -85,18 +85,46 @@
 ==== Fri, 10.10.2025
 ==== Thu, 09.10.2025
 ==== Wed, 08.10.2025
+Facebook - Front End Tech Talk 8/5/2010 (Primer.js) (Mirror):
+https://www.youtube.com/watch?v=BZmfCjtv6cM
+
 ==== Tue, 07.10.2025
 ==== Mon, 06.10.2025
+ARIA Authoring Practices Guide (APG) Home:
+https://www.w3.org/WAI/ARIA/apg/
+
+also aria: underengineered posts like:
+https://adrianroselli.com/2019/09/under-engineered-text-boxen.html
+
 ==== Sun, 05.10.2025
+Dependency Injection Revisited by Juergen Hoeller @ Spring I/O 2025
+https://www.youtube.com/watch?v=AvZEoxH_wGo&list=WL&index=2
+
 ==== Sat, 04.10.2025
-==== Fri, 03.10.2025
-==== Thu, 02.10.2025
-==== Wed, 01.10.2025
-==== Tue, 30.09.2025
-==== Mon, 29.09.2025
+StructuredTaskScope And ScopedValue - Get The Most Out of Virtual Threads by Christian Woerz:
+https://www.youtube.com/watch?v=mGNNJVvrGeA&list=WL&index=1
 ==== Sun, 28.09.2025
-==== Sat, 27.09.2025
-==== Fri, 26.09.2025
+-----
+Bring back the joy in web development with HTMX and Hypermedia-Driven Applications by Frederik Hahne:
+https://www.youtube.com/watch?v=F2qKUF7VjRQ
+repo:
+https://github.com/atomfrede/spring-io-25-samples
+slides:
+https://atomfrede.github.io/spring-io-25-htmx-slides/#/
+- spring boot
+- overview of templage engines
+- HTMX patterns
+-- form validation with morphing
+-- tables: paging
+-- tables: endless scrolling
+-- realtime updates
+
+-----
+Play framework, twirl template engine (scala but works also for java)
+https://www.playframework.com/documentation/3.0.x/JavaHome
+https://github.com/playframework/twirl
+-----
+
 ==== Thu, 25.09.2025
 https://ajmoon.com/posts/mesh-i-tried-htmx-then-ditched-it
 
