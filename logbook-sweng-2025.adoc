@@ -79,14 +79,45 @@
 ==== Thu, 16.10.2025
 ==== Wed, 15.10.2025
 ==== Tue, 14.10.2025
-==== Mon, 13.10.2025
-==== Sun, 12.10.2025
+https://unplannedobsolescence.com/blog/what-dynamic-typing-is-for/
+https://www.angulararchitects.io/blog/all-about-angulars-new-signal-forms/
+
 ==== Sat, 11.10.2025
+Simple Accessibility Tooling
+https://www.morganwebdev.org/posts/simple-accessibility-tooling/
+---
+https://dummyjson.com/
+
 ==== Fri, 10.10.2025
+popover polyfill:
+https://popover.oddbird.net/
+
 ==== Thu, 09.10.2025
+Component wrappers and other patterns for making your tests bulletproof by Łukasz Nowak
+https://www.youtube.com/watch?v=C84lP8u-0is&list=WL&index=4
+https://github.com/LukaszNowakPL
+-----
+Introducing Spring AI by Christian Tzolov / Mark Pollack @ Spring I/O 2024
+https://www.youtube.com/watch?v=umKbaXsiCOY&list=WL&index=6
+https://2024.springio.net/slides/introducing-spring-ai-springio24.pdf
+-----
+Beyond Built-in: Advanced Testing Techniques for Spring Boot Applications by Michael Vitz @ SpringIO
+https://www.youtube.com/watch?v=vn9P38o03TQ&list=WL&index=2
+https://2024.springio.net/slides/beyond-built-in-advanced-testing-techniques-for-spring-boot-applications-springio24.pdf
+-----
+Trash Talk - Exploring the JVM memory management by Gerrit Grunwald
+https://www.youtube.com/watch?v=Jh79ojcror0&list=WL&index=3
+-----
+Unit Test Your Spring Architecture With ArchUnit by Roland Weisleder @ Spring I/O 2024
+https://www.youtube.com/watch?v=sGmhaizFcEA&list=WL&index=2
+https://speakerdeck.com/rweisleder/unit-test-your-java-architecture-with-archunit
+https://github.com/rweisleder/archunit-talk-examples
+
 ==== Wed, 08.10.2025
 Facebook - Front End Tech Talk 8/5/2010 (Primer.js) (Mirror):
 https://www.youtube.com/watch?v=BZmfCjtv6cM
+better video quality?:
+https://archive.org/details/facebook-front-end-tech-talk-8-5-2010-primerjs
 
 create slides:
 https://pandoc.org/demo/example33/10-slide-shows.html
