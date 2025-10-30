@@ -67,17 +67,26 @@
 ==== Tue, 28.10.2025
 ==== Mon, 27.10.2025
 ==== Sun, 26.10.2025
+
 ==== Sat, 25.10.2025
-==== Fri, 24.10.2025
+https://vanjs.org/
+https://github.com/grucloud/bau
+
+https://www.xvello.net/blog/htmx-error-handling/
+
+https://coriander.6nok.org/
+
 ==== Thu, 23.10.2025
-==== Wed, 22.10.2025
-==== Tue, 21.10.2025
-==== Mon, 20.10.2025
-==== Sun, 19.10.2025
+https://evanhahn.com/scripts-i-wrote-that-i-use-all-the-time/
+
 ==== Sat, 18.10.2025
-==== Fri, 17.10.2025
+web component library:
+https://webawesome.com/
+
 ==== Thu, 16.10.2025
-==== Wed, 15.10.2025
+htmx server-commands extension:
+https://github.com/scriptogre/htmx-extensions/tree/feature/server-commands/src/server-commands
+
 ==== Tue, 14.10.2025
 https://unplannedobsolescence.com/blog/what-dynamic-typing-is-for/
 https://www.angulararchitects.io/blog/all-about-angulars-new-signal-forms/
