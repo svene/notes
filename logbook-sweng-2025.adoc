@@ -45,18 +45,9 @@
 ==== Wed, 19.11.2025
 ==== Tue, 18.11.2025
 ==== Mon, 17.11.2025
-==== Sun, 16.11.2025
-==== Sat, 15.11.2025
-==== Fri, 14.11.2025
-==== Thu, 13.11.2025
-==== Wed, 12.11.2025
-==== Tue, 11.11.2025
-==== Mon, 10.11.2025
-==== Sun, 09.11.2025
-==== Sat, 08.11.2025
-==== Fri, 07.11.2025
-==== Thu, 06.11.2025
-==== Wed, 05.11.2025
+https://joel.drapper.me/p/morphlex/
+https://frontendmasters.com/blog/seeking-an-answer-why-cant-html-alone-do-includes/
+
 ==== Tue, 04.11.2025
 https://alfy.blog/2025/10/31/your-url-is-your-state.html
 https://cheatsheetseries.owasp.org/cheatsheets/Cross-Site_Request_Forgery_Prevention_Cheat_Sheet.html#employing-custom-request-headers-for-ajaxapi
@@ -755,7 +746,9 @@ https://icones.js.org/collection/lucide
 
 
 ==== Sat, 17.05.2025
-==== Fri, 16.05.2025
+https://joshi.monster/posts/build-your-own-htmx/
+https://github.com/nonnorm/nomini
+
 ==== Thu, 15.05.2025
 https://github.com/gnat/text-to-speech-ubuntu
 
