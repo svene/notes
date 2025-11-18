@@ -43,7 +43,26 @@
 ==== Fri, 21.11.2025
 ==== Thu, 20.11.2025
 ==== Wed, 19.11.2025
+
 ==== Tue, 18.11.2025
+edit table cell:
+https://game-catalog.luontola.fi/games
+https://discord.com/channels/725789699527933952/725789747212976259/1439999868012859453
+
+
+https://basecoatui.com/
+All of the shadcn/ui magic, none of the React
+A components library built with Tailwind CSS that works with any web stack.
+
+https://e-html.org/
+EHTML — Extended HTML for Real Apps
+
+a11y
+https://anthonycosgrave.github.io/fasthtml-web-a11y/
+
+htmx-download-extension:
+https://gist.github.com/MichaelWest22/10ea3f9852a851380be632fa531d96d6
+
 ==== Mon, 17.11.2025
 https://joel.drapper.me/p/morphlex/
 https://frontendmasters.com/blog/seeking-an-answer-why-cant-html-alone-do-includes/
