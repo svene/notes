@@ -37,12 +37,34 @@
 ==== Thu, 27.11.2025
 ==== Wed, 26.11.2025
 ==== Tue, 25.11.2025
+https://www.bedelstein.com/post/mcmaster-carr
+
 ==== Mon, 24.11.2025
-==== Sun, 23.11.2025
+https://news.alvaroduran.com/p/engineers-do-not-get-to-make-startup
+
 ==== Sat, 22.11.2025
+Creating REST Clients in Spring Boot 4 Just Got EASIER!
+https://www.youtube.com/watch?v=TEd5e4Thu7M
+
+Free fake and reliable API for testing and prototyping.
+https://jsonplaceholder.typicode.com/
+
 ==== Fri, 21.11.2025
 ==== Thu, 20.11.2025
+https://github.com/WICG/declarative-partial-updates?tab=readme-ov-file#element-to-element
 ==== Wed, 19.11.2025
+
+htmx m4 modal extension:
+https://jsfiddle.net/Latent22/52ue4vhz/1/
+
+github pages with zola:
+https://www.getzola.org/documentation/deployment/github-pages/
+see also:
+https://github.com/bigskysoftware/htmx/pull/3539
+
+GH Pages can directly publish HTML files that are checked in to the repo, no extra workflow required.
+there's a little trick: the repo needs an empty file called .nojekyll at the top level to tell GH not to try running Jekyll
+yawaramin: https://discord.com/channels/725789699527933952/974086000307499028/1440351332346106082
 
 ==== Tue, 18.11.2025
 edit table cell:
@@ -330,8 +352,9 @@ there's a simple rule to avoiding injections in inline scripts (javascript or hy
 JSON is valid JS and _hs syntax, but won't have any side effects
 
 ==== Tue, 19.08.2025
-from: https://discord.com/channels/725789699527933952/974086000307499028/1407089911575740506
+static hosting:
 "I switched to https://www.statichost.eu/ for https://missing.style/ and my personal sites and it's so nice":
+from (Deniz): https://discord.com/channels/725789699527933952/974086000307499028/1407089911575740506
 
 https://www.statichost.eu/
 -----
