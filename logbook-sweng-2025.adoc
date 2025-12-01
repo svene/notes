@@ -31,11 +31,19 @@
 ==== Wed, 03.12.2025
 ==== Tue, 02.12.2025
 ==== Mon, 01.12.2025
-==== Sun, 30.11.2025
+caching:
+https://web.dev/articles/stale-while-revalidate
+
 ==== Sat, 29.11.2025
-==== Fri, 28.11.2025
-==== Thu, 27.11.2025
+video hosting:
+https://streamable.com/
+
 ==== Wed, 26.11.2025
+https://wiki.c2.com/?DoubleEntryBookkeeping
+https://hledger.org/accounting.html
+
+https://www.process-one.net/blog/stop-telling-us-xmpp-should-use-json/
+
 ==== Tue, 25.11.2025
 https://www.bedelstein.com/post/mcmaster-carr
 
