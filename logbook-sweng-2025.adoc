@@ -1,35 +1,50 @@
 ----
 ==== Thu, 01.01.2026
 ==== Wed, 31.12.2025
+after HONO looking again at various template engines / HTML builder libs:
+- looks good (but HONO is better imho): https://vento.js.org/
+
 ==== Tue, 30.12.2025
+
 ==== Mon, 29.12.2025
-==== Sun, 28.12.2025
-==== Sat, 27.12.2025
+dream-html:1
+https://github.com/yawaramin/dream-html-ui?tab=readme-ov-file
+
 ==== Fri, 26.12.2025
-==== Thu, 25.12.2025
+Native HTML Dialogs with HTMX:
+https://dev.to/robodobdob/native-html-dialogs-with-htmx-50i2
+
 ==== Wed, 24.12.2025
-==== Tue, 23.12.2025
-==== Mon, 22.12.2025
-==== Sun, 21.12.2025
+robots.txt guide:
+https://gist.github.com/semanticentity/1b9878878c47141eec55d28e0595ad6e#well-formed-robotstxt-heuristic-guide
+
 ==== Sat, 20.12.2025
-==== Fri, 19.12.2025
+https://blog.jakesaunders.dev/my-server-started-mining-monero-this-morning/
+
+SRI Hash Generator
+https://srihash.org/
+
 ==== Thu, 18.12.2025
+htmx indicator delay:
+hi! is there any way to debounce the activation of the hx-indicator? I'd like the indicator to appear only if the request takes a while. When the response is very quick, the indicator flashes briefly, and I'd like to avoid that.
+https://discord.com/channels/725789699527933952/725789747212976259/1450932846234570974
+.htmx-request.htmx-indicator {
+  transition-delay: 1s !important;
+}
+
+
 ==== Wed, 17.12.2025
+
 ==== Tue, 16.12.2025
-==== Mon, 15.12.2025
-==== Sun, 14.12.2025
+Introduction to HTMX for Vibe Coders
+https://www.youtube.com/watch?v=FfdjXZYXzmM
+
 ==== Sat, 13.12.2025
+JS Promises:
+https://www.youtube.com/watch?v=rXfBXV8Jd_Y
+
 ==== Fri, 12.12.2025
-==== Thu, 11.12.2025
-==== Wed, 10.12.2025
-==== Tue, 09.12.2025
-==== Mon, 08.12.2025
-==== Sun, 07.12.2025
-==== Sat, 06.12.2025
-==== Fri, 05.12.2025
-==== Thu, 04.12.2025
-==== Wed, 03.12.2025
-==== Tue, 02.12.2025
+https://michaelwest22.github.io/htmx/upsert.html
 ==== Mon, 01.12.2025
 caching:
 https://web.dev/articles/stale-while-revalidate

@@ -2,6 +2,7 @@
 - Wed, 25.12.2024
 NOTE: argument for string-based template engines (vs. api-based ones like jsx):
 https://discord.com/channels/725789699527933952/1156332623233302578/1321068055068934145
+https://legacy.reactjs.org/docs/jsx-in-depth.html#spread-attributes
 
 Goodbye Array.reduce: https://www.youtube.com/watch?v=1bfK1EswPUY
 
