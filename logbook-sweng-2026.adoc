@@ -345,22 +345,83 @@
 - Thu, 22.01.2026
 - Wed, 21.01.2026
 - Tue, 20.01.2026
-- Mon, 19.01.2026
-- Sun, 18.01.2026
+Simplified HTML Streaming Patches Design:
+https://gist.github.com/MichaelWest22/059fadab159f64cc55725ebee750d7bc
+
+The Incredible Overcomplexity of the Shadcn Radio Button:
+https://paulmakeswebsites.com/writing/shadcn-radio-button/
+
+ssh powered services for developers:
+https://pico.sh/
+
 - Sat, 17.01.2026
+Tardis blue: #003B6F
+https://color-register.org/color/tardis-blue
+
+rscss:
+https://rstacruz.github.io/rscss/index.html
+
 - Fri, 16.01.2026
 - Thu, 15.01.2026
 - Wed, 14.01.2026
+
 - Tue, 13.01.2026
-- Mon, 12.01.2026
-- Sun, 11.01.2026
+we rolled our own documentation site (pandoc):
+https://blog.tangled.org/docs
+---
+Bulma with htmx.config.requestClass = 'is-loading';
+---
+const prop = "name"
+
+class C {
+get [prop]() { return "WTF" }
+set [prop](val) { console.log(val) }
+}
+
+const c = new C()
+console.log(c.name) // => WTF
+c.name = "amazing" // => amazing
+---
+https://sqlite.org/np1queryprob.html
+
 - Sat, 10.01.2026
-- Fri, 09.01.2026
-- Thu, 08.01.2026
+How To Use an Emoji as a Favicon:
+https://css-tricks.com/emoji-as-a-favicon/
+
 - Wed, 07.01.2026
-- Tue, 06.01.2026
+html table fixes, image width fixes
+https://aartaka.me/easy-fixes.html#img
+-----
+max-width: 0;
+min-width: 100%;
+"i've been using this snippet whenever an element is stubbornly refusing to take its container's width. it almost always works. is this a known technique?"
+https://discord.com/channels/725789699527933952/1149355150956314734/1457649511068598336
+
+
+
 - Mon, 05.01.2026
-- Sun, 04.01.2026
-- Sat, 03.01.2026
-- Fri, 02.01.2026
-- Thu, 01.01.2026
+Deniz, css: in a work project, i wrote this class:
+.layout-grid {
+display: grid;
+gap: var(--gap);
+margin-block: var(--gap);
+
+  @media (max-width: 768px) {
+    display: flex;
+    flex-flow: column nowrap;
+  }
+}
+<article class="layout-grid" style="grid: 1fr / 1fr 2fr">
+<!-- or -->
+
+<article class="layout-grid" style="
+grid-template:
+'image title' auto
+'image desc' 1fr
+/auto  1fr
+">
+from:
+https://discord.com/channels/725789699527933952/974086000307499028/1457436454220333066
+
+5 layout utilities that will handle 80% of cases:
+https://gist.github.com/dz4k/ddd8daa59468bf6c33a620d7a10184d6
