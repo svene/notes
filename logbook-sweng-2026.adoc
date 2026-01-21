@@ -344,6 +344,11 @@
 - Fri, 23.01.2026
 - Thu, 22.01.2026
 - Wed, 21.01.2026
+https://github.com/thepracticaldev/orly-full-res/blob/master/solvingimaginaryscalingissues.png
+
+streaming-patches-demo.js:
+https://gist.github.com/MichaelWest22/1acd837d18e3abae12079e80186a29ab
+
 - Tue, 20.01.2026
 Simplified HTML Streaming Patches Design:
 https://gist.github.com/MichaelWest22/059fadab159f64cc55725ebee750d7bc
