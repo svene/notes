@@ -343,6 +343,12 @@
 - Sat, 24.01.2026
 - Fri, 23.01.2026
 - Thu, 22.01.2026
+APL:
+https://xpqz.github.io/learnapl/intro.html
+
+Bret Victor:
+https://worrydream.com/KillMath/
+
 - Wed, 21.01.2026
 https://github.com/thepracticaldev/orly-full-res/blob/master/solvingimaginaryscalingissues.png
 
