@@ -337,11 +337,25 @@
 - Fri, 30.01.2026
 - Thu, 29.01.2026
 - Wed, 28.01.2026
+
 - Tue, 27.01.2026
-- Mon, 26.01.2026
+HTML tags, just truly accessible:
+https://u-elements.github.io/u-elements/
+
 - Sun, 25.01.2026
+Building for Users: Designing URLs:
+https://link.springer.com/chapter/10.1007/978-3-031-79444-5_2
+https://link.springer.com/content/pdf/10.1007/978-3-031-79444-5_2.pdf
+https://upload.wikimedia.org/wikipedia/commons/3/3f/Aaron_Swartz_s_A_Programmable_Web_An_Unfinished_Work.pdf
+
 - Sat, 24.01.2026
+really nice HTML component library using css classes
+https://basecoatui.com/
+
 - Fri, 23.01.2026
+Latent: Streaming partials Demo with fake server:
+https://jsfiddle.net/Latent22/m4awroht/2/
+
 - Thu, 22.01.2026
 APL:
 https://xpqz.github.io/learnapl/intro.html
