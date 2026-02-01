@@ -333,10 +333,16 @@
 - Tue, 03.02.2026
 - Mon, 02.02.2026
 - Sun, 01.02.2026
+https://schalkneethling.com/posts/opening-and-closing-dialogs-without-javascript-using-html-invoker-commands/
+
+https://www.staldal.nu/tech/2026/01/02/how-to-publish-a-gradle-project-on-maven-central/
+
+bunnie lets u use Bun as the templating language in ur Rust applications (similar as springboot->Hono):
+https://github.com/aspizu/bunnie
+
 - Sat, 31.01.2026
-- Fri, 30.01.2026
-- Thu, 29.01.2026
-- Wed, 28.01.2026
+Anchor position learning tool:
+https://anchoreum.com/#de
 
 - Tue, 27.01.2026
 HTML tags, just truly accessible:
