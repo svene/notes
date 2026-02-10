@@ -323,15 +323,19 @@
 - Fri, 13.02.2026
 - Thu, 12.02.2026
 - Wed, 11.02.2026
+
 - Tue, 10.02.2026
-- Mon, 09.02.2026
-- Sun, 08.02.2026
-- Sat, 07.02.2026
-- Fri, 06.02.2026
+command line tool that runs HTTP requests defined in a simple plain text format:
+https://github.com/Orange-OpenSource/hurl
+
 - Thu, 05.02.2026
-- Wed, 04.02.2026
-- Tue, 03.02.2026
+Markus Eisele's blog-posts:
+https://www.the-main-thread.com/
+
 - Mon, 02.02.2026
+Compiler Explorer, compiles code and shows assembly
+https://godbolt.org/
+
 - Sun, 01.02.2026
 https://schalkneethling.com/posts/opening-and-closing-dialogs-without-javascript-using-html-invoker-commands/
 
