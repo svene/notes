@@ -317,8 +317,19 @@
 - Thu, 19.02.2026
 - Wed, 18.02.2026
 - Tue, 17.02.2026
+https://sgom.es/posts/2026-02-13-js-heavy-approaches-are-not-compatible-with-long-term-performance-goals/
+https://developer.mozilla.org/en-US/docs/Web/API/CSS_Custom_Highlight_API
+
 - Mon, 16.02.2026
+https://modern-css.com/
+
 - Sun, 15.02.2026
+virtual scroll demoe for result list with 1000s of items:
+https://gist.github.com/MichaelWest22/26b0db0f489e213ef15e675ade913784
+from:
+https://discord.com/channels/725789699527933952/1472060135760462015/1472104445880959080
+
+
 - Sat, 14.02.2026
 - Fri, 13.02.2026
 - Thu, 12.02.2026
