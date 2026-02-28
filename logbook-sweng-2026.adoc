@@ -307,15 +307,31 @@
 - Sun, 01.03.2026
 - Sat, 28.02.2026
 - Fri, 27.02.2026
+Earthquake explorer:
+https://hyperleaflet-earthquakes.fly.dev/
+
 - Thu, 26.02.2026
+
 - Wed, 25.02.2026
-- Tue, 24.02.2026
-- Mon, 23.02.2026
-- Sun, 22.02.2026
+https://hacks.mozilla.org/2026/02/goodbye-innerhtml-hello-sethtml-stronger-xss-protection-in-firefox-148/
+
 - Sat, 21.02.2026
+A tiny language framework for embedding JavaScript in hypermedia:
+https://www.npmjs.com/package/hctx
+
 - Fri, 20.02.2026
+Passkey explained:
+https://www.youtube.com/watch?v=3BmYR--3z8M&t=87s
+
 - Thu, 19.02.2026
-- Wed, 18.02.2026
+UI library:
+https://oat.ink/
+
+https://json-schema.org/
+
+yawaramin's styles on top of bulma:
+https://zettelkit.xyz/static/app.css
+
 - Tue, 17.02.2026
 https://sgom.es/posts/2026-02-13-js-heavy-approaches-are-not-compatible-with-long-term-performance-goals/
 https://developer.mozilla.org/en-US/docs/Web/API/CSS_Custom_Highlight_API
@@ -328,12 +344,6 @@ virtual scroll demoe for result list with 1000s of items:
 https://gist.github.com/MichaelWest22/26b0db0f489e213ef15e675ade913784
 from:
 https://discord.com/channels/725789699527933952/1472060135760462015/1472104445880959080
-
-
-- Sat, 14.02.2026
-- Fri, 13.02.2026
-- Thu, 12.02.2026
-- Wed, 11.02.2026
 
 - Tue, 10.02.2026
 command line tool that runs HTTP requests defined in a simple plain text format:
