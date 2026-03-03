@@ -302,10 +302,15 @@
 - Fri, 06.03.2026
 - Thu, 05.03.2026
 - Wed, 04.03.2026
+
 - Tue, 03.03.2026
-- Mon, 02.03.2026
-- Sun, 01.03.2026
-- Sat, 28.02.2026
+css property for formatting counters, timers etc.:
+.tabular-nums {
+font-variant-numeric: tabular-nums;
+}
+https://x.com/sorenblank/status/2028520200417706017
+https://sorenblank.com/
+
 - Fri, 27.02.2026
 Earthquake explorer:
 https://hyperleaflet-earthquakes.fly.dev/
