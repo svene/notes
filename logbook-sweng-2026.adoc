@@ -300,8 +300,9 @@
 - Sun, 08.03.2026
 - Sat, 07.03.2026
 - Fri, 06.03.2026
-- Thu, 05.03.2026
-- Wed, 04.03.2026
+https://terriblesoftware.org/2026/03/03/nobody-gets-promoted-for-simplicity/
+https://css-tricks.com/css-logical-properties-and-values/
+https://zweiundeins.gmbh/en/methodology/spa-vs-hypermedia-real-world-performance-under-load
 
 - Tue, 03.03.2026
 css property for formatting counters, timers etc.:
