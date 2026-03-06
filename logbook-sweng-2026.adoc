@@ -321,6 +321,10 @@ https://hyperleaflet-earthquakes.fly.dev/
 - Wed, 25.02.2026
 https://hacks.mozilla.org/2026/02/goodbye-innerhtml-hello-sethtml-stronger-xss-protection-in-firefox-148/
 
+- Tue, 24.02.
+From Java to Kotlin:
+https://jdriven.com/blog/author/jbrugman
+
 - Sat, 21.02.2026
 A tiny language framework for embedding JavaScript in hypermedia:
 https://www.npmjs.com/package/hctx

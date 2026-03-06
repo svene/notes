@@ -1,19 +1,25 @@
 # IntelliJ IDEA Tips and Tricks
 
-## Add/remove a selection
+Add/remove a selection
 
 ```bash
 Alt + Shift + Mouse Click
 ```
 
-## Select/unselect the next occurrence
+Select/unselect the next occurrence
 
 ```bash
 Alt + J / Shift + Alt + J
 ```
 
-## Select all occurrences
+Select all occurrences
 
 ```bash
 Shift + Ctrl + Alt + J
+```
+
+Method call hierarchy
+
+```bash
+Shift + Ctrl + Alt + H
 ```
