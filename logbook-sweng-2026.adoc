@@ -298,7 +298,11 @@
 - Tue, 10.03.2026
 - Mon, 09.03.2026
 - Sun, 08.03.2026
+
 - Sat, 07.03.2026
+HyperCard Changed Everything:
+https://www.youtube.com/watch?v=hxHkNToXga8
+
 - Fri, 06.03.2026
 https://terriblesoftware.org/2026/03/03/nobody-gets-promoted-for-simplicity/
 https://css-tricks.com/css-logical-properties-and-values/
