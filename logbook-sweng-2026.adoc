@@ -297,7 +297,10 @@
 - Wed, 11.03.2026
 - Tue, 10.03.2026
 - Mon, 09.03.2026
+
 - Sun, 08.03.2026
+trusted-types,CSP
+https://frederikbraun.de/perfect-types-with-sethtml.html
 
 - Sat, 07.03.2026
 HyperCard Changed Everything:
