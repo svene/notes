@@ -290,13 +290,21 @@
 - Wed, 18.03.2026
 - Tue, 17.03.2026
 - Mon, 16.03.2026
+
 - Sun, 15.03.2026
+Java Streams with Gatherers:
+https://www.youtube.com/watch?v=1CT57yPixAc&list=WL&index=7
+
 - Sat, 14.03.2026
-- Fri, 13.03.2026
-- Thu, 12.03.2026
-- Wed, 11.03.2026
-- Tue, 10.03.2026
-- Mon, 09.03.2026
+XML is a cheap DSL:
+https://unplannedobsolescence.com/blog/xml-cheap-dsl/
+
+HyperCard Changed Everything
+https://www.youtube.com/watch?v=hxHkNToXga8
+
+Claude:
+https://steveklabnik.com/writing/getting-started-with-claude-for-software-development/
+
 
 - Sun, 08.03.2026
 trusted-types,CSP
