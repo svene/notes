@@ -285,11 +285,11 @@
 - Mon, 23.03.2026
 - Sun, 22.03.2026
 - Sat, 21.03.2026
-- Fri, 20.03.2026
-- Thu, 19.03.2026
-- Wed, 18.03.2026
-- Tue, 17.03.2026
-- Mon, 16.03.2026
+htmx vscode extension:
+https://github.com/atoolz/htmx-vscode-toolkit
+
+angular signal forms with reactive forms:
+https://www.angulararchitects.io/blog/migrating-to-angular-signal-forms-interop-with-reactive-forms/?
 
 - Sun, 15.03.2026
 Java Streams with Gatherers:
