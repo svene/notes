@@ -284,6 +284,12 @@
 - Tue, 24.03.2026
 - Mon, 23.03.2026
 - Sun, 22.03.2026
+MUI: material design css:
+https://www.muicss.com/
+
+MUI: material design for react:
+https://mui.com/
+
 - Sat, 21.03.2026
 htmx vscode extension:
 https://github.com/atoolz/htmx-vscode-toolkit
