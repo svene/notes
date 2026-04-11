@@ -265,24 +265,52 @@
 - Sun, 12.04.2026
 - Sat, 11.04.2026
 - Fri, 10.04.2026
-- Thu, 09.04.2026
-- Wed, 08.04.2026
-- Tue, 07.04.2026
-- Mon, 06.04.2026
+https://github.com/madeonawave/htmx-mcp
+
+todo: demo time: tool for presentations
+https://demotime.show/
+https://github.com/alexander-posztos/django-htmx-sse-chat?tab=readme-ov-file
+
 - Sun, 05.04.2026
+htmx extension to display charts for json:
+https://c-cube.github.io/hx-plot/
+
 - Sat, 04.04.2026
+convert old JavaCC grammar file to newer JavaCC21/congocc format:
+jbang https://parsers.org/download/javacc-full.jar convert jst.jj > jst.ccc
+
 - Fri, 03.04.2026
-- Thu, 02.04.2026
-- Wed, 01.04.2026
+htmx4 extension to add/replace element-attributes:
+https://github.com/MichaelWest22/htmx4-extensions/tree/main/src/attribute
+
 - Tue, 31.03.2026
-- Mon, 30.03.2026
-- Sun, 29.03.2026
+https://abuseofnotation.github.io/category-theory-illustrated/06_type/
+
 - Sat, 28.03.2026
+astro themes:
+https://github.com/erlandv/case
+https://astro.build/themes/details/astrozen-personal-portfolio-website/
+https://astro.build/themes/details/minimalistic-portfolio/
+https://astro.build/themes/details/saral/
+
+
+
 - Fri, 27.03.2026
 - Thu, 26.03.2026
 - Wed, 25.03.2026
 - Tue, 24.03.2026
+https://sx-web.org/sx/(language.(doc.introduction))
+
+https://github.com/atoolz
+https://github.com/atoolz/htmx-devtools
+
 - Mon, 23.03.2026
+REST:
+https://unplannedobsolescence.com/blog/why-insist-on-a-word/
+https://martinfowler.com/articles/richardsonMaturityModel.html
+
+- book: REST in Practice: Hypermedia and Systems Architecture
+
 - Sun, 22.03.2026
 MUI: material design css:
 https://www.muicss.com/
