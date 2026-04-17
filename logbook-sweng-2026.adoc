@@ -258,12 +258,21 @@
 - Sun, 19.04.2026
 - Sat, 18.04.2026
 - Fri, 17.04.2026
+Stop using JWTs!
+https://gist.github.com/samsch/0d1f3d3b4745d778f78b230cf6061452
+
 - Thu, 16.04.2026
+DB indexes:
+https://jon.chrt.dev/2026/04/15/things-you-didnt-know-about-indexes.html
+
 - Wed, 15.04.2026
+https://codeberg.org/dz4k/psatina
+
+https://tools.rmv.fyi/
+
 - Tue, 14.04.2026
-- Mon, 13.04.2026
-- Sun, 12.04.2026
-- Sat, 11.04.2026
+https://dev.to/robodobdob/solving-problems-with-htmx-theme-switcher-306f
+
 - Fri, 10.04.2026
 https://github.com/madeonawave/htmx-mcp
 
