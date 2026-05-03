@@ -241,22 +241,49 @@
 - Wed, 06.05.2026
 - Tue, 05.05.2026
 - Mon, 04.05.2026
+
 - Sun, 03.05.2026
+TODO: progressive webcomponents:
+https://arielsalminen.com/2026/progressive-web-components/
+https://elenajs.com/
+
 - Sat, 02.05.2026
 - Fri, 01.05.2026
-- Thu, 30.04.2026
-- Wed, 29.04.2026
+https://ratfactor.com/cards/text-editor-as-ui
+- gettings started with chroot:
+  https://ratfactor.com/slackware/pkgblog/coreutils
+https://ratfactor.com/cards/ruby-shell-scripts
+
 - Tue, 28.04.2026
+https://michaelwest22.github.io/htmx/hx-boost-history-demo/index.html
+
+Semantic CSS library:
+https://semtx.org/
+
 - Mon, 27.04.2026
+astro themes documentation:
+https://dockit-astro.vercel.app/getting-started/introduction/overview/
+https://astro.build/themes/details/starlight-vintage/
+
 - Sun, 26.04.2026
 - Sat, 25.04.2026
+AI-tool:
+https://pi.dev/
+https://mariozechner.at/posts/2026-04-08-ive-sold-out/
+
+
 - Fri, 24.04.2026
-- Thu, 23.04.2026
-- Wed, 22.04.2026
+TODO:
+https://tsrx.dev/
+
 - Tue, 21.04.2026
-- Mon, 20.04.2026
+https://github.com/marcingolenia/htmx-echarts
+https://binaryigor.com/modern-frontend-complexity.html
+https://fonts.google.com/specimen/Roboto+Mono
+
 - Sun, 19.04.2026
-- Sat, 18.04.2026
+https://developer.chrome.com/docs/web-platform/device-bound-session-credentials
+
 - Fri, 17.04.2026
 Stop using JWTs!
 https://gist.github.com/samsch/0d1f3d3b4745d778f78b230cf6061452
