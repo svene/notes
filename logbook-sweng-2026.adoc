@@ -225,29 +225,33 @@
 - Fri, 22.05.2026
 - Thu, 21.05.2026
 - Wed, 20.05.2026
-- Tue, 19.05.2026
-- Mon, 18.05.2026
+https://developer.chrome.com/blog/declarative-partial-updates
+
 - Sun, 17.05.2026
-- Sat, 16.05.2026
+https://chrismorgan.info/css-themed-colours
+
 - Fri, 15.05.2026
+https://github.com/soteria-security/hardening-workflows/tree/main/workflows/pin-actions-to-sha
+
 - Thu, 14.05.2026
-- Wed, 13.05.2026
-- Tue, 12.05.2026
-- Mon, 11.05.2026
-- Sun, 10.05.2026
-- Sat, 09.05.2026
-- Fri, 08.05.2026
-- Thu, 07.05.2026
+https://github.com/maxandersen/lazyslide
+
+css themes for old operating systems:
+https://nielssp.github.io/classic-stylesheets/?theme=cde&skin=default
+
 - Wed, 06.05.2026
-- Tue, 05.05.2026
-- Mon, 04.05.2026
+htmx and d3:
+https://github.com/mdo6180/htmx-graph
+
+font for data:
+https://fonts.google.com/specimen/Datatype?preview.script=Latn
+e.g.: ddddd{l:33,88,13,1}{p:14}
 
 - Sun, 03.05.2026
 TODO: progressive webcomponents:
 https://arielsalminen.com/2026/progressive-web-components/
 https://elenajs.com/
 
-- Sat, 02.05.2026
 - Fri, 01.05.2026
 https://ratfactor.com/cards/text-editor-as-ui
 - gettings started with chroot:
