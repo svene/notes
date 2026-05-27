@@ -72,7 +72,6 @@ https://www.youtube.com/watch?v=TEd5e4Thu7M
 Free fake and reliable API for testing and prototyping.
 https://jsonplaceholder.typicode.com/
 
-==== Fri, 21.11.2025
 ==== Thu, 20.11.2025
 https://github.com/WICG/declarative-partial-updates?tab=readme-ov-file#element-to-element
 ==== Wed, 19.11.2025

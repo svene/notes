@@ -219,11 +219,15 @@
 - Thu, 28.05.2026
 - Wed, 27.05.2026
 - Tue, 26.05.2026
+Alpine.js → hx-live Migration Guide:
+https://gist.github.com/MichaelWest22/e399e69e77332f07540152ae789ee783
+
 - Mon, 25.05.2026
-- Sun, 24.05.2026
-- Sat, 23.05.2026
-- Fri, 22.05.2026
+https://lucumr.pocoo.org/
+
 - Thu, 21.05.2026
+https://chrismorgan.info/css-themed-colours
+
 - Wed, 20.05.2026
 https://developer.chrome.com/blog/declarative-partial-updates
 
