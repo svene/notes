@@ -213,11 +213,75 @@
 - Wed, 03.06.2026
 - Tue, 02.06.2026
 - Mon, 01.06.2026
+
 - Sun, 31.05.2026
+git flag for better rebase support with conflicts:
+https://git-scm.com/book/en/v2/Git-Tools-Rerere
+
+https://pandoc-templates.org/
+
+typst templates:
+- https://typst.app/universe/search/?category=office
+-- briefe:
+--- https://typst.app/universe/package/letter-pro
+--- https://typst.app/universe/package/briefs
+-- https://typst.app/universe/package/etykett
+-- https://typst.app/universe/package/typographic-resume
+
 - Sat, 30.05.2026
+jsx for python:
+https://github.com/tomasr8/pyjsx
+
+https://github.com/justinfagnani/dom-templating-api-proposal/blob/main/EXPLAINER.md
+https://observablehq.com/@observablehq/htl
+https://lit.dev/
+
+https://github.com/goreleaser/nfpm
+
+reactivity with HTML and css:
+https://github.com/iDev-Games/State-JS
+
 - Fri, 29.05.2026
+https://declarative-partial-updates.paulkinlan-ea.deno.net/
+chrome://flags/#enable-experimental-web-platform-features
+
+https://github.com/jj-vcs/jj
+
 - Thu, 28.05.2026
-- Wed, 27.05.2026
+templates for go:
+https://templ.guide/
+
+jsx templates:
+https://html.kitajs.org/
+---
+// compositional HTML generation:
+export function contactArchiveUI(contact) {
+return contact.archived ?
+html`<button hx-patch="/contacts/${contact.id}/unarchive">Unarchive</button>` :
+html`<button hx-delete="/contacts/${contact.id}">Archive</button>`
+}
+
+export function contactDetail(contact) {
+return html`
+<html>
+<body>
+<div hx-target="this">
+${contactArchiveUI(contact)}
+</div>
+
+        <h3>Contact</h3>
+        <p>${contact.email}</p>
+      </body>
+    </html>
+  `)
+}
+from:
+https://discord.com/channels/725789699527933952/725789747212976259/1509366289448308927
+
+"Yeah, I would argue that the co-location (of fragments) makes templates overly inflexible"
+"by extracting the contactArchiveUI, i can now use it inside some other component, making it much simpler to move things around in my UI. but a fragment stays stuck in the template it was defined in"
+
+
 - Tue, 26.05.2026
 Alpine.js → hx-live Migration Guide:
 https://gist.github.com/MichaelWest22/e399e69e77332f07540152ae789ee783
