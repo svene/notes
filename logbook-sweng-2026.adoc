@@ -213,6 +213,7 @@
 - Wed, 03.06.2026
 - Tue, 02.06.2026
 - Mon, 01.06.2026
+https://goilerplate.com/blog/the-server-is-back
 
 - Sun, 31.05.2026
 git flag for better rebase support with conflicts:
