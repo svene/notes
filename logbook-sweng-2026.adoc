@@ -207,11 +207,22 @@
 - Tue, 09.06.2026
 - Mon, 08.06.2026
 - Sun, 07.06.2026
+
 - Sat, 06.06.2026
-- Fri, 05.06.2026
+https://sumnerevans.com/posts/software-engineering/stop-using-conventional-commits/
+https://scopedcommits.com/
+
+https://www.0xkato.xyz/how-llms-actually-work/
+
+https://smallrye.io/smallrye-mutiny/latest/tutorials/getting-mutiny/
+https://smallrye.io/smallrye-mutiny/latest/guides/handling-null/
+
 - Thu, 04.06.2026
-- Wed, 03.06.2026
-- Tue, 02.06.2026
+https://blog.frankmtaylor.com/2026/05/13/you-dont-know-html-lists/
+
+passkeys explained:
+https://kerkour.com/passkeys
+
 - Mon, 01.06.2026
 https://goilerplate.com/blog/the-server-is-back
 
@@ -237,6 +248,7 @@ https://github.com/justinfagnani/dom-templating-api-proposal/blob/main/EXPLAINER
 https://observablehq.com/@observablehq/htl
 https://lit.dev/
 
+make linux packages:
 https://github.com/goreleaser/nfpm
 
 reactivity with HTML and css:
