@@ -203,10 +203,7 @@
 - Sat, 13.06.2026
 - Fri, 12.06.2026
 - Thu, 11.06.2026
-- Wed, 10.06.2026
-- Tue, 09.06.2026
-- Mon, 08.06.2026
-- Sun, 07.06.2026
+https://mohkohn.co.uk/writing/html-first/
 
 - Sat, 06.06.2026
 https://sumnerevans.com/posts/software-engineering/stop-using-conventional-commits/
@@ -238,7 +235,11 @@ typst templates:
 --- https://typst.app/universe/package/letter-pro
 --- https://typst.app/universe/package/briefs
 -- https://typst.app/universe/package/etykett
+
+- CVs:
 -- https://typst.app/universe/package/typographic-resume
+-- https://github.com/cammellos/typst-blue-header-cv
+-- https://github.com/caffeinatedgaze/bare-bones-cv
 
 - Sat, 30.05.2026
 jsx for python:
