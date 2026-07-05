@@ -179,11 +179,7 @@
 - Tue, 07.07.2026
 - Mon, 06.07.2026
 - Sun, 05.07.2026
-- Sat, 04.07.2026
-- Fri, 03.07.2026
-- Thu, 02.07.2026
-- Wed, 01.07.2026
-- Tue, 30.06.2026
+https://github.com/MichaelWest22/htmx4-extensions/tree/main/src
 - Mon, 29.06.2026
 https://stonetools.ghost.io/hypercard-mac/
 
@@ -307,6 +303,9 @@ ${contactArchiveUI(contact)}
 }
 from:
 https://discord.com/channels/725789699527933952/725789747212976259/1509366289448308927
+also there: argument against fragments (in a page):
+"extracting the contactArchiveUI, i can now use it inside some other component, making it much simpler to move things around in my UI. but a fragment stays stuck in the template it was defined in"
+see all examples underneath: 2025-12-27_ssfe-patterns-hono-htmx/src/m01html/
 
 "Yeah, I would argue that the co-location (of fragments) makes templates overly inflexible"
 "by extracting the contactArchiveUI, i can now use it inside some other component, making it much simpler to move things around in my UI. but a fragment stays stuck in the template it was defined in"
@@ -537,7 +536,7 @@ https://developer.mozilla.org/en-US/docs/Web/API/CSS_Custom_Highlight_API
 https://modern-css.com/
 
 - Sun, 15.02.2026
-virtual scroll demoe for result list with 1000s of items:
+virtual scroll demo for result list with 1000s of items:
 https://gist.github.com/MichaelWest22/26b0db0f489e213ef15e675ade913784
 from:
 https://discord.com/channels/725789699527933952/1472060135760462015/1472104445880959080
