@@ -177,11 +177,23 @@
 - Thu, 09.07.2026
 - Wed, 08.07.2026
 - Tue, 07.07.2026
+
 - Mon, 06.07.2026
+dark-mode:
+https://olliewilliams.xyz/blog/dark-mode/
+
+https://quarkus.io/blog/virtual-thread-1/
+
 - Sun, 05.07.2026
 https://github.com/MichaelWest22/htmx4-extensions/tree/main/src
 - Mon, 29.06.2026
 https://stonetools.ghost.io/hypercard-mac/
+
+run javascript from Java using WASM. TODO.
+https://github.com/roastedroot/quickjs4j
+
+github actions alternative:
+https://buildkite.com/
 
 - Fri, 26.06.2026
 HTML template strings for the Browser with support for Server Side Rendering in Node.
