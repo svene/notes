@@ -199,6 +199,8 @@ https://buildkite.com/
 HTML template strings for the Browser with support for Server Side Rendering in Node.
 https://github.com/choojs/nanohtml
 
+https://docs.confluent.io/platform/current/streams/concepts.html
+
 - Mon, 22.06.2026
 https://sandimetz.com/blog/2016/1/20/the-wrong-abstraction
 
