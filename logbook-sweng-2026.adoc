@@ -167,16 +167,20 @@
 - Sun, 19.07.2026
 - Sat, 18.07.2026
 - Fri, 17.07.2026
+
 - Thu, 16.07.2026
-- Wed, 15.07.2026
-- Tue, 14.07.2026
+system that allows LLMs to progressively discover and learn about ReAcT-style tools. It is way more efficient than MCP and gives better results too:
+https://github.com/AnswerDotAI/pyskills
+
 - Mon, 13.07.2026
-- Sun, 12.07.2026
-- Sat, 11.07.2026
+whats new in HTMX-4
+https://www.youtube.com/watch?v=LMS_tLT3yvk
+
 - Fri, 10.07.2026
-- Thu, 09.07.2026
+https://blinry.org/lcd-clock/
+
 - Wed, 08.07.2026
-- Tue, 07.07.2026
+https://davidpoblador.com/deep-dives/what-happened-to-the-frontend/
 
 - Mon, 06.07.2026
 dark-mode:
