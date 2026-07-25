@@ -162,11 +162,20 @@
 - Fri, 24.07.2026
 - Thu, 23.07.2026
 - Wed, 22.07.2026
-- Tue, 21.07.2026
-- Mon, 20.07.2026
+https://thecastlemap.com/
+https://www.dgtlgrove.com/p/the-codepath-combinatoric-explosion
+https://www.phpwayoflife.com/en/manifesto
+https://www.yegor256.com/2014/05/05/oop-alternative-to-utility-classes.html
+
 - Sun, 19.07.2026
-- Sat, 18.07.2026
+generate a Spring Boot with Thymeleaf (or JTE) project where you can select htmx as well.
+It allows also to setup Vite so you get super-fast browser reloads when you save your html, css or JS.
+https://github.com/wimdeblauwe/ttcli
+
+https://drupalpatterns.shawnduncan.org/post/drupal-12-and-htmx-4
+
 - Fri, 17.07.2026
+https://mine-css.neocities.org/
 
 - Thu, 16.07.2026
 system that allows LLMs to progressively discover and learn about ReAcT-style tools. It is way more efficient than MCP and gives better results too:
