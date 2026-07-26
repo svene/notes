@@ -157,10 +157,12 @@
 - Wed, 29.07.2026
 - Tue, 28.07.2026
 - Mon, 27.07.2026
+
 - Sun, 26.07.2026
-- Sat, 25.07.2026
-- Fri, 24.07.2026
-- Thu, 23.07.2026
+https://github.com/MichaelWest22/htmx4-extensions/tree/main/src/hx-streaming
+https://refp.se/articles/your-shell-and-the-magic-colon
+https://zigbyexample.neocities.org/
+
 - Wed, 22.07.2026
 https://thecastlemap.com/
 https://www.dgtlgrove.com/p/the-codepath-combinatoric-explosion
