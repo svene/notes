@@ -137,26 +137,66 @@
 - Tue, 18.08.2026
 - Mon, 17.08.2026
 - Sun, 16.08.2026
-- Sat, 15.08.2026
-- Fri, 14.08.2026
+Your servers. Your cloud.:
+https://miren.dev/
+
 - Thu, 13.08.2026
-- Wed, 12.08.2026
-- Tue, 11.08.2026
-- Mon, 10.08.2026
-- Sun, 09.08.2026
-- Sat, 08.08.2026
-- Fri, 07.08.2026
+https://en.andros.dev/blog/ef4968f5/html-over-websockets-real-time-spas-with-barely-any-javascript/
+
+htpy - HTML in Python:
+https://htpy.dev/
+https://github.com/pelme/htpy/discussions/23
+
 - Thu, 06.08.2026
+https://www.youtube.com/watch?v=fG6ToJJ9x_Y
+https://prop-for-that.netlify.app/docsite/
+
 - Wed, 05.08.2026
-- Tue, 04.08.2026
-- Mon, 03.08.2026
+Little's law:
+https://www.youtube.com/watch?v=07V08SB1l8c&t=142s
+
+data-star author:
+Put State in the Right Place - Delaney Gillilan | SSW 2026
+https://www.youtube.com/watch?v=W7Ki3aXgmZU
+
 - Sun, 02.08.2026
+https://zserge.com/posts/worst-htmx-ever/
+https://github.com/MichaelWest22/htmx4-extensions/tree/main/src/hx-streaming
+
+htmx Streaming Extensions Comparison:
+https://gist.github.com/MichaelWest22/36e1a418b8fc3ffc9495a771479d74d6
+
+https://xkeyscore.neocities.org/play-ascii_gallery#form_constants
+
+https://www.n16f.net/blog/concurrency-interactivity-mutability-choose-two/
+https://news.ycombinator.com/item?id=49065874
+
 - Sat, 01.08.2026
+Database (bigsky conf)
+https://docs.invirgance.com/convirgance/latest/#/
+
+Christian Tanul
+https://github.com/scriptogre
+
 - Fri, 31.07.2026
+https://github.com/peperronii/hatch
+similar: https://four.htmx.org/extensions/hx-optimistic
+
+https://www.rafa.ee/articles/progressive-enhanced-forms-htmx/
+
 - Thu, 30.07.2026
-- Wed, 29.07.2026
+Go: HTML-DSL components for Go
+https://www.gomponents.com/
+
+ZX81 simulator and handbook:
+https://www.zx81stuff.org.uk/zx81/jtyone.html
+https://www.historybit.it/wp-content/uploads/2018/09/ZX81_BasicProgramming.pdf
+
 - Tue, 28.07.2026
+https://silky.github.io/posts/reviews-one-simple-trick.html
+
 - Mon, 27.07.2026
+https://beyondloom.com/decker/
 
 - Sun, 26.07.2026
 https://github.com/MichaelWest22/htmx4-extensions/tree/main/src/hx-streaming
