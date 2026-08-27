@@ -125,17 +125,10 @@
 - Sun, 30.08.2026
 - Sat, 29.08.2026
 - Fri, 28.08.2026
+
 - Thu, 27.08.2026
-- Wed, 26.08.2026
-- Tue, 25.08.2026
-- Mon, 24.08.2026
-- Sun, 23.08.2026
-- Sat, 22.08.2026
-- Fri, 21.08.2026
-- Thu, 20.08.2026
-- Wed, 19.08.2026
-- Tue, 18.08.2026
-- Mon, 17.08.2026
+https://github.com/SenteLabsAI/OpenExecutive
+
 - Sun, 16.08.2026
 Your servers. Your cloud.:
 https://miren.dev/
