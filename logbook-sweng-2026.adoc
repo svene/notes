@@ -117,14 +117,40 @@
 - Mon, 07.09.2026
 - Sun, 06.09.2026
 - Sat, 05.09.2026
-- Fri, 04.09.2026
+SRI is a new W3C specification that allows web developers to ensure that resources hosted on third-party servers have not been tampered with.
+Use of SRI is recommended as a best-practice, whenever libraries are loaded from a third-party source.
+https://srihash.org/
+
+makes searches work with a lot of :has() selectors and ~= attribute selectors to find matching data-attributes:
+https://stephenrwicks.github.io/php-css-filters/
+
+WebSockets vs. SSE should be about ordering and correctness:
+https://dashbit.co/blog/websockets-vs-sse
+
+PostgreSQL for Everything:
+https://www.raphaelbauer.com/posts/postgresql-everything/
+
+https://sumnerevans.com/posts/money/plain-text-accounting/
+
 - Thu, 03.09.2026
+<meta name="viewport" content="width=device-width, initial-scale=1.0">:
+https://vale.rocks/micros/20260902-1350
+
+https://shivjm.blog/is-minifying-css-necessary/
+-> Not even in extreme cases.
+
 - Wed, 02.09.2026
-- Tue, 01.09.2026
-- Mon, 31.08.2026
-- Sun, 30.08.2026
+https://drafts.csswg.org/css-mixins-1/
+
+The pattern language of software architecture
+https://metapatterns.io/
+
 - Sat, 29.08.2026
+https://freenet.org/
+
 - Fri, 28.08.2026
+HOCON: Human-Optimized Config Object Notation
+https://github.com/lightbend/config/blob/main/HOCON.md
 
 - Thu, 27.08.2026
 https://github.com/SenteLabsAI/OpenExecutive
