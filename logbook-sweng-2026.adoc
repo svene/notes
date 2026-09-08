@@ -113,8 +113,22 @@
 - Fri, 11.09.2026
 - Thu, 10.09.2026
 - Wed, 09.09.2026
+
 - Tue, 08.09.2026
+html multi selects:
+https://adrianroselli.com/2022/05/under-engineered-multi-selects.html
+https://missing.style/docs/forms/#select-listboxes
+https://www.nngroup.com/articles/dropdown-list/
+
+https://bergie.iki.fi/blog/eupl/
+https://jyn.dev/simple-is-not-the-same-as-small/
+
 - Mon, 07.09.2026
+resuse inline svg in html:
+https://missing.style/docs/components/#icon-button
+https://developer.mozilla.org/en-US/docs/Web/SVG/Reference/Element/use
+
+
 - Sun, 06.09.2026
 https://github.com/tt-a1i/archify
 
