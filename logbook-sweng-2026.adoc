@@ -105,11 +105,14 @@
 - Sat, 19.09.2026
 - Fri, 18.09.2026
 - Thu, 17.09.2026
+
 - Wed, 16.09.2026
-- Tue, 15.09.2026
-- Mon, 14.09.2026
-- Sun, 13.09.2026
+https://will-keleher.com/posts/small-programming-tricks-matter/
+
 - Sat, 12.09.2026
+https://artificialworlds.net/blog/2026/09/11/feeling-sad-about-ai/
+
+project rename: SSFE -> Hypermedia
 
 - Fri, 11.09.2026
 DOMStack builds static websites and multi-page apps:
