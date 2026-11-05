@@ -56,40 +56,89 @@
 - Sat, 07.11.2026
 - Fri, 06.11.2026
 - Thu, 05.11.2026
+https://matklad.github.io/2026/10/29/pub-calls-pub.html
+
 - Wed, 04.11.2026
-- Tue, 03.11.2026
+https://weli.dev/blog/the-valley-of-webhooks/
+
 - Mon, 02.11.2026
-- Sun, 01.11.2026
+https://nolanlawson.com/2026/10/28/the-ai-cost-of-javascript-frameworks/
+
 - Sat, 31.10.2026
+https://srcmd.org/
+
 - Fri, 30.10.2026
-- Thu, 29.10.2026
-- Wed, 28.10.2026
-- Tue, 27.10.2026
+Book
+https://basecamp.com/books#shapeup
+
 - Mon, 26.10.2026
+draw app:
+https://www.tldraw.com/
+
 - Sun, 25.10.2026
+
 - Sat, 24.10.2026
+html: Don't mess with links:
+https://maurycyz.com/misc/real_links/
+
 - Fri, 23.10.2026
-- Thu, 22.10.2026
-- Wed, 21.10.2026
+https://jvns.ca/blog/2017/01/31/whats-tls/
+
 - Tue, 20.10.2026
-- Mon, 19.10.2026
-- Sun, 18.10.2026
-- Sat, 17.10.2026
+https://thefloatingcontinent.com/blog/credit-is-due/
+https://ashwinsundar.com/posts/hx-partial
+
 - Fri, 16.10.2026
+https://github.com/ninesl/htmx4live-sse-collect
+
+hx-data extension by Latent:
+Collect data-* attributes from the DOM and send them with requests. Receive updates from the server to sync data-* attributes across the page:
+https://github.com/MichaelWest22/htmx4-extensions/blob/main/src/hx-data/hx-data.md
+---
+openssl, but you don't have to google the flags:
+https://github.com/glincker/sslx
+
 - Thu, 15.10.2026
 - Wed, 14.10.2026
 - Tue, 13.10.2026
+elixir (erlang based ?)
+https://elixir-lang.org/cases/
+
+Phoenix is a web development framework written in Elixir:
+https://www.phoenixframework.org/
+
+
 - Mon, 12.10.2026
-- Sun, 11.10.2026
-- Sat, 10.10.2026
-- Fri, 09.10.2026
+css underlines:
+https://www.rubenerd.au/css-for-underlines/
+
+good (intersting for supermarket app):
+We replaced Redis with MySQL for inventory reservations—and it scaled
+https://shopify.engineering/scaling-inventory-reservations
+
+How shredding JSON is giving Logfire 1000x query speedups:
+https://pydantic.dev/articles/dynamic-shredding-2026-01-26
+
 - Thu, 08.10.2026
-- Wed, 07.10.2026
-- Tue, 06.10.2026
-- Mon, 05.10.2026
+https://refactoringenglish.com/blog/anti-patterns-software-blogging/
+
 - Sun, 04.10.2026
+https://claude.dev/blog/getting-the-most-out-of-opus-5-5/
+
 - Sat, 03.10.2026
+codegraph: Semantic Code Intelligence for AI tools like claude:
+https://www.npmjs.com/package/@kongdd/codegraph
+https://github.com/colbymchenry/codegraph
+
 - Fri, 02.10.2026
+https://molily.de/web-dev-education/
+bookmark apps:
+https://molily.de/bookmarking-tool/
+https://github.com/sissbruecker/linkding
+https://github.com/linkwarden/linkwarden
+hosting:
+https://uberspace.de/en/
+
 - Thu, 01.10.2026
 https://56k.rip/
 
