@@ -48,13 +48,9 @@
 - Sun, 15.11.2026
 - Sat, 14.11.2026
 - Fri, 13.11.2026
-- Thu, 12.11.2026
-- Wed, 11.11.2026
-- Tue, 10.11.2026
-- Mon, 09.11.2026
-- Sun, 08.11.2026
-- Sat, 07.11.2026
-- Fri, 06.11.2026
+TODO:
+https://blog.master.dev/creating-diagrams-and-graphs-using-modern-css/
+
 - Thu, 05.11.2026
 https://matklad.github.io/2026/10/29/pub-calls-pub.html
 
